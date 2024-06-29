@@ -1,0 +1,145 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: authorize",
+                "infFile": "t1.inf",
+                "time": 1719494021395
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login_2",
+                "infFile": "t3.inf",
+                "time": 1719494021624
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: modelSchema_2",
+                "infFile": "t4.inf",
+                "time": 1719494021732
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: user_5",
+                "infFile": "t5.inf",
+                "time": 1719494021830
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: identityProvider_2",
+                "infFile": "t6.inf",
+                "time": 1719494021888
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: 13_2",
+                "infFile": "t7.inf",
+                "time": 1719494021949
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: teamContext_2",
+                "infFile": "t9.inf",
+                "time": 1719494022031
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: testRunner_2",
+                "infFile": "t10.inf",
+                "time": 1719494022105
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: project_3",
+                "infFile": "t11.inf",
+                "time": 1719494041243
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: label_3",
+                "infFile": "t12.inf",
+                "time": 1719494041319
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: user_6",
+                "infFile": "t13.inf",
+                "time": 1719494041389
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: test_4",
+                "infFile": "t15.inf",
+                "time": 1719494041489
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Url: test_5",
+                "infFile": "t16.inf",
+                "time": 1719494041600
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Custom Request: stop",
+                "infFile": "t17.inf",
+                "time": 1719494046791
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Url: test_6",
+                "infFile": "t18.inf",
+                "time": 1719494046880
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: test_7",
+                "infFile": "t19.inf",
+                "time": 1719494046994
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: test_8",
+                "infFile": "t20.inf",
+                "time": 1719494057091
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Url: test_9",
+                "infFile": "t21.inf",
+                "time": 1719494057199
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC04_TR01_login",
+                "rawStartTime": 1719494021405,
+                "rawEndTime": 1719494022115,
+                "thinkTime": 0.0,
+                "wastedTime": 0.06701827049255371
+            },
+            {
+                "transactionName": "UC04_TR02_test_runs",
+                "rawStartTime": 1719494041145,
+                "rawEndTime": 1719494041605,
+                "thinkTime": 0.0,
+                "wastedTime": 0.03972339630126953
+            },
+            {
+                "transactionName": "UC04_TR03_stopping_the_test",
+                "rawStartTime": 1719494041616,
+                "rawEndTime": 1719494057208,
+                "thinkTime": 15.016757,
+                "wastedTime": 0.04006171226501465
+            },
+            {
+                "transactionName": "UC04_TR04_sign_out",
+                "rawStartTime": 1719494057225,
+                "rawEndTime": 1719494057240,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            }
+        ]
+    }
+]

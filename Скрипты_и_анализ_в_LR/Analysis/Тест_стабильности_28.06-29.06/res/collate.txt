@@ -1,0 +1,5 @@
+[Diagnostics]
+Status=-1
+[Collate Recovery]
+Scenario=D:\PROJECT NT 2024\KontrollerTests\Prof10StabilityTest6min.lrs
+Completed=0

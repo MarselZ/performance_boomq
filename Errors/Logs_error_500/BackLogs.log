@@ -1,0 +1,1000 @@
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        (
+            test0_.state in (
+                ? , ? , ?
+            )
+        ) 
+        and (
+            test0_.test_project_id in (
+                ?
+            )
+        ) 
+        and test0_.team_id=? 
+    order by
+        test0_.create_date desc limit ?
+2024-06-27 18:25:21.277  INFO 1 --- [nio-7010-exec-4] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project list: teamId=14, projectIds=[2604, 2604, 2604, 2604]
+2024-06-27 18:25:21.282  INFO 1 --- [nio-7010-exec-4] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project list: testProjectDtos=[TestProjectDto(id=2604, projectName=test_966_15:11, settingsId=null, comment=, lastModified=2024-06-27T11:12:01Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=180, version=[TestProjectVersionDto(id=3642, projectId=2604, settingsId=null, createdOn=2024-06-27T11:12:01.197Z, location=boomq/teams/14/projects/2604/v_3642.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1), TestProjectVersionDto(id=3643, projectId=2604, settingsId=null, createdOn=2024-06-27T11:14:45.954Z, location=boomq/teams/14/projects/2604/v_3643.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=2), TestProjectVersionDto(id=3644, projectId=2604, settingsId=null, createdOn=2024-06-27T11:19:12.627Z, location=boomq/teams/14/projects/2604/v_3644.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=3), TestProjectVersionDto(id=3645, projectId=2604, settingsId=null, createdOn=2024-06-27T11:20:13.171Z, location=boomq/teams/14/projects/2604/v_3645.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=4)])]
+Hibernate: 
+    select
+        testlabel0_.id as id1_2_,
+        testlabel0_.color as color2_2_,
+        testlabel0_.label as label3_2_,
+        testlabel0_.test_id as test_id4_2_ 
+    from
+        test_label testlabel0_ 
+    where
+        testlabel0_.test_id in (
+            ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_5_,
+        testresult0_.result_files_folder as result_f2_5_,
+        testresult0_.result_files_state as result_f3_5_ 
+    from
+        test_result_files_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_4_,
+        testresult0_.users_chart_svg as users_ch2_4_ 
+    from
+        test_result_charts_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testerror0_.test_id as test_id1_1_,
+        testerror0_.error_date as error_da2_1_,
+        testerror0_.exception_description as exceptio3_1_,
+        testerror0_.exception_message_type as exceptio4_1_,
+        testerror0_.source_service as source_s5_1_,
+        testerror0_.state_before_error as state_be6_1_ 
+    from
+        test_error testerror0_ 
+    where
+        testerror0_.test_id in (
+            ? , ? , ? , ?
+        )
+2024-06-27 18:25:21.288  INFO 1 --- [nio-7010-exec-4] r.p.b.t.c.a.user.UserControllerAdapter   : Try call auth service for user info: userIdList=[1871, 1871, 1871, 1871]
+2024-06-27 18:25:21.295  INFO 1 --- [nio-7010-exec-4] r.p.b.t.c.a.user.UserControllerAdapter   : Successful call auth service for user info: userIdList=[1871, 1871, 1871, 1871]
+2024-06-27 18:25:21.295  INFO 1 --- [nio-7010-exec-4] r.p.b.t.ent.controller.TestController    : Return response to get test list: page.size=2000
+2024-06-27 18:25:21.358  INFO 1 --- [nio-7010-exec-2] r.p.b.t.e.c.SlaReportProfileController   : Get request to get available sla types for report: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z), availableSlaTypesRequestDto=AvailableSlaTypesRequestDto(projectId=2604, testFilterExpressionList=[TestIdExpression(testIdList=[8542, 8529])], testLimit=null)
+Hibernate: 
+    select
+        test0_.id as col_0_0_ 
+    from
+        test_v2 test0_ 
+    where
+        (
+            test0_.id in (
+                ? , ?
+            )
+        ) 
+        and test0_.test_mode<>? 
+        and (
+            test0_.state in (
+                ? , ? , ?
+            )
+        ) 
+        and test0_.test_project_id=? 
+        and test0_.team_id=? 
+    order by
+        test0_.start_date desc
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:21.361  INFO 1 --- [nio-7010-exec-2] r.p.b.t.c.s.s.i.SlaReportProfileService  : Report profile matched: teamId=14, testList.size=2, testResultSlaDataList.size()=2, slaTypesPerTest.size=2
+2024-06-27 18:25:21.361  INFO 1 --- [nio-7010-exec-2] r.p.b.t.e.c.SlaReportProfileController   : Return success response to get available sla types for report: availableSlaTypeList=[GeneralSlaType(super=SlaType(targetType=TEST, restrictionType=AVERAGE, fromDate=0, toDate=180))]
+2024-06-27 18:25:21.423  INFO 1 --- [nio-7010-exec-3] r.p.b.t.e.c.SlaReportProfileController   : Get request to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        (
+            test0_.id in (
+                ? , ?
+            )
+        ) 
+        and test0_.test_mode<>? 
+        and (
+            test0_.state in (
+                ? , ? , ?
+            )
+        ) 
+        and test0_.test_project_id=? 
+        and test0_.team_id=?
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:21.426  INFO 1 --- [nio-7010-exec-3] r.p.b.t.c.s.sla.impl.SlaReportService    : Repost profile matched: teamId=14, testList.size=2, testResultSlaDataList.size=2
+Hibernate: 
+    select
+        testlabel0_.id as id1_2_,
+        testlabel0_.color as color2_2_,
+        testlabel0_.label as label3_2_,
+        testlabel0_.test_id as test_id4_2_ 
+    from
+        test_label testlabel0_ 
+    where
+        testlabel0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:21.427  INFO 1 --- [nio-7010-exec-3] r.p.b.t.e.c.SlaReportProfileController   : Return success response to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z), slaReportDto=SlaReportDto(profileId=null, profileName=null, chartList=[], tableList=[], baselineTestId=null, testList=[TestDto(id=8529, testProjectId=2604, testProjectVersionId=3643, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:14:59.465Z, startDate=2024-06-27T11:15:01.692Z, endDate=2024-06-27T11:17:54.040Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null), TestDto(id=8542, testProjectId=2604, testProjectVersionId=3645, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:20:13.260Z, startDate=2024-06-27T11:20:15.221Z, endDate=2024-06-27T11:23:07.548Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null)])
+2024-06-27 18:25:22.724  INFO 1 --- [.test-service-2] r.p.b.t.c.messaging.TestEventListener    : Handling test stopped event. testEventDto: TestEventDto(testId=10049, data={"startDate":"2024-06-27T18:24:27.745Z","endDate":"2024-06-27T18:25:22.076Z","testResultFilesFolder":"boomq/teams/14/tests/10049/result_files/"}, type=TEST_STOPPED)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.id=? for update
+            of test0_
+2024-06-27 18:25:22.727  INFO 1 --- [.test-service-2] r.p.b.t.c.s.impl.TestResultService       : Saving test result. testId: 10049
+2024-06-27 18:25:22.727  INFO 1 --- [  boomq-async-4] r.p.b.t.c.s.impl.TestWebHooksService     : Running async tasks for webhook requests for test. testId=10049
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_5_0_,
+        testresult0_.result_files_folder as result_f2_5_0_,
+        testresult0_.result_files_state as result_f3_5_0_ 
+    from
+        test_result_files_data testresult0_ 
+    where
+        testresult0_.test_id=?
+2024-06-27 18:25:22.727  INFO 1 --- [  boomq-async-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project version: teamId=14, projectId=2952, projectVersion=3995
+2024-06-27 18:25:22.728  INFO 1 --- [  boomq-async-7] r.p.b.t.c.a.t.TimescaleServiceAdapter    : Trying calling timescale-service getActiveThreadsTimeline: teamId=14 testId=10049 testStartDate=2024-06-27T18:24:27.745Z testEndDate=2024-06-27T18:25:22.076Z
+2024-06-27 18:25:22.728  INFO 1 --- [  boomq-async-5] r.p.b.t.c.s.t.TeamTestResultFileService  : Successfully saved test result files data. testId: 10049, testResultFilesData: TestResultFilesData(testId=10049, resultFilesFolder=boomq/teams/14/tests/10049/result_files/, resultFilesState=FINISHED)
+Hibernate: 
+    insert 
+    into
+        test_result_files_data
+        (result_files_folder, result_files_state, test_id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    update
+        test_v2 
+    set
+        comment=?,
+        create_date=?,
+        end_date=?,
+        start_date=?,
+        state=?,
+        team_id=?,
+        test_mode=?,
+        test_project_id=?,
+        test_project_settings_id=?,
+        test_project_version_id=?,
+        test_settings_location=?,
+        update_date=?,
+        user_email=?,
+        user_id=? 
+    where
+        id=?
+2024-06-27 18:25:22.730  INFO 1 --- [  boomq-async-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service with test project version: TestProjectVersionDto(id=3995, projectId=2952, settingsId=null, createdOn=2024-06-27T18:17:55.973Z, location=boomq/teams/14/projects/2952/v_3995.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)
+2024-06-27 18:25:22.732  INFO 1 --- [  boomq-async-3] r.p.b.t.core.service.impl.SlaService     : Sla for test is undefined. testId: 10049, testResultSlaData: TestResultSlaData(testId=10049, testResultSlaState=UNDEFINED, slaResults=null)
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_0_,
+        testresult0_.sla_results as sla_resu2_6_0_,
+        testresult0_.test_result_sla_state as test_res3_6_0_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id=?
+Hibernate: 
+    insert 
+    into
+        test_result_sla_data
+        (sla_results, test_result_sla_state, test_id) 
+    values
+        (?, ?, ?)
+2024-06-27 18:25:22.764  INFO 1 --- [  boomq-async-7] r.p.b.t.c.a.t.TimescaleServiceAdapter    : Success response from timescale-service getActiveThreadsTimeline: timeline.size=7
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_4_0_,
+        testresult0_.users_chart_svg as users_ch2_4_0_ 
+    from
+        test_result_charts_data testresult0_ 
+    where
+        testresult0_.test_id=?
+Hibernate: 
+    insert 
+    into
+        test_result_charts_data
+        (users_chart_svg, test_id) 
+    values
+        (?, ?)
+2024-06-27 18:25:22.768  INFO 1 --- [  boomq-async-7] r.p.b.t.c.service.impl.TestChartService  : Successfully saved test result charts. testId: 10049
+2024-06-27 18:25:23.488  INFO 1 --- [nio-7010-exec-8] r.p.b.t.ent.controller.TestController    : Get request to start test: teamId=14, userId=1871, createTestDto=CreateTestDto(testProjectId=2957, testProjectVersionId=4000, testMode=TEST, comment=, labelSet=[])
+2024-06-27 18:25:23.488  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.service.team.TeamTestService   : Creating test: teamId=14, userId=1871, createTestDto=CreateTestDto(testProjectId=2957, testProjectVersionId=4000, testMode=TEST, comment=, labelSet=[])
+2024-06-27 18:25:23.489  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project info: teamId=14, projectId=2957
+2024-06-27 18:25:23.496  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project info: testProjectDto=TestProjectDto(id=2957, projectName=test_609_22:22, settingsId=null, comment=, lastModified=2024-06-27T18:22:36Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)])
+2024-06-27 18:25:23.496  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project version: teamId=14, projectId=2957, projectVersion=4000
+2024-06-27 18:25:23.500  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service with test project version: TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)
+Hibernate: 
+    select
+        count(test0_.id) as col_0_0_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.state in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        nextval ('seq_test')
+Hibernate: 
+    insert 
+    into
+        test_v2
+        (comment, create_date, end_date, start_date, state, team_id, test_mode, test_project_id, test_project_settings_id, test_project_version_id, test_settings_location, update_date, user_email, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-06-27 18:25:23.516  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.a.m.MessagingAdapterImpl       : Sending test event. testId: 10051 eventType: TEST_PROJECT_SETTINGS_SELECTION eventData: TestProjectSettingsSelectionDto(projectVersionId=4000)
+2024-06-27 18:25:23.517  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.service.team.TeamTestService   : Test created. testId: 10051, testProjectId: 2957, testProjectVersionId: 4000, teamId:14, userId: 1871
+2024-06-27 18:25:23.517  INFO 1 --- [nio-7010-exec-8] r.p.b.t.c.a.m.MessagingAdapterImpl       : Sending test event. testId: 10051 eventType: TEST_CREATED eventData: TestCreatedDto(teamId=14)
+2024-06-27 18:25:23.517  INFO 1 --- [nio-7010-exec-8] r.p.b.t.ent.controller.TestController    : Return response to start test: TestDto(id=10051, testProjectId=2957, testProjectVersionId=4000, testMode=TEST, state=CREATED, displayState=INITIALIZATION, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T18:25:23.514Z, startDate=null, endDate=null, comment=, labelSet=[], testProject=TestProjectDto(id=2957, projectName=test_609_22:22, settingsId=null, comment=null, lastModified=null, contentFormat=null, contentModelVersion=null, labelSet=null, testType=null, requestCount=null, totalDuration=null, version=null), testProjectVersion=TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1), testResult=null, testError=null)
+2024-06-27 18:25:23.524  INFO 1 --- [.test-service-4] r.p.b.t.c.messaging.TestEventListener    : Handling test project settings selected event. testEventDto: TestEventDto(testId=10051, data={"settingsId":null,"settingsContent":{"modelVersion":"V_2_0_0","systemMetricsMonitoring":null,"webhookSettingsList":null,"toolConfiguration":null,"timers":[{"timerType":"CONSTANT","id":"3284cd61-8341-4f4d-a0e0-a382d1c48de3","typeDisplayName":null,"label":"boomq_timer_3284cd61-8341-4f4d-a0e0-a382d1c48de3","enabled":true,"durationMs":8000}],"configurationElements":[{"type":"HTTP_COOKIE_MANAGER","id":"8959fb54-b80b-44a8-8961-791d6cf01778","label":"Http cookie manager","enabled":true,"clearEachIteration":false,"clearControlledByThreadGroup":false,"cookiePolicy":"STANDARD","userDefinedCookies":[]},{"type":"HTTP_HEADER_MANAGER","id":"193a0976-5458-498a-9d92-cd94dd75ef2e","label":"Http header manager","enabled":true,"headers":{"User-Agent":"Mozilla/5.0"}},{"type":"HTTP_REQUEST_DEFAULTS","id":"2ed61f3b-5aac-4247-8e3c-70947c9e6c32","label":"Http request defaults","enabled":true,"protocol":null,"serverName":null,"port":null,"path":null,"responseTimeout":120000,"connectTimeout":60000,"clientImplementation":null,"contentEncoding":null,"queryParameters":null,"bodyParameters":null,"body":null,"proxyProperties":null,"retrieveAllEmbeddedResources":null,"useParallelDownloads":null,"parallelDownloadsPoolSize":null,"urlMustMatch":null,"urlMustNotMatch":null,"sourceAddress":null,"saveResponseAsMd5Hash":null}],"urlOverwrites":[],"supportingFiles":[]},"settingsContentMap":null}, type=TEST_PROJECT_SETTINGS_SELECTED)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.id=? for update
+            of test0_
+2024-06-27 18:25:23.526  INFO 1 --- [.test-service-4] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project version: teamId=14, projectId=2957, projectVersion=4000
+2024-06-27 18:25:23.531  INFO 1 --- [.test-service-4] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service with test project version: TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)
+2024-06-27 18:25:23.539  INFO 1 --- [.test-service-4] r.p.b.t.c.a.m.MessagingAdapterImpl       : Sending test event. testId: 10051 eventType: TEST_RESOURCES_ESTIMATING eventData: TestResourcesEstimatingDto(testProjectVersionLocation=boomq/teams/14/projects/2957/v_4000.yaml, testProjectContentModelVersion=V_2_0_0, userAllowedToSetResources=true, testMode=TEST)
+Hibernate: 
+    update
+        test_v2 
+    set
+        comment=?,
+        create_date=?,
+        end_date=?,
+        start_date=?,
+        state=?,
+        team_id=?,
+        test_mode=?,
+        test_project_id=?,
+        test_project_settings_id=?,
+        test_project_version_id=?,
+        test_settings_location=?,
+        update_date=?,
+        user_email=?,
+        user_id=? 
+    where
+        id=?
+2024-06-27 18:25:23.549  INFO 1 --- [.test-service-1] r.p.b.t.c.messaging.TestEventListener    : Handling test resources estimated event. testEventDto: TestEventDto(testId=10051, data={"testResourceEstimate":{"totalDuration":420,"maxVUserCount":4,"testResourceConfiguration":{"testRunnerIds":null,"cloudTestRunLocationRequirements":null,"entTestRunLocationRequirements":null,"memoryMb":1024,"cpuShares":48},"testPlanRequestGroups":[{"groupId":"1119bc83-01b8-46e5-b2ec-54376bb4f8ac","totalDuration":420,"maxUserCount":4,"resourceConfiguration":{"testRunnerIds":[1],"cloudTestRunLocationRequirements":null,"entTestRunLocationRequirements":null,"memoryMb":1024,"cpuShares":48}}],"allocationGroupId":null,"allocationGroupName":null,"vuserMinutes":24},"testResourceEstimateList":null}, type=TEST_RESOURCES_ESTIMATED)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.id=? for update
+            of test0_
+Hibernate: 
+    select
+        testresour0_.test_id as test_id1_3_0_,
+        testresour0_.estimated_resource as estimate2_3_0_,
+        testresour0_.json_data as json_dat3_3_0_ 
+    from
+        test_resources_estimate testresour0_ 
+    where
+        testresour0_.test_id=?
+2024-06-27 18:25:23.551  INFO 1 --- [.test-service-1] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project version: teamId=14, projectId=2957, projectVersion=4000
+2024-06-27 18:25:23.554  INFO 1 --- [.test-service-1] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service with test project version: TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)
+2024-06-27 18:25:23.555  INFO 1 --- [.test-service-1] r.p.b.t.c.a.m.MessagingAdapterImpl       : Sending test event. testId: 10051 eventType: TEST_RESOURCES_ALLOCATING eventData: TestResourcesAllocatingDto(userId=1871, teamId=14, testResourcesEstimate=TestResourcesEstimateDto(totalDuration=420, maxVUserCount=4, vUserMinutes=24, testResourceConfiguration=ResourceConfiguration(testRunnerIds=null, cloudTestRunLocationRequirements=null, entTestRunLocationRequirements=null, memoryMb=1024, cpuShares=48), testPlanRequestGroups=[TestPlanRequestGroupDto(groupId=1119bc83-01b8-46e5-b2ec-54376bb4f8ac, totalDuration=420, maxUserCount=4, resourceConfiguration=ResourceConfiguration(testRunnerIds=[1], cloudTestRunLocationRequirements=null, entTestRunLocationRequirements=null, memoryMb=1024, cpuShares=48))], allocationGroupId=null, allocationGroupName=null), testResourceEstimateList=null)
+Hibernate: 
+    insert 
+    into
+        test_resources_estimate
+        (estimated_resource, json_data, test_id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    update
+        test_v2 
+    set
+        comment=?,
+        create_date=?,
+        end_date=?,
+        start_date=?,
+        state=?,
+        team_id=?,
+        test_mode=?,
+        test_project_id=?,
+        test_project_settings_id=?,
+        test_project_version_id=?,
+        test_settings_location=?,
+        update_date=?,
+        user_email=?,
+        user_id=? 
+    where
+        id=?
+2024-06-27 18:25:23.590  INFO 1 --- [.test-service-3] r.p.b.t.c.messaging.TestEventListener    : Handling test resources allocated event. testEventDto: TestEventDto(testId=10051, data={"containerAllocations":[{"containerId":8883,"allocationGroupId":null,"requestGroupAllocationList":[{"requestGroupId":"1119bc83-01b8-46e5-b2ec-54376bb4f8ac"}]}]}, type=TEST_RESOURCES_ALLOCATED)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.id=? for update
+            of test0_
+2024-06-27 18:25:23.591  INFO 1 --- [.test-service-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project info: teamId=14, projectId=2957
+2024-06-27 18:25:23.594  INFO 1 --- [.test-service-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project info: testProjectDto=TestProjectDto(id=2957, projectName=test_609_22:22, settingsId=null, comment=, lastModified=2024-06-27T18:22:36Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)])
+2024-06-27 18:25:23.594  INFO 1 --- [.test-service-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project version: teamId=14, projectId=2957, projectVersion=4000
+2024-06-27 18:25:23.596  INFO 1 --- [.test-service-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service with test project version: TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)
+2024-06-27 18:25:23.600  INFO 1 --- [.test-service-3] r.p.b.t.c.a.m.MessagingAdapterImpl       : Sending test event. testId: 10051 eventType: TEST_PLANS_CREATING eventData: TestPlansCreatingDto(teamId=14, testProjectDto=TestProjectDto(id=2957, projectName=test_609_22:22, settingsId=null, comment=, lastModified=2024-06-27T18:22:36Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)]), testProjectVersionDto=TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1), containerAllocations=[ContainerAllocationDto(containerId=8883, allocationGroupId=null, requestGroupAllocationList=[TestPlanRequestGroupAllocationDto(requestGroupId=1119bc83-01b8-46e5-b2ec-54376bb4f8ac)])], settingsContent=TestProjectSettingsContentDtoV2(super=TestProjectSettingsContentDto(modelVersion=V_2_0_0, systemMetricsMonitoring=null, webhookSettingsList=null, toolConfiguration=null), timers=[ConstantTimer(durationMs=8000)], configurationElements=[HttpCookieManager(clearEachIteration=false, clearControlledByThreadGroup=false, cookiePolicy=STANDARD, userDefinedCookies=[]), HttpHeaderManager(headers={User-Agent=Mozilla/5.0}), HttpRequestDefaults(protocol=null, serverName=null, port=null, path=null, responseTimeout=120000, connectTimeout=60000, clientImplementation=null, contentEncoding=null, queryParameters=null, bodyParameters=null, body=null, proxyProperties=null, retrieveAllEmbeddedResources=null, useParallelDownloads=null, parallelDownloadsPoolSize=null, urlMustMatch=null, urlMustNotMatch=null, sourceAddress=null, saveResponseAsMd5Hash=null)], urlOverwrites=[], supportingFiles=[]), allocationGroupIdTestProjectSettingsContentDtoMap=null)
+Hibernate: 
+    update
+        test_v2 
+    set
+        comment=?,
+        create_date=?,
+        end_date=?,
+        start_date=?,
+        state=?,
+        team_id=?,
+        test_mode=?,
+        test_project_id=?,
+        test_project_settings_id=?,
+        test_project_version_id=?,
+        test_settings_location=?,
+        update_date=?,
+        user_email=?,
+        user_id=? 
+    where
+        id=?
+2024-06-27 18:25:23.616  INFO 1 --- [.test-service-2] r.p.b.t.c.messaging.TestEventListener    : Handling test plans created event. testEventDto: TestEventDto(testId=10051, data={"startTestPlanDtoList":[{"testId":10051,"fileName":"TEST.jmx","fileLink":"boomq/teams/14/tests/10051/containers/8883/generated_jmx/TEST.jmx","testingTool":"jmeter","maxUserCount":4,"durationSeconds":420,"supportingFiles":[],"containerId":8883}]}, type=TEST_PLANS_CREATED)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.id=? for update
+            of test0_
+2024-06-27 18:25:23.617  INFO 1 --- [.test-service-2] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project info: teamId=14, projectId=2957
+2024-06-27 18:25:23.626  INFO 1 --- [.test-service-2] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project info: testProjectDto=TestProjectDto(id=2957, projectName=test_609_22:22, settingsId=null, comment=, lastModified=2024-06-27T18:22:36Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)])
+2024-06-27 18:25:23.626  INFO 1 --- [.test-service-2] r.p.b.t.c.a.t.TimescaleServiceAdapter    : Trying calling timescale-service getTeamTimescaleUser: teamId=14, timescaleUserType=INTERNAL
+2024-06-27 18:25:23.629  INFO 1 --- [.test-service-2] r.p.b.t.c.a.t.TimescaleServiceAdapter    : Success response from timescale-service getTeamTimescaleUser: teamTimescaleUser=TimescaleUserDto(type=INTERNAL, name=team_14_internal, dbName=team_14, writeHost=192.168.14.80, writePort=5200, writeJdbc=jdbc:postgresql://192.168.14.80:5200/team_14, readHost=192.168.14.80, readPort=5201, readJdbc=jdbc:postgresql://192.168.14.80:5201/team_14)
+2024-06-27 18:25:23.629  INFO 1 --- [.test-service-2] r.p.b.t.c.a.t.TimescaleServiceAdapter    : Trying calling timescale-service getTeamTimescaleUser: teamId=14, timescaleUserType=PUBLIC
+2024-06-27 18:25:23.633  INFO 1 --- [.test-service-2] r.p.b.t.c.a.t.TimescaleServiceAdapter    : Success response from timescale-service getTeamTimescaleUser: teamTimescaleUser=TimescaleUserDto(type=PUBLIC, name=team_14_public, dbName=team_14, writeHost=192.168.14.80, writePort=5200, writeJdbc=jdbc:postgresql://192.168.14.80:5200/team_14, readHost=192.168.14.80, readPort=5201, readJdbc=jdbc:postgresql://192.168.14.80:5201/team_14)
+2024-06-27 18:25:23.633  INFO 1 --- [.test-service-2] r.p.b.t.c.a.m.MessagingAdapterImpl       : Sending test event. testId: 10051 eventType: TEST_STARTING eventData: TestStartingDto(testProjectName=test_609_22:22, internalTimescaleUser=TimescaleUserDto(type=INTERNAL, name=team_14_internal, dbName=team_14, writeHost=192.168.14.80, writePort=5200, writeJdbc=jdbc:postgresql://192.168.14.80:5200/team_14, readHost=192.168.14.80, readPort=5201, readJdbc=jdbc:postgresql://192.168.14.80:5201/team_14), publicTimescaleUser=TimescaleUserDto(type=PUBLIC, name=team_14_public, dbName=team_14, writeHost=192.168.14.80, writePort=5200, writeJdbc=jdbc:postgresql://192.168.14.80:5200/team_14, readHost=192.168.14.80, readPort=5201, readJdbc=jdbc:postgresql://192.168.14.80:5201/team_14), testPlans=[StartTestPlanDto(testId=10051, fileName=TEST.jmx, fileLink=boomq/teams/14/tests/10051/containers/8883/generated_jmx/TEST.jmx, testingTool=JMETER, maxUserCount=4, durationSeconds=420, supportingFiles=[], containerId=8883)], teamId=14)
+Hibernate: 
+    update
+        test_v2 
+    set
+        comment=?,
+        create_date=?,
+        end_date=?,
+        start_date=?,
+        state=?,
+        team_id=?,
+        test_mode=?,
+        test_project_id=?,
+        test_project_settings_id=?,
+        test_project_version_id=?,
+        test_settings_location=?,
+        update_date=?,
+        user_email=?,
+        user_id=? 
+    where
+        id=?
+2024-06-27 18:25:23.644  INFO 1 --- [nio-7010-exec-9] r.p.b.t.e.c.TestLabelController          : Receiving request to search user test labels: teamId=14, userId=1871, query=
+Hibernate: 
+    select
+        l.label as label,
+        max(l.color) as color 
+    from
+        test_v2 t 
+    join
+        test_label l 
+            on t.id = l.test_id  
+    where
+        t.team_id = ? 
+    group by
+        l.label
+2024-06-27 18:25:23.652  INFO 1 --- [nio-7010-exec-9] r.p.b.t.e.c.TestLabelController          : Return response to search user test labels. teamId=14, userId=1871, query=, testLabels.size()=0
+2024-06-27 18:25:23.711  INFO 1 --- [nio-7010-exec-5] r.p.b.t.e.controller.TestUserController  : Get request for user list created test: userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z)
+Hibernate: 
+    select
+        distinct t.user_id   
+    from
+        test_v2 t  
+    where
+        t.team_id = ?
+2024-06-27 18:25:23.714  INFO 1 --- [nio-7010-exec-5] r.p.b.t.c.a.user.UserControllerAdapter   : Try call auth service for user info list: userIdSet=[1871]
+2024-06-27 18:25:23.734  INFO 1 --- [nio-7010-exec-5] r.p.b.t.c.a.user.UserControllerAdapter   : Successful call auth service for user info list: userIdSet=[1871]
+2024-06-27 18:25:23.734  INFO 1 --- [nio-7010-exec-5] r.p.b.t.e.controller.TestUserController  : Return response for user list created test: userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z), userCreatedTestDtoList=[UserCreatedTestDto(userId=1871)]
+2024-06-27 18:25:23.794  INFO 1 --- [nio-7010-exec-6] r.p.b.t.ent.controller.TestController    : Get request to get test list: teamId=14, userId=1871, projectIds=null, states=null, labelSet=null, pageable: Page request [number: 0, size 20, sort: createDate: DESC]
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        (
+            test0_.state in (
+                ? , ? , ? , ? , ? , ? , ? , ? , ?
+            )
+        ) 
+        and test0_.team_id=? 
+    order by
+        test0_.create_date desc limit ?
+2024-06-27 18:25:23.802  INFO 1 --- [nio-7010-exec-6] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project list: teamId=14, projectIds=[2957, 2956]
+2024-06-27 18:25:23.806  INFO 1 --- [nio-7010-exec-6] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project list: testProjectDtos=[TestProjectDto(id=2956, projectName=test_583_22:21, settingsId=null, comment=, lastModified=2024-06-27T18:21:42Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=3999, projectId=2956, settingsId=null, createdOn=2024-06-27T18:21:42.317Z, location=boomq/teams/14/projects/2956/v_3999.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)]), TestProjectDto(id=2957, projectName=test_609_22:22, settingsId=null, comment=, lastModified=2024-06-27T18:22:36Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)])]
+Hibernate: 
+    select
+        testlabel0_.id as id1_2_,
+        testlabel0_.color as color2_2_,
+        testlabel0_.label as label3_2_,
+        testlabel0_.test_id as test_id4_2_ 
+    from
+        test_label testlabel0_ 
+    where
+        testlabel0_.test_id in (
+            ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_5_,
+        testresult0_.result_files_folder as result_f2_5_,
+        testresult0_.result_files_state as result_f3_5_ 
+    from
+        test_result_files_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_4_,
+        testresult0_.users_chart_svg as users_ch2_4_ 
+    from
+        test_result_charts_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+Hibernate: 
+    select
+        testerror0_.test_id as test_id1_1_,
+        testerror0_.error_date as error_da2_1_,
+        testerror0_.exception_description as exceptio3_1_,
+        testerror0_.exception_message_type as exceptio4_1_,
+        testerror0_.source_service as source_s5_1_,
+        testerror0_.state_before_error as state_be6_1_ 
+    from
+        test_error testerror0_ 
+    where
+        testerror0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:23.808  INFO 1 --- [nio-7010-exec-6] r.p.b.t.c.a.user.UserControllerAdapter   : Try call auth service for user info: userIdList=[1871, 1871]
+2024-06-27 18:25:23.812  INFO 1 --- [nio-7010-exec-6] r.p.b.t.c.a.user.UserControllerAdapter   : Successful call auth service for user info: userIdList=[1871, 1871]
+2024-06-27 18:25:23.812  INFO 1 --- [nio-7010-exec-6] r.p.b.t.ent.controller.TestController    : Return response to get test list: page.size=20
+2024-06-27 18:25:23.881  INFO 1 --- [io-7010-exec-10] r.p.b.t.ent.controller.TestController    : Get request to get test list: teamId=14, userId=1871, projectIds=null, states=null, labelSet=null, pageable: Page request [number: 0, size 7, sort: createDate: DESC]
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.team_id=? 
+    order by
+        test0_.create_date desc limit ?
+Hibernate: 
+    select
+        count(test0_.id) as col_0_0_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.team_id=?
+2024-06-27 18:25:23.889  INFO 1 --- [io-7010-exec-10] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project list: teamId=14, projectIds=[2957, 2956, 2952, 2957, 2615, 2953, 2954]
+2024-06-27 18:25:23.896  INFO 1 --- [io-7010-exec-10] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project list: testProjectDtos=[TestProjectDto(id=2615, projectName=test_580_15:35, settingsId=null, comment=, lastModified=2024-06-27T11:35:15Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=3657, projectId=2615, settingsId=null, createdOn=2024-06-27T11:35:15.697Z, location=boomq/teams/14/projects/2615/v_3657.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)]), TestProjectDto(id=2952, projectName=test_868_22:17, settingsId=null, comment=, lastModified=2024-06-27T18:17:55Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=3995, projectId=2952, settingsId=null, createdOn=2024-06-27T18:17:55.973Z, location=boomq/teams/14/projects/2952/v_3995.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)]), TestProjectDto(id=2953, projectName=test_810_22:18, settingsId=null, comment=, lastModified=2024-06-27T18:18:51Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=3996, projectId=2953, settingsId=null, createdOn=2024-06-27T18:18:51.529Z, location=boomq/teams/14/projects/2953/v_3996.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)]), TestProjectDto(id=2954, projectName=test_690_22:19, settingsId=null, comment=, lastModified=2024-06-27T18:19:48Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=3997, projectId=2954, settingsId=null, createdOn=2024-06-27T18:19:48.045Z, location=boomq/teams/14/projects/2954/v_3997.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)]), TestProjectDto(id=2956, projectName=test_583_22:21, settingsId=null, comment=, lastModified=2024-06-27T18:21:42Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=3999, projectId=2956, settingsId=null, createdOn=2024-06-27T18:21:42.317Z, location=boomq/teams/14/projects/2956/v_3999.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)]), TestProjectDto(id=2957, projectName=test_609_22:22, settingsId=null, comment=, lastModified=2024-06-27T18:22:36Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=3720, version=[TestProjectVersionDto(id=4000, projectId=2957, settingsId=null, createdOn=2024-06-27T18:22:36.869Z, location=boomq/teams/14/projects/2957/v_4000.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1)])]
+Hibernate: 
+    select
+        testlabel0_.id as id1_2_,
+        testlabel0_.color as color2_2_,
+        testlabel0_.label as label3_2_,
+        testlabel0_.test_id as test_id4_2_ 
+    from
+        test_label testlabel0_ 
+    where
+        testlabel0_.test_id in (
+            ? , ? , ? , ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_5_,
+        testresult0_.result_files_folder as result_f2_5_,
+        testresult0_.result_files_state as result_f3_5_ 
+    from
+        test_result_files_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ? , ? , ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ? , ? , ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_4_,
+        testresult0_.users_chart_svg as users_ch2_4_ 
+    from
+        test_result_charts_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ? , ? , ? , ? , ? , ?
+        )
+Hibernate: 
+    select
+        testerror0_.test_id as test_id1_1_,
+        testerror0_.error_date as error_da2_1_,
+        testerror0_.exception_description as exceptio3_1_,
+        testerror0_.exception_message_type as exceptio4_1_,
+        testerror0_.source_service as source_s5_1_,
+        testerror0_.state_before_error as state_be6_1_ 
+    from
+        test_error testerror0_ 
+    where
+        testerror0_.test_id in (
+            ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:25:23.899  INFO 1 --- [io-7010-exec-10] r.p.b.t.c.a.user.UserControllerAdapter   : Try call auth service for user info: userIdList=[1871, 1871, 1871, 1871, 1871, 1871, 1871]
+2024-06-27 18:25:23.902  INFO 1 --- [io-7010-exec-10] r.p.b.t.c.a.user.UserControllerAdapter   : Successful call auth service for user info: userIdList=[1871, 1871, 1871, 1871, 1871, 1871, 1871]
+2024-06-27 18:25:23.902  INFO 1 --- [io-7010-exec-10] r.p.b.t.ent.controller.TestController    : Return response to get test list: page.size=7
+2024-06-27 18:25:23.993  INFO 1 --- [nio-7010-exec-1] r.p.b.t.e.c.SlaReportProfileController   : Get request to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        (
+            test0_.id in (
+                ? , ?
+            )
+        ) 
+        and test0_.test_mode<>? 
+        and (
+            test0_.state in (
+                ? , ? , ?
+            )
+        ) 
+        and test0_.test_project_id=? 
+        and test0_.team_id=?
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:23.994  INFO 1 --- [nio-7010-exec-1] r.p.b.t.c.s.sla.impl.SlaReportService    : Repost profile matched: teamId=14, testList.size=2, testResultSlaDataList.size=2
+Hibernate: 
+    select
+        testlabel0_.id as id1_2_,
+        testlabel0_.color as color2_2_,
+        testlabel0_.label as label3_2_,
+        testlabel0_.test_id as test_id4_2_ 
+    from
+        test_label testlabel0_ 
+    where
+        testlabel0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:23.994  INFO 1 --- [nio-7010-exec-1] r.p.b.t.e.c.SlaReportProfileController   : Return success response to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z), slaReportDto=SlaReportDto(profileId=null, profileName=null, chartList=[SlaReportChartDto(chartId=null, chartDatasetList=[SlaChartDatasetDto(slaType=GeneralSlaType(super=SlaType(targetType=TEST, restrictionType=AVERAGE, fromDate=0, toDate=502)), points=[SlaReportPointDto(testId=8529, testStartDate=2024-06-27T11:15:01.692Z, testComment=, slaResult=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED), SlaReportPointDto(testId=8542, testStartDate=2024-06-27T11:20:15.221Z, testComment=, slaResult=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED)])], orderInReport=null)], tableList=[], baselineTestId=null, testList=[TestDto(id=8529, testProjectId=2604, testProjectVersionId=3643, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:14:59.465Z, startDate=2024-06-27T11:15:01.692Z, endDate=2024-06-27T11:17:54.040Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null), TestDto(id=8542, testProjectId=2604, testProjectVersionId=3645, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:20:13.260Z, startDate=2024-06-27T11:20:15.221Z, endDate=2024-06-27T11:23:07.548Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null)])
+2024-06-27 18:25:24.006  INFO 1 --- [.test-service-4] r.p.b.t.c.messaging.TestEventListener    : Handling test started event. testEventDto: TestEventDto(testId=10051, data={"startDate":"2024-06-27T18:25:24.004Z","endDate":"2024-06-27T18:32:24.004Z"}, type=TEST_STARTED)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.id=? for update
+            of test0_
+2024-06-27 18:25:24.007  INFO 1 --- [  boomq-async-2] r.p.b.t.c.s.impl.TestWebHooksService     : Running async tasks for webhook requests for test. testId=10051
+Hibernate: 
+    update
+        test_v2 
+    set
+        comment=?,
+        create_date=?,
+        end_date=?,
+        start_date=?,
+        state=?,
+        team_id=?,
+        test_mode=?,
+        test_project_id=?,
+        test_project_settings_id=?,
+        test_project_version_id=?,
+        test_settings_location=?,
+        update_date=?,
+        user_email=?,
+        user_id=? 
+    where
+        id=?
+2024-06-27 18:25:24.057  INFO 1 --- [nio-7010-exec-7] r.p.b.t.e.c.SlaReportProfileController   : Get request to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        (
+            test0_.id in (
+                ? , ?
+            )
+        ) 
+        and test0_.test_mode<>? 
+        and (
+            test0_.state in (
+                ? , ? , ?
+            )
+        ) 
+        and test0_.test_project_id=? 
+        and test0_.team_id=?
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:24.059  INFO 1 --- [nio-7010-exec-7] r.p.b.t.c.s.sla.impl.SlaReportService    : Repost profile matched: teamId=14, testList.size=2, testResultSlaDataList.size=2
+Hibernate: 
+    select
+        testlabel0_.id as id1_2_,
+        testlabel0_.color as color2_2_,
+        testlabel0_.label as label3_2_,
+        testlabel0_.test_id as test_id4_2_ 
+    from
+        test_label testlabel0_ 
+    where
+        testlabel0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:24.060  INFO 1 --- [nio-7010-exec-7] r.p.b.t.e.c.SlaReportProfileController   : Return success response to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z), slaReportDto=SlaReportDto(profileId=null, profileName=null, chartList=[], tableList=[SlaReportTableDto(tableId=null, valueType=VALUE, baselineDiffType=null, previousTestDiffType=null, baselineTestId=null, rowList=[SlaReportTableRowDto(slaType=GeneralSlaType(super=SlaType(targetType=TEST, restrictionType=AVERAGE, fromDate=0, toDate=277)), cellList=[SlaReportTableCellDto(testId=8529, slaResult=null, slaResultBaselineDiff=null, slaResultBaselineDiffPercent=null, slaResultPreviousTestDiff=null, slaResultPreviousTestDiffPercent=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED), SlaReportTableCellDto(testId=8542, slaResult=null, slaResultBaselineDiff=null, slaResultBaselineDiffPercent=null, slaResultPreviousTestDiff=null, slaResultPreviousTestDiffPercent=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED)])], orderInReport=null)], baselineTestId=null, testList=[TestDto(id=8529, testProjectId=2604, testProjectVersionId=3643, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:14:59.465Z, startDate=2024-06-27T11:15:01.692Z, endDate=2024-06-27T11:17:54.040Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null), TestDto(id=8542, testProjectId=2604, testProjectVersionId=3645, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:20:13.260Z, startDate=2024-06-27T11:20:15.221Z, endDate=2024-06-27T11:23:07.548Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null)])
+2024-06-27 18:25:24.123  INFO 1 --- [nio-7010-exec-4] r.p.b.t.e.c.SlaReportProfileController   : Get request to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z)
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        (
+            test0_.id in (
+                ? , ?
+            )
+        ) 
+        and test0_.test_mode<>? 
+        and (
+            test0_.state in (
+                ? , ? , ?
+            )
+        ) 
+        and test0_.test_project_id=? 
+        and test0_.team_id=?
+Hibernate: 
+    select
+        testresult0_.test_id as test_id1_6_,
+        testresult0_.sla_results as sla_resu2_6_,
+        testresult0_.test_result_sla_state as test_res3_6_ 
+    from
+        test_result_sla_data testresult0_ 
+    where
+        testresult0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:24.124  INFO 1 --- [nio-7010-exec-4] r.p.b.t.c.s.sla.impl.SlaReportService    : Repost profile matched: teamId=14, testList.size=2, testResultSlaDataList.size=2
+Hibernate: 
+    select
+        testlabel0_.id as id1_2_,
+        testlabel0_.color as color2_2_,
+        testlabel0_.label as label3_2_,
+        testlabel0_.test_id as test_id4_2_ 
+    from
+        test_label testlabel0_ 
+    where
+        testlabel0_.test_id in (
+            ? , ?
+        )
+2024-06-27 18:25:24.124  INFO 1 --- [nio-7010-exec-4] r.p.b.t.e.c.SlaReportProfileController   : Return success response to preview sla report from profile: userId=1871, userPermission=TeamMemberDto(id=1947, teamId=14, userId=1871, permissionList=[VIEW, ADMIN, RUN, MANAGE_USERS_IN_ORG, EDIT], createAt=2024-06-24T09:36:57.414Z, updatedAt=2024-06-24T09:37:01.639Z), slaReportDto=SlaReportDto(profileId=null, profileName=null, chartList=[], tableList=[SlaReportTableDto(tableId=null, valueType=VALUE, baselineDiffType=null, previousTestDiffType=null, baselineTestId=null, rowList=[SlaReportTableRowDto(slaType=GeneralSlaType(super=SlaType(targetType=TEST, restrictionType=AVERAGE, fromDate=0, toDate=502)), cellList=[SlaReportTableCellDto(testId=8529, slaResult=null, slaResultBaselineDiff=null, slaResultBaselineDiffPercent=null, slaResultPreviousTestDiff=null, slaResultPreviousTestDiffPercent=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED), SlaReportTableCellDto(testId=8542, slaResult=null, slaResultBaselineDiff=null, slaResultBaselineDiffPercent=null, slaResultPreviousTestDiff=null, slaResultPreviousTestDiffPercent=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED)]), SlaReportTableRowDto(slaType=GeneralSlaType(super=SlaType(targetType=TEST, restrictionType=AVERAGE, fromDate=0, toDate=277)), cellList=[SlaReportTableCellDto(testId=8529, slaResult=null, slaResultBaselineDiff=null, slaResultBaselineDiffPercent=null, slaResultPreviousTestDiff=null, slaResultPreviousTestDiffPercent=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED), SlaReportTableCellDto(testId=8542, slaResult=null, slaResultBaselineDiff=null, slaResultBaselineDiffPercent=null, slaResultPreviousTestDiff=null, slaResultPreviousTestDiffPercent=null, slaTarget=null, slaOperation=null, status=NOT_COUNTED)])], orderInReport=null)], baselineTestId=null, testList=[TestDto(id=8529, testProjectId=2604, testProjectVersionId=3643, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:14:59.465Z, startDate=2024-06-27T11:15:01.692Z, endDate=2024-06-27T11:17:54.040Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null), TestDto(id=8542, testProjectId=2604, testProjectVersionId=3645, testMode=TEST, state=FINISHED, displayState=FINISHED, userId=1871, userEmail=null, teamId=14, createDate=2024-06-27T11:20:13.260Z, startDate=2024-06-27T11:20:15.221Z, endDate=2024-06-27T11:23:07.548Z, comment=, labelSet=[], testProject=null, testProjectVersion=null, testResult=null, testError=null)])
+2024-06-27 18:25:24.187  INFO 1 --- [nio-7010-exec-2] r.p.b.t.e.c.SlaReportProfileController   : Get request to create sla report profile: teamId=14, userId=1871
+Hibernate: 
+    select
+        nextval ('seq_sla_report_profile')
+2024-06-27 18:25:24.188  INFO 1 --- [nio-7010-exec-2] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project info: teamId=14, projectId=2604
+2024-06-27 18:25:24.195  INFO 1 --- [nio-7010-exec-2] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project info: testProjectDto=TestProjectDto(id=2604, projectName=test_966_15:11, settingsId=null, comment=, lastModified=2024-06-27T11:12:01Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=180, version=[TestProjectVersionDto(id=3642, projectId=2604, settingsId=null, createdOn=2024-06-27T11:12:01.197Z, location=boomq/teams/14/projects/2604/v_3642.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1), TestProjectVersionDto(id=3643, projectId=2604, settingsId=null, createdOn=2024-06-27T11:14:45.954Z, location=boomq/teams/14/projects/2604/v_3643.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=2), TestProjectVersionDto(id=3644, projectId=2604, settingsId=null, createdOn=2024-06-27T11:19:12.627Z, location=boomq/teams/14/projects/2604/v_3644.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=3), TestProjectVersionDto(id=3645, projectId=2604, settingsId=null, createdOn=2024-06-27T11:20:13.171Z, location=boomq/teams/14/projects/2604/v_3645.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=4)])
+Hibernate: 
+    insert 
+    into
+        sla_report_profile
+        (baseline_test_id, json_data, name, project_id, team_id, test_limit, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-06-27 18:25:24.197  INFO 1 --- [nio-7010-exec-2] r.p.b.t.e.c.SlaReportProfileController   : Return success response to create sla report profile: teamId=14, userId=1871, profileId=3131
+2024-06-27 18:25:24.257  INFO 1 --- [nio-7010-exec-3] r.p.b.t.e.c.SlaReportProfileController   : Get request to get sla report profiles: teamId=14, userId=1871
+Hibernate: 
+    select
+        slareportp0_.id as id1_0_,
+        slareportp0_.baseline_test_id as baseline2_0_,
+        slareportp0_.json_data as json_dat3_0_,
+        slareportp0_.name as name4_0_,
+        slareportp0_.project_id as project_5_0_,
+        slareportp0_.team_id as team_id6_0_,
+        slareportp0_.test_limit as test_lim7_0_,
+        slareportp0_.user_id as user_id8_0_ 
+    from
+        sla_report_profile slareportp0_ 
+    where
+        slareportp0_.team_id=?
+2024-06-27 18:25:24.262  INFO 1 --- [nio-7010-exec-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Try to call test-project service for test project list: teamId=14, projectIds=[2604, 2604, 2604, 2604, 2604, 2604, 2604, 2604, 2604, 2604, 2604, 2604]
+2024-06-27 18:25:24.275  INFO 1 --- [nio-7010-exec-3] r.p.b.t.c.a.t.TestProjectServiceAdapter  : Got response from test-project service for test project list: testProjectDtos=[TestProjectDto(id=2604, projectName=test_966_15:11, settingsId=null, comment=, lastModified=2024-06-27T11:12:01Z, contentFormat=YAML, contentModelVersion=null, labelSet=[], testType=STABLE, requestCount=1, totalDuration=180, version=[TestProjectVersionDto(id=3642, projectId=2604, settingsId=null, createdOn=2024-06-27T11:12:01.197Z, location=boomq/teams/14/projects/2604/v_3642.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=3720, versionNumber=1), TestProjectVersionDto(id=3643, projectId=2604, settingsId=null, createdOn=2024-06-27T11:14:45.954Z, location=boomq/teams/14/projects/2604/v_3643.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=2), TestProjectVersionDto(id=3644, projectId=2604, settingsId=null, createdOn=2024-06-27T11:19:12.627Z, location=boomq/teams/14/projects/2604/v_3644.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=3), TestProjectVersionDto(id=3645, projectId=2604, settingsId=null, createdOn=2024-06-27T11:20:13.171Z, location=boomq/teams/14/projects/2604/v_3645.yaml, comment=, contentFormat=YAML, contentModelVersion=V_2_0_0, testType=STABLE, requestCount=1, totalDuration=180, versionNumber=4)])]
+2024-06-27 18:25:24.276  INFO 1 --- [nio-7010-exec-3] r.p.b.t.e.c.SlaReportProfileController   : Return success response to get sla report profiles: size=12
+Hibernate: 
+    select
+        test0_.id as id1_7_,
+        test0_.comment as comment2_7_,
+        test0_.create_date as create_d3_7_,
+        test0_.end_date as end_date4_7_,
+        test0_.start_date as start_da5_7_,
+        test0_.state as state6_7_,
+        test0_.team_id as team_id7_7_,
+        test0_.test_mode as test_mod8_7_,
+        test0_.test_project_id as test_pro9_7_,
+        test0_.test_project_settings_id as test_pr10_7_,
+        test0_.test_project_version_id as test_pr11_7_,
+        test0_.test_settings_location as test_se12_7_,
+        test0_.update_date as update_13_7_,
+        test0_.user_email as user_em14_7_,
+        test0_.user_id as user_id15_7_ 
+    from
+        test_v2 test0_ 
+    where
+        test0_.state=? 
+    order by
+        test0_.create_date asc

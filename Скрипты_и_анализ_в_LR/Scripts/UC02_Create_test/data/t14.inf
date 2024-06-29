@@ -1,0 +1,11 @@
+[t14]
+FileName1=t14_ru.4cd05270ae7e3662e152f7c201b429f1.svg
+URL1=https://dev-boomq.pflb.ru/static/media/ru.4cd05270ae7e3662e152f7c201b429f1.svg
+Total=1
+ContentType=image/svg+xml
+SnapshotXmlFile=snapshot_14.xml
+RequestHeaderFile=t14_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t14_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

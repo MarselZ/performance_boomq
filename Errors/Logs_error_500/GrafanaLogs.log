@@ -1,0 +1,100 @@
+2024-06-27 17:28:21.414  INFO 1 --- [nio-7060-exec-9] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2002, teamId=13
+2024-06-27 17:28:21.419  INFO 1 --- [nio-7060-exec-9] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=14, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2002, role=VIEWER)
+2024-06-27 17:28:21.457  INFO 1 --- [nio-7060-exec-9] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 17:28:21.457  INFO 1 --- [nio-7060-exec-9] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2002, teamId=13
+2024-06-27 17:31:13.904  INFO 1 --- [nio-7060-exec-1] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2003
+2024-06-27 17:31:13.906  INFO 1 --- [nio-7060-exec-1] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2003)
+2024-06-27 17:31:13.958  INFO 1 --- [nio-7060-exec-1] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2014, message=User created)
+2024-06-27 17:31:13.960  INFO 1 --- [nio-7060-exec-1] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2003
+2024-06-27 17:31:19.109  INFO 1 --- [nio-7060-exec-2] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2003, teamId=13
+2024-06-27 17:31:19.111  INFO 1 --- [nio-7060-exec-2] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=14, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2003, role=VIEWER)
+2024-06-27 17:31:19.136  INFO 1 --- [nio-7060-exec-2] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 17:31:19.137  INFO 1 --- [nio-7060-exec-2] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2003, teamId=13
+2024-06-27 17:34:23.001  INFO 1 --- [nio-7060-exec-4] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2004
+2024-06-27 17:34:23.004  INFO 1 --- [nio-7060-exec-4] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2004)
+2024-06-27 17:34:23.049  INFO 1 --- [nio-7060-exec-4] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2015, message=User created)
+2024-06-27 17:34:23.052  INFO 1 --- [nio-7060-exec-4] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2004
+2024-06-27 17:34:28.218  INFO 1 --- [nio-7060-exec-5] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2004, teamId=13
+2024-06-27 17:34:28.220  INFO 1 --- [nio-7060-exec-5] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=14, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2004, role=VIEWER)
+2024-06-27 17:34:28.256  INFO 1 --- [nio-7060-exec-5] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 17:34:28.256  INFO 1 --- [nio-7060-exec-5] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2004, teamId=13
+2024-06-27 17:37:13.010  INFO 1 --- [nio-7060-exec-7] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2005
+2024-06-27 17:37:13.011  INFO 1 --- [nio-7060-exec-7] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2005)
+2024-06-27 17:37:13.057  INFO 1 --- [nio-7060-exec-7] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2016, message=User created)
+2024-06-27 17:37:13.059  INFO 1 --- [nio-7060-exec-7] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2005
+2024-06-27 17:37:18.225  INFO 1 --- [nio-7060-exec-8] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2005, teamId=13
+2024-06-27 17:37:18.227  INFO 1 --- [nio-7060-exec-8] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=14, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2005, role=VIEWER)
+2024-06-27 17:37:18.254  INFO 1 --- [nio-7060-exec-8] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 17:37:18.254  INFO 1 --- [nio-7060-exec-8] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2005, teamId=13
+2024-06-27 17:40:16.885  INFO 1 --- [io-7060-exec-10] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2006
+2024-06-27 17:40:16.886  INFO 1 --- [io-7060-exec-10] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2006)
+2024-06-27 17:40:16.954  INFO 1 --- [io-7060-exec-10] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2017, message=User created)
+2024-06-27 17:40:16.958  INFO 1 --- [io-7060-exec-10] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2006
+2024-06-27 17:40:22.114  INFO 1 --- [nio-7060-exec-1] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2006, teamId=13
+2024-06-27 17:40:22.116  INFO 1 --- [nio-7060-exec-1] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=14, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2006, role=VIEWER)
+2024-06-27 17:40:22.156  INFO 1 --- [nio-7060-exec-1] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 17:40:22.156  INFO 1 --- [nio-7060-exec-1] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2006, teamId=13
+2024-06-27 17:43:20.203  INFO 1 --- [nio-7060-exec-3] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2007
+2024-06-27 17:43:20.207  INFO 1 --- [nio-7060-exec-3] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2007)
+2024-06-27 17:43:20.261  INFO 1 --- [nio-7060-exec-3] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2018, message=User created)
+2024-06-27 17:43:20.264  INFO 1 --- [nio-7060-exec-3] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2007
+2024-06-27 17:43:25.434  INFO 1 --- [nio-7060-exec-4] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2007, teamId=13
+2024-06-27 17:43:25.438  INFO 1 --- [nio-7060-exec-4] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=14, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2007, role=VIEWER)
+2024-06-27 17:43:25.479  INFO 1 --- [nio-7060-exec-4] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 17:43:25.479  INFO 1 --- [nio-7060-exec-4] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2007, teamId=13
+2024-06-27 18:17:52.162  INFO 1 --- [nio-7060-exec-6] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2008
+2024-06-27 18:17:52.166  INFO 1 --- [nio-7060-exec-6] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2008)
+2024-06-27 18:17:52.220  INFO 1 --- [nio-7060-exec-6] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2019, message=User created)
+2024-06-27 18:17:52.223  INFO 1 --- [nio-7060-exec-6] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2008
+2024-06-27 18:17:57.905  INFO 1 --- [nio-7060-exec-7] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2008, teamId=14
+2024-06-27 18:17:57.910  INFO 1 --- [nio-7060-exec-7] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=15, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2008, role=VIEWER)
+2024-06-27 18:17:57.942  INFO 1 --- [nio-7060-exec-7] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 18:17:57.942  INFO 1 --- [nio-7060-exec-7] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2008, teamId=14
+2024-06-27 18:18:51.911  INFO 1 --- [nio-7060-exec-8] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2009
+2024-06-27 18:18:51.916  INFO 1 --- [nio-7060-exec-8] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2009)
+2024-06-27 18:18:51.957  INFO 1 --- [nio-7060-exec-8] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2020, message=User created)
+2024-06-27 18:18:51.962  INFO 1 --- [nio-7060-exec-8] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2009
+2024-06-27 18:18:57.171  INFO 1 --- [nio-7060-exec-9] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2009, teamId=14
+2024-06-27 18:18:57.175  INFO 1 --- [nio-7060-exec-9] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=15, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2009, role=VIEWER)
+2024-06-27 18:18:57.223  INFO 1 --- [nio-7060-exec-9] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 18:18:57.223  INFO 1 --- [nio-7060-exec-9] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2009, teamId=14
+2024-06-27 18:19:47.122  INFO 1 --- [io-7060-exec-10] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2010
+2024-06-27 18:19:47.126  INFO 1 --- [io-7060-exec-10] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2010)
+2024-06-27 18:19:47.176  INFO 1 --- [io-7060-exec-10] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2021, message=User created)
+2024-06-27 18:19:47.181  INFO 1 --- [io-7060-exec-10] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2010
+2024-06-27 18:19:50.170  INFO 1 --- [nio-7060-exec-1] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2010, teamId=14
+2024-06-27 18:19:50.173  INFO 1 --- [nio-7060-exec-1] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=15, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2010, role=VIEWER)
+2024-06-27 18:19:50.212  INFO 1 --- [nio-7060-exec-1] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 18:19:50.212  INFO 1 --- [nio-7060-exec-1] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2010, teamId=14
+2024-06-27 18:20:42.414  INFO 1 --- [nio-7060-exec-2] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2011
+2024-06-27 18:20:42.416  INFO 1 --- [nio-7060-exec-2] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2011)
+2024-06-27 18:20:42.500  INFO 1 --- [nio-7060-exec-2] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2022, message=User created)
+2024-06-27 18:20:42.504  INFO 1 --- [nio-7060-exec-2] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2011
+2024-06-27 18:20:44.478  INFO 1 --- [nio-7060-exec-3] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2011, teamId=14
+2024-06-27 18:20:44.482  INFO 1 --- [nio-7060-exec-3] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=15, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2011, role=VIEWER)
+2024-06-27 18:20:44.523  INFO 1 --- [nio-7060-exec-3] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 18:20:44.523  INFO 1 --- [nio-7060-exec-3] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2011, teamId=14
+2024-06-27 18:21:36.857  INFO 1 --- [nio-7060-exec-4] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2012
+2024-06-27 18:21:36.860  INFO 1 --- [nio-7060-exec-4] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2012)
+2024-06-27 18:21:36.920  INFO 1 --- [nio-7060-exec-4] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2023, message=User created)
+2024-06-27 18:21:36.924  INFO 1 --- [nio-7060-exec-4] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2012
+2024-06-27 18:21:41.066  INFO 1 --- [nio-7060-exec-5] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2012, teamId=14
+2024-06-27 18:21:41.067  INFO 1 --- [nio-7060-exec-5] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=15, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2012, role=VIEWER)
+2024-06-27 18:21:41.106  INFO 1 --- [nio-7060-exec-5] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 18:21:41.106  INFO 1 --- [nio-7060-exec-5] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2012, teamId=14
+2024-06-27 18:22:32.462  INFO 1 --- [nio-7060-exec-6] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2013
+2024-06-27 18:22:32.464  INFO 1 --- [nio-7060-exec-6] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2013)
+2024-06-27 18:22:32.521  INFO 1 --- [nio-7060-exec-6] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2024, message=User created)
+2024-06-27 18:22:32.523  INFO 1 --- [nio-7060-exec-6] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2013
+2024-06-27 18:22:36.001  INFO 1 --- [nio-7060-exec-7] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2013, teamId=14
+2024-06-27 18:22:36.005  INFO 1 --- [nio-7060-exec-7] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=15, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2013, role=VIEWER)
+2024-06-27 18:22:36.058  INFO 1 --- [nio-7060-exec-7] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 18:22:36.058  INFO 1 --- [nio-7060-exec-7] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2013, teamId=14
+2024-06-27 18:23:31.716  INFO 1 --- [nio-7060-exec-8] r.p.b.g.c.a.i.GrafanaUserController      : Received request to create grafana user. userId=2014
+2024-06-27 18:23:31.719  INFO 1 --- [nio-7060-exec-8] r.p.b.g.a.g.GrafanaUserServiceAdapter    : Try create user in Grafana: request=CreateUserRequestDto(name=null, email=null, login=user_2014)
+2024-06-27 18:23:31.774  INFO 1 --- [nio-7060-exec-8] r.p.b.g.a.g.GrafanaUserServiceAdapter    : User in Grafana created: response=CreateUserResponseDto(id=2025, message=User created)
+2024-06-27 18:23:31.777  INFO 1 --- [nio-7060-exec-8] r.p.b.g.c.a.i.GrafanaUserController      : Created grafana user. userId=2014
+2024-06-27 18:23:35.843  INFO 1 --- [nio-7060-exec-9] r.p.b.g.c.a.i.GrafanaUserController      : Received request to add grafana user to grafana organization. userId=2014, teamId=14
+2024-06-27 18:23:35.847  INFO 1 --- [nio-7060-exec-9] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Try add user to organization in Grafana: orgId=15, addUserToOrganizationRequestDto=AddUserToOrganizationRequestDto(loginOrEmail=user_2014, role=VIEWER)
+2024-06-27 18:23:35.890  INFO 1 --- [nio-7060-exec-9] r.p.b.g.a.g.GrafanaOrgServiceAdapter     : Successfully added user to organization in grafana: response=AddUserToOrganizationResponseDto(message=User added to organization)
+2024-06-27 18:23:35.890  INFO 1 --- [nio-7060-exec-9] r.p.b.g.c.a.i.GrafanaUserController      : Add grafana user to grafana organization. userId=2014, teamId=14

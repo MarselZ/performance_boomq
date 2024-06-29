@@ -1,0 +1,118 @@
+Virtual User Script started at: 27.06.2024 12:57:20
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (янв 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0  	[MsgId: MMSG-26988]
+Runtime Settings file: "D:\PROJECT NT 2024\Скрипты\Scripts4Stability\UC06_Create_report\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(4): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(6): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(6): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("sec-ch-ua") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("sec-ch-ua") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_add_auto_header("sec-ch-ua-mobile") started  	[MsgId: MMSG-26355]
+Action.c(24): web_add_auto_header("sec-ch-ua-mobile") was successful  	[MsgId: MMSG-26392]
+Action.c(27): web_add_auto_header("sec-ch-ua-platform") started  	[MsgId: MMSG-26355]
+Action.c(27): web_add_auto_header("sec-ch-ua-platform") was successful  	[MsgId: MMSG-26392]
+Action.c(30): web_url("authorize") started  	[MsgId: MMSG-26355]
+Action.c(30): Found resource "https://dev-boomq.pflb.ru/static/js/main.cddf1824.js" in HTML "https://dev-boomq.pflb.ru/authorize"  	[MsgId: MMSG-26659]
+Action.c(30): Found resource "https://dev-boomq.pflb.ru/static/css/main.64a4c65b.css" in HTML "https://dev-boomq.pflb.ru/authorize"  	[MsgId: MMSG-26659]
+Action.c(30): Downloading resource "https://dev-boomq.pflb.ru/static/media/logo.f5ae2890e77693e018920d4ad41c643c.svg" (specified by argument number 10)  	[MsgId: MMSG-26577]
+Action.c(30): Downloading resource "https://dev-boomq.pflb.ru/static/media/loading.b59fa25397e07d75b9ac55ace151e625.svg" (specified by argument number 12)  	[MsgId: MMSG-26577]
+Action.c(30): Downloading resource "https://dev-boomq.pflb.ru/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff" (specified by argument number 14)  	[MsgId: MMSG-26577]
+Action.c(30): Downloading resource "https://dev-boomq.pflb.ru/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff" (specified by argument number 17)  	[MsgId: MMSG-26577]
+Action.c(30): Downloading resource "https://dev-boomq.pflb.ru/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff" (specified by argument number 20)  	[MsgId: MMSG-26577]
+Action.c(30): Downloading resource "https://dev-boomq.pflb.ru/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff" (specified by argument number 23)  	[MsgId: MMSG-26577]
+Action.c(30): web_url("authorize") was successful, 4190661 body bytes, 2426 header bytes  	[MsgId: MMSG-26386]
+Action.c(47): Notify: Transaction "UC06_TR01_login" started.
+Action.c(49): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(49): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(52): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(52): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_header("X-Client-Date") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_header("X-Client-Date") was successful  	[MsgId: MMSG-26392]
+Action.c(64): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Action.c(64): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(73): web_submit_data("login") started  	[MsgId: MMSG-26355]
+Action.c(73): web_submit_data("login") was successful, 0 body bytes, 1919 header bytes  	[MsgId: MMSG-26386]
+Action.c(87): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(87): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(87): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(89): web_url("user") started  	[MsgId: MMSG-26355]
+Action.c(89): Downloading resource "https://dev-boomq.pflb.ru/static/media/en.b1acfc6b06bfe6e29bfbfc06d09d8177.svg" (specified by argument number 10)  	[MsgId: MMSG-26577]
+Action.c(89): web_url("user") was successful, 4202 body bytes, 757 header bytes  	[MsgId: MMSG-26386]
+Action.c(101): web_url("modelSchema") started  	[MsgId: MMSG-26355]
+Action.c(101): web_url("modelSchema") was successful, 66848 body bytes, 427 header bytes  	[MsgId: MMSG-26386]
+Action.c(111): web_url("identityProvider") started  	[MsgId: MMSG-26355]
+Action.c(111): web_url("identityProvider") was successful, 2 body bytes, 492 header bytes  	[MsgId: MMSG-26386]
+Action.c(121): web_url("team") started  	[MsgId: MMSG-26355]
+Action.c(121): web_url("team") was successful, 587 body bytes, 492 header bytes  	[MsgId: MMSG-26386]
+Action.c(131): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Action.c(139): web_url("teamContext") started  	[MsgId: MMSG-26355]
+Action.c(139): web_url("teamContext") was successful, 307 body bytes, 2934 header bytes  	[MsgId: MMSG-26386]
+Action.c(149): web_add_auto_header("Authorization") started  	[MsgId: MMSG-26355]
+Action.c(149): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+Action.c(149): web_add_auto_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(151): web_url("testRunner") started  	[MsgId: MMSG-26355]
+Action.c(151): web_url("testRunner") was successful, 531 body bytes, 338 header bytes  	[MsgId: MMSG-26386]
+Action.c(161): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(161): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(177): web_url("13") started  	[MsgId: MMSG-26355]
+Action.c(177): web_url("13") was successful, 273 body bytes, 492 header bytes  	[MsgId: MMSG-26386]
+Action.c(187): web_url("config.json") started  	[MsgId: MMSG-26355]
+Action.c(187): web_url("config.json") was successful, 285 body bytes, 267 header bytes  	[MsgId: MMSG-26386]
+Action.c(197): Notify: Transaction "UC06_TR01_login" ended with a "Pass" status (Duration: 0.9189 Wasted Time: 0.0577).
+Action.c(199): Notify: Transaction "UC06_TR02_reports" started.
+Action.c(201): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(201): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(204): lr_think_time: 13.00 seconds.
+Action.c(206): web_add_header("Connection") started  	[MsgId: MMSG-26355]
+Action.c(206): web_add_header("Connection") was successful  	[MsgId: MMSG-26392]
+Action.c(215): web_custom_request("search") started  	[MsgId: MMSG-26355]
+Action.c(215): web_custom_request("search") was successful, 1008 body bytes, 338 header bytes  	[MsgId: MMSG-26386]
+Action.c(228): Notify: Transaction "UC06_TR02_reports" ended with a "Pass" status (Duration: 13.1924 Think Time: 13.0056 Wasted Time: 0.0054).
+Action.c(230): Notify: Transaction "UC06_TR03_add_new_report" started.
+Action.c(232): web_url("test") started  	[MsgId: MMSG-26355]
+Action.c(232): web_url("test") was successful, 14187 body bytes, 427 header bytes  	[MsgId: MMSG-26386]
+Action.c(242): Notify: Transaction "UC06_TR03_add_new_report" ended with a "Pass" status (Duration: 0.1378 Wasted Time: 0.0037).
+Action.c(244): Notify: Transaction "UC06_TR05_reportname" started.
+Action.c(246): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(246): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(249): lr_think_time: 13.00 seconds.
+Action.c(251): web_reg_save_param_json started  	[MsgId: MMSG-26355]
+Action.c(251): Registering web_reg_save_param_json was successful  	[MsgId: MMSG-26390]
+Action.c(258): web_custom_request("report") started  	[MsgId: MMSG-26355]
+Action.c(258): web_custom_request("report") was successful, 236 body bytes, 338 header bytes  	[MsgId: MMSG-26386]
+Action.c(271): web_url("1182") started  	[MsgId: MMSG-26355]
+Action.c(271): web_url("1182") was successful, 236 body bytes, 338 header bytes  	[MsgId: MMSG-26386]
+Action.c(281): web_url("content") started  	[MsgId: MMSG-26355]
+Action.c(281): web_url("content") was successful, 239 body bytes, 338 header bytes  	[MsgId: MMSG-26386]
+Action.c(291): web_url("test_2") started  	[MsgId: MMSG-26355]
+Action.c(291): web_url("test_2") was successful, 14187 body bytes, 427 header bytes  	[MsgId: MMSG-26386]
+Action.c(354): Notify: Transaction "UC06_TR05_reportname" ended with a "Pass" status (Duration: 13,4722 Think Time: 13,0024 Wasted Time: 0,0199).
+Action.c(356): Notify: Transaction "UC06_TR06_sign_out" started.
+Action.c(358): Notify: Transaction "UC06_TR06_sign_out" ended with a "Pass" status (Duration: 0,0148).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

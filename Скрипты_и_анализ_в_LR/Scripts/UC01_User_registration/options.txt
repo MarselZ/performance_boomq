@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\PROJECT NT 2024\Скрипты\Scripts4Stability\UC01_User_registration
+-ID:\RL\LOADRUNNER\include
+-ed:\project nt 2024\скрипты\scripts4stability\uc01_user_registration\\logfile.log
+d:\project nt 2024\скрипты\scripts4stability\uc01_user_registration\\combined_UC01_User_registration.c
+d:\project nt 2024\скрипты\scripts4stability\uc01_user_registration\\pre_cci.c

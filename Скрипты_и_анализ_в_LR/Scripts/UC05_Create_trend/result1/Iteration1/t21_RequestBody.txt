@@ -1,0 +1,4 @@
+"{"projectId":2519,"chartProfileList":[],"tableProfileList":[{"slaTypeList":[{"fromDate":0,"res"
+"trictionType":"AVERAGE","targetType":"TEST","toDate":360,"type":"GENERAL_SLA_TYPE"}],"valueTyp"
+"e":"VALUE"}],"testFilterExpressionList":[{"type":"TEST_ID_EXPRESSION","testIdList":[8215,8214]"
+"}]}"

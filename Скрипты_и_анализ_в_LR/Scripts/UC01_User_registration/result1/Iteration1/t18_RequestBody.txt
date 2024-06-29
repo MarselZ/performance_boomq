@@ -1,0 +1,2 @@
+"[{"email":"kokwe2225@edx.ru","permissionList":["ADMIN","VIEW","EDIT","RUN","MANAGE_USERS_IN_OR"
+"G"],"userDisplayName":"kokwe_2225"}]"

@@ -1,0 +1,109 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: authorize",
+                "infFile": "t1.inf",
+                "time": 1719592699682
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login",
+                "infFile": "t3.inf",
+                "time": 1719592699985
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: config.json",
+                "infFile": "t4.inf",
+                "time": 1719592700049
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: modelSchema",
+                "infFile": "t5.inf",
+                "time": 1719592700185
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: user",
+                "infFile": "t6.inf",
+                "time": 1719592700270
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: identityProvider",
+                "infFile": "t7.inf",
+                "time": 1719592700318
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: team",
+                "infFile": "t8.inf",
+                "time": 1719592700375
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: teamContext",
+                "infFile": "t10.inf",
+                "time": 1719592700448
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: testRunner",
+                "infFile": "t11.inf",
+                "time": 1719592700528
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: label",
+                "infFile": "t12.inf",
+                "time": 1719592708767
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: project",
+                "infFile": "t13.inf",
+                "time": 1719592708829
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Custom Request: project_2",
+                "infFile": "t14.inf",
+                "time": 1719592729010
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC02_TR01_login",
+                "rawStartTime": 1719592699699,
+                "rawEndTime": 1719592700537,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05331778526306152
+            },
+            {
+                "transactionName": "UC02_TR02_tests",
+                "rawStartTime": 1719592708582,
+                "rawEndTime": 1719592708834,
+                "thinkTime": 0.0,
+                "wastedTime": 0.008409500122070313
+            },
+            {
+                "transactionName": "UC02_TR03_create_new_test",
+                "rawStartTime": 1719592708850,
+                "rawEndTime": 1719592729022,
+                "thinkTime": 19.010719,
+                "wastedTime": 0.006367683410644531
+            },
+            {
+                "transactionName": "UC02_TR04_sign_out",
+                "rawStartTime": 1719592729038,
+                "rawEndTime": 1719592729053,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            }
+        ]
+    }
+]

@@ -1,0 +1,1000 @@
+2024-05-08 10:52:42.522 [info] <0.268.0> Running boot step rabbit_node_monitor defined by app rabbit
+2024-05-08 10:52:42.522 [info] <0.477.0> Starting rabbit_node_monitor
+2024-05-08 10:52:42.522 [info] <0.268.0> Running boot step delegate_sup defined by app rabbit
+2024-05-08 10:52:42.522 [info] <0.268.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2024-05-08 10:52:42.522 [info] <0.268.0> Running boot step core_initialized defined by app rabbit
+2024-05-08 10:52:42.522 [info] <0.268.0> Running boot step upgrade_queues defined by app rabbit
+2024-05-08 10:52:42.563 [info] <0.268.0> Running boot step rabbit_connection_tracking defined by app rabbit
+2024-05-08 10:52:42.564 [info] <0.268.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2024-05-08 10:52:42.564 [info] <0.268.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2024-05-08 10:52:42.564 [info] <0.268.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2024-05-08 10:52:42.564 [info] <0.268.0> Running boot step rabbit_policies defined by app rabbit
+2024-05-08 10:52:42.565 [info] <0.268.0> Running boot step rabbit_policy defined by app rabbit
+2024-05-08 10:52:42.565 [info] <0.268.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2024-05-08 10:52:42.565 [info] <0.268.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2024-05-08 10:52:42.565 [info] <0.268.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2024-05-08 10:52:42.565 [info] <0.268.0> Running boot step recovery defined by app rabbit
+2024-05-08 10:52:42.573 [info] <0.518.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2024-05-08 10:52:42.903 [info] <0.60.0> SIGTERM received - shutting down
+2024-05-08 10:54:03.813 [debug] <0.284.0> Lager installed handler error_logger_lager_h into error_logger
+2024-05-08 10:54:04.103 [debug] <0.287.0> Lager installed handler lager_forwarder_backend into error_logger_lager_event
+2024-05-08 10:54:04.103 [debug] <0.290.0> Lager installed handler lager_forwarder_backend into rabbit_log_lager_event
+2024-05-08 10:54:04.103 [debug] <0.293.0> Lager installed handler lager_forwarder_backend into rabbit_log_channel_lager_event
+2024-05-08 10:54:04.103 [debug] <0.296.0> Lager installed handler lager_forwarder_backend into rabbit_log_connection_lager_event
+2024-05-08 10:54:04.103 [debug] <0.299.0> Lager installed handler lager_forwarder_backend into rabbit_log_feature_flags_lager_event
+2024-05-08 10:54:04.103 [debug] <0.305.0> Lager installed handler lager_forwarder_backend into rabbit_log_ldap_lager_event
+2024-05-08 10:54:04.103 [debug] <0.308.0> Lager installed handler lager_forwarder_backend into rabbit_log_mirroring_lager_event
+2024-05-08 10:54:04.103 [debug] <0.311.0> Lager installed handler lager_forwarder_backend into rabbit_log_prelaunch_lager_event
+2024-05-08 10:54:04.103 [debug] <0.302.0> Lager installed handler lager_forwarder_backend into rabbit_log_federation_lager_event
+2024-05-08 10:54:04.103 [debug] <0.314.0> Lager installed handler lager_forwarder_backend into rabbit_log_queue_lager_event
+2024-05-08 10:54:04.103 [debug] <0.320.0> Lager installed handler lager_forwarder_backend into rabbit_log_shovel_lager_event
+2024-05-08 10:54:04.103 [debug] <0.317.0> Lager installed handler lager_forwarder_backend into rabbit_log_ra_lager_event
+2024-05-08 10:54:04.103 [debug] <0.323.0> Lager installed handler lager_forwarder_backend into rabbit_log_upgrade_lager_event
+2024-05-08 10:54:04.314 [debug] <0.280.0> Lager installed handler lager_backend_throttle into lager_event
+2024-05-08 10:54:04.416 [info] <0.268.0> HiPE disabled: no modules were natively recompiled.
+2024-05-08 10:54:13.425 [info] <0.268.0> 
+ Starting RabbitMQ 3.8.5 on Erlang 23.0.3
+ Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+ Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  ##  ##      RabbitMQ 3.8.5
+  ##  ##
+  ##########  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+  ######  ##
+  ##########  Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  Doc guides: https://rabbitmq.com/documentation.html
+  Support:    https://rabbitmq.com/contact.html
+  Tutorials:  https://rabbitmq.com/getstarted.html
+  Monitoring: https://rabbitmq.com/monitoring.html
+
+  Logs: <stdout>
+
+  Config file(s): /etc/rabbitmq/rabbitmq.conf
+
+  Starting broker...2024-05-08 10:54:13.448 [info] <0.268.0> 
+ node           : rabbit@rabbitmq
+ home dir       : /var/lib/rabbitmq
+ config file(s) : /etc/rabbitmq/rabbitmq.conf
+ cookie hash    : CRUpz7cbQ1tNlla2qk0lGw==
+ log(s)         : <stdout>
+ database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+2024-05-08 10:54:13.456 [info] <0.268.0> Running boot step pre_boot defined by app rabbit
+2024-05-08 10:54:13.456 [info] <0.268.0> Running boot step rabbit_core_metrics defined by app rabbit
+2024-05-08 10:54:13.457 [info] <0.268.0> Running boot step rabbit_alarm defined by app rabbit
+2024-05-08 10:54:13.724 [info] <0.383.0> Memory high watermark set to 6346 MiB (6654915379 bytes) of 15866 MiB (16637288448 bytes) total
+2024-05-08 10:54:13.883 [info] <0.396.0> Enabling free disk space monitoring
+2024-05-08 10:54:13.883 [info] <0.396.0> Disk free limit set to 1000MB
+2024-05-08 10:54:13.958 [info] <0.268.0> Running boot step code_server_cache defined by app rabbit
+2024-05-08 10:54:13.959 [info] <0.268.0> Running boot step file_handle_cache defined by app rabbit
+2024-05-08 10:54:13.959 [info] <0.421.0> Limiting to approx 1048479 file handles (943629 sockets)
+2024-05-08 10:54:13.959 [info] <0.422.0> FHC read buffering:  OFF
+2024-05-08 10:54:13.959 [info] <0.422.0> FHC write buffering: ON
+2024-05-08 10:54:14.052 [info] <0.268.0> Running boot step worker_pool defined by app rabbit
+2024-05-08 10:54:14.052 [info] <0.378.0> Will use 8 processes for default worker pool
+2024-05-08 10:54:14.052 [info] <0.378.0> Starting worker pool 'worker_pool' with 8 processes in it
+2024-05-08 10:54:14.052 [info] <0.268.0> Running boot step database defined by app rabbit
+2024-05-08 10:54:14.335 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-08 10:54:14.335 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-08 10:54:14.335 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-08 10:54:14.335 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-08 10:54:14.508 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-08 10:54:14.508 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-08 10:54:14.508 [info] <0.268.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2024-05-08 10:54:14.508 [info] <0.268.0> Running boot step database_sync defined by app rabbit
+2024-05-08 10:54:14.508 [info] <0.268.0> Running boot step feature_flags defined by app rabbit
+2024-05-08 10:54:14.531 [info] <0.268.0> Running boot step codec_correctness_check defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step external_infrastructure defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_registry defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_event defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2024-05-08 10:54:14.532 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step rabbit_priority_queue defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step kernel_ready defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2024-05-08 10:54:14.533 [info] <0.268.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2024-05-08 10:54:14.549 [info] <0.448.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2024-05-08 10:54:14.549 [info] <0.268.0> Running boot step guid_generator defined by app rabbit
+2024-05-08 10:54:14.635 [info] <0.268.0> Running boot step rabbit_node_monitor defined by app rabbit
+2024-05-08 10:54:14.635 [info] <0.452.0> Starting rabbit_node_monitor
+2024-05-08 10:54:14.635 [info] <0.268.0> Running boot step delegate_sup defined by app rabbit
+2024-05-08 10:54:14.635 [info] <0.268.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2024-05-08 10:54:14.635 [info] <0.268.0> Running boot step core_initialized defined by app rabbit
+2024-05-08 10:54:14.636 [info] <0.268.0> Running boot step upgrade_queues defined by app rabbit
+2024-05-08 10:54:14.707 [info] <0.268.0> Running boot step rabbit_connection_tracking defined by app rabbit
+2024-05-08 10:54:14.707 [info] <0.268.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2024-05-08 10:54:14.707 [info] <0.268.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2024-05-08 10:54:14.707 [info] <0.268.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2024-05-08 10:54:14.707 [info] <0.268.0> Running boot step rabbit_policies defined by app rabbit
+2024-05-08 10:54:14.708 [info] <0.268.0> Running boot step rabbit_policy defined by app rabbit
+2024-05-08 10:54:14.708 [info] <0.268.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2024-05-08 10:54:14.708 [info] <0.268.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2024-05-08 10:54:14.708 [info] <0.268.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2024-05-08 10:54:14.708 [info] <0.268.0> Running boot step recovery defined by app rabbit
+2024-05-08 10:54:14.739 [info] <0.493.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2024-05-08 10:54:14.850 [info] <0.493.0> Starting message stores for vhost '/'
+2024-05-08 10:54:14.850 [info] <0.497.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2024-05-08 10:54:14.990 [info] <0.493.0> Started message store of type transient for vhost '/'
+2024-05-08 10:54:14.990 [info] <0.502.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2024-05-08 10:54:15.075 [warning] <0.502.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent" : recovery terms differ from present
+rebuilding indices from scratch
+2024-05-08 10:54:15.579 [info] <0.493.0> Started message store of type persistent for vhost '/'
+2024-05-08 10:54:15.711 [info] <0.268.0> Running boot step definition_import_worker_pool defined by app rabbit
+2024-05-08 10:54:15.711 [info] <0.378.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2024-05-08 10:54:15.711 [info] <0.268.0> Running boot step load_core_definitions defined by app rabbit
+2024-05-08 10:54:15.711 [info] <0.268.0> Running boot step empty_db_check defined by app rabbit
+2024-05-08 10:54:15.711 [info] <0.268.0> Running boot step rabbit_looking_glass defined by app rabbit
+2024-05-08 10:54:15.712 [info] <0.268.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2024-05-08 10:54:15.712 [info] <0.268.0> Running boot step background_gc defined by app rabbit
+2024-05-08 10:54:15.712 [info] <0.268.0> Running boot step connection_tracking defined by app rabbit
+2024-05-08 10:54:15.712 [info] <0.268.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@rabbitmq
+2024-05-08 10:54:15.712 [info] <0.268.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@rabbitmq
+2024-05-08 10:54:15.712 [info] <0.268.0> Running boot step routing_ready defined by app rabbit
+2024-05-08 10:54:15.712 [info] <0.268.0> Running boot step pre_flight defined by app rabbit
+2024-05-08 10:54:15.712 [info] <0.268.0> Running boot step notify_cluster defined by app rabbit
+2024-05-08 10:54:15.712 [info] <0.268.0> Running boot step networking defined by app rabbit
+2024-05-08 10:54:15.726 [info] <0.601.0> started TCP listener on [::]:5672
+2024-05-08 10:54:15.726 [info] <0.268.0> Running boot step cluster_name defined by app rabbit
+2024-05-08 10:54:15.726 [info] <0.268.0> Running boot step direct_client defined by app rabbit
+2024-05-08 10:54:20.653 [info] <0.603.0> Feature flags: list of feature flags found:
+2024-05-08 10:54:20.653 [info] <0.603.0> Feature flags:   [ ] drop_unroutable_metric
+2024-05-08 10:54:20.653 [info] <0.603.0> Feature flags:   [ ] empty_basic_get_metric
+2024-05-08 10:54:20.653 [info] <0.603.0> Feature flags:   [x] implicit_default_bindings
+2024-05-08 10:54:20.653 [info] <0.603.0> Feature flags:   [x] quorum_queue
+2024-05-08 10:54:20.653 [info] <0.603.0> Feature flags:   [x] virtual_host_metadata
+2024-05-08 10:54:20.653 [info] <0.603.0> Feature flags: feature flag states written to disk: yes
+2024-05-08 10:54:21.823 [info] <0.603.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2024-05-08 10:54:21.823 [info] <0.603.0> Management plugin: using rates mode 'basic'
+2024-05-08 10:54:22.100 [info] <0.603.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2024-05-08 10:54:22.100 [info] <0.603.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2024-05-08 10:54:22.202 [info] <0.675.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2024-05-08 10:54:22.202 [info] <0.781.0> Statistics database started.
+2024-05-08 10:54:22.203 [info] <0.780.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2024-05-08 10:54:26.485 [info] <0.603.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+ completed with 3 plugins.
+2024-05-08 10:54:33.405 [info] <0.802.0> accepting AMQP connection <0.802.0> (172.18.0.13:51048 -> 172.18.0.12:5672)
+2024-05-08 10:54:33.897 [info] <0.802.0> Connection <0.802.0> (172.18.0.13:51048 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#160c3ec1:0
+2024-05-08 10:54:33.916 [info] <0.802.0> connection <0.802.0> (172.18.0.13:51048 -> 172.18.0.12:5672 - rabbitConnectionFactory#160c3ec1:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-08 10:54:47.095 [info] <0.846.0> accepting AMQP connection <0.846.0> (172.18.0.10:34468 -> 172.18.0.12:5672)
+2024-05-08 10:54:47.208 [info] <0.846.0> Connection <0.846.0> (172.18.0.10:34468 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#3d40a3b4:0
+2024-05-08 10:54:47.212 [info] <0.846.0> connection <0.846.0> (172.18.0.10:34468 -> 172.18.0.12:5672 - rabbitConnectionFactory#3d40a3b4:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-08 10:54:52.849 [info] <0.900.0> accepting AMQP connection <0.900.0> (172.18.0.6:55170 -> 172.18.0.12:5672)
+2024-05-08 10:54:53.028 [info] <0.900.0> Connection <0.900.0> (172.18.0.6:55170 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#67507df:0
+2024-05-08 10:54:53.036 [info] <0.900.0> connection <0.900.0> (172.18.0.6:55170 -> 172.18.0.12:5672 - rabbitConnectionFactory#67507df:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-13 09:42:14.147 [info] <0.19492.13> accepting AMQP connection <0.19492.13> (172.18.0.3:52438 -> 172.18.0.12:5672)
+2024-05-13 09:42:14.220 [info] <0.19492.13> Connection <0.19492.13> (172.18.0.3:52438 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#72b6832e:0
+2024-05-13 09:42:14.227 [info] <0.19492.13> connection <0.19492.13> (172.18.0.3:52438 -> 172.18.0.12:5672 - rabbitConnectionFactory#72b6832e:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-13 10:21:42.367 [info] <0.22003.13> accepting AMQP connection <0.22003.13> (172.18.0.8:49038 -> 172.18.0.12:5672)
+2024-05-13 10:21:42.443 [info] <0.22003.13> Connection <0.22003.13> (172.18.0.8:49038 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#7e446d92:0
+2024-05-13 10:21:42.448 [info] <0.22003.13> connection <0.22003.13> (172.18.0.8:49038 -> 172.18.0.12:5672 - rabbitConnectionFactory#7e446d92:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-13 10:22:31.575 [info] <0.22085.13> accepting AMQP connection <0.22085.13> (172.18.0.8:49482 -> 172.18.0.12:5672)
+2024-05-13 10:22:31.577 [info] <0.22085.13> Connection <0.22085.13> (172.18.0.8:49482 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#20791f32:0
+2024-05-13 10:22:31.579 [info] <0.22085.13> connection <0.22085.13> (172.18.0.8:49482 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#20791f32:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-13 10:22:31.848 [info] <0.22098.13> accepting AMQP connection <0.22098.13> (172.18.0.3:39444 -> 172.18.0.12:5672)
+2024-05-13 10:22:31.850 [info] <0.22098.13> Connection <0.22098.13> (172.18.0.3:39444 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#23b535d2:0
+2024-05-13 10:22:31.857 [info] <0.22098.13> connection <0.22098.13> (172.18.0.3:39444 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#23b535d2:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-13 10:22:33.066 [info] <0.22112.13> accepting AMQP connection <0.22112.13> (172.18.0.13:46136 -> 172.18.0.12:5672)
+2024-05-13 10:22:33.079 [info] <0.22112.13> Connection <0.22112.13> (172.18.0.13:46136 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#2d73be1d:0
+2024-05-13 10:22:33.082 [info] <0.22112.13> connection <0.22112.13> (172.18.0.13:46136 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#2d73be1d:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-13 10:22:34.587 [info] <0.22127.13> accepting AMQP connection <0.22127.13> (172.18.0.6:50058 -> 172.18.0.12:5672)
+2024-05-13 10:22:34.589 [info] <0.22127.13> Connection <0.22127.13> (172.18.0.6:50058 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#42297b9a:0
+2024-05-13 10:22:34.591 [info] <0.22127.13> connection <0.22127.13> (172.18.0.6:50058 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#42297b9a:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-17 14:43:27.081 [info] <0.22127.13> closing AMQP connection <0.22127.13> (172.18.0.6:50058 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#42297b9a:0, vhost: '/', user: 'guest')
+2024-05-17 14:43:27.084 [info] <0.900.0> closing AMQP connection <0.900.0> (172.18.0.6:55170 -> 172.18.0.12:5672 - rabbitConnectionFactory#67507df:0, vhost: '/', user: 'guest')
+2024-05-17 14:43:48.490 [info] <0.6903.25> accepting AMQP connection <0.6903.25> (172.18.0.6:58862 -> 172.18.0.12:5672)
+2024-05-17 14:43:48.557 [info] <0.6903.25> Connection <0.6903.25> (172.18.0.6:58862 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#7c3e4b1a:0
+2024-05-17 14:43:48.613 [info] <0.6903.25> connection <0.6903.25> (172.18.0.6:58862 -> 172.18.0.12:5672 - rabbitConnectionFactory#7c3e4b1a:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-17 14:43:49.807 [info] <0.6930.25> accepting AMQP connection <0.6930.25> (172.18.0.6:58894 -> 172.18.0.12:5672)
+2024-05-17 14:43:49.811 [info] <0.6930.25> Connection <0.6930.25> (172.18.0.6:58894 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#22063a69:0
+2024-05-17 14:43:49.813 [info] <0.6930.25> connection <0.6930.25> (172.18.0.6:58894 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#22063a69:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-20 08:44:21.826 [info] <0.6930.25> closing AMQP connection <0.6930.25> (172.18.0.6:58894 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#22063a69:0, vhost: '/', user: 'guest')
+2024-05-20 08:44:21.828 [info] <0.6903.25> closing AMQP connection <0.6903.25> (172.18.0.6:58862 -> 172.18.0.12:5672 - rabbitConnectionFactory#7c3e4b1a:0, vhost: '/', user: 'guest')
+2024-05-20 08:44:41.272 [info] <0.26797.32> accepting AMQP connection <0.26797.32> (172.18.0.6:42686 -> 172.18.0.12:5672)
+2024-05-20 08:44:41.328 [info] <0.26797.32> Connection <0.26797.32> (172.18.0.6:42686 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#28f4f300:0
+2024-05-20 08:44:41.334 [info] <0.26797.32> connection <0.26797.32> (172.18.0.6:42686 -> 172.18.0.12:5672 - rabbitConnectionFactory#28f4f300:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-20 08:45:42.740 [info] <0.26891.32> accepting AMQP connection <0.26891.32> (172.18.0.6:43180 -> 172.18.0.12:5672)
+2024-05-20 08:45:42.748 [info] <0.26891.32> Connection <0.26891.32> (172.18.0.6:43180 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#2ce29045:0
+2024-05-20 08:45:42.753 [info] <0.26891.32> connection <0.26891.32> (172.18.0.6:43180 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#2ce29045:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-20 12:09:39.691 [info] <0.26891.32> closing AMQP connection <0.26891.32> (172.18.0.6:43180 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#2ce29045:0, vhost: '/', user: 'guest')
+2024-05-20 12:09:39.693 [info] <0.26797.32> closing AMQP connection <0.26797.32> (172.18.0.6:42686 -> 172.18.0.12:5672 - rabbitConnectionFactory#28f4f300:0, vhost: '/', user: 'guest')
+2024-05-20 12:09:56.605 [info] <0.6967.33> accepting AMQP connection <0.6967.33> (172.18.0.6:55288 -> 172.18.0.12:5672)
+2024-05-20 12:09:56.668 [info] <0.6967.33> Connection <0.6967.33> (172.18.0.6:55288 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#3c91530d:0
+2024-05-20 12:09:56.677 [info] <0.6967.33> connection <0.6967.33> (172.18.0.6:55288 -> 172.18.0.12:5672 - rabbitConnectionFactory#3c91530d:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-20 12:10:44.721 [info] <0.7048.33> accepting AMQP connection <0.7048.33> (172.18.0.6:55696 -> 172.18.0.12:5672)
+2024-05-20 12:10:44.731 [info] <0.7048.33> Connection <0.7048.33> (172.18.0.6:55696 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#294253b0:0
+2024-05-20 12:10:44.733 [info] <0.7048.33> connection <0.7048.33> (172.18.0.6:55696 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#294253b0:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:19:34.176 [info] <0.7048.33> closing AMQP connection <0.7048.33> (172.18.0.6:55696 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#294253b0:0, vhost: '/', user: 'guest')
+2024-05-21 07:19:34.178 [info] <0.6967.33> closing AMQP connection <0.6967.33> (172.18.0.6:55288 -> 172.18.0.12:5672 - rabbitConnectionFactory#3c91530d:0, vhost: '/', user: 'guest')
+2024-05-21 07:19:51.188 [info] <0.13668.35> accepting AMQP connection <0.13668.35> (172.18.0.6:33192 -> 172.18.0.12:5672)
+2024-05-21 07:19:51.257 [info] <0.13668.35> Connection <0.13668.35> (172.18.0.6:33192 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#6848a051:0
+2024-05-21 07:19:51.263 [info] <0.13668.35> connection <0.13668.35> (172.18.0.6:33192 -> 172.18.0.12:5672 - rabbitConnectionFactory#6848a051:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:21:04.106 [info] <0.13774.35> accepting AMQP connection <0.13774.35> (172.18.0.6:33728 -> 172.18.0.12:5672)
+2024-05-21 07:21:04.110 [info] <0.13774.35> Connection <0.13774.35> (172.18.0.6:33728 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#6356e4a9:0
+2024-05-21 07:21:04.113 [info] <0.13774.35> connection <0.13774.35> (172.18.0.6:33728 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#6356e4a9:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:32:45.751 [info] <0.13774.35> closing AMQP connection <0.13774.35> (172.18.0.6:33728 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#6356e4a9:0, vhost: '/', user: 'guest')
+2024-05-21 07:32:45.756 [info] <0.13668.35> closing AMQP connection <0.13668.35> (172.18.0.6:33192 -> 172.18.0.12:5672 - rabbitConnectionFactory#6848a051:0, vhost: '/', user: 'guest')
+2024-05-21 07:33:05.291 [info] <0.14548.35> accepting AMQP connection <0.14548.35> (172.18.0.6:38834 -> 172.18.0.12:5672)
+2024-05-21 07:33:05.348 [info] <0.14548.35> Connection <0.14548.35> (172.18.0.6:38834 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory#1a3e8e24:0
+2024-05-21 07:33:05.355 [info] <0.14548.35> connection <0.14548.35> (172.18.0.6:38834 -> 172.18.0.12:5672 - rabbitConnectionFactory#1a3e8e24:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:33:21.644 [info] <0.14597.35> accepting AMQP connection <0.14597.35> (172.18.0.6:38988 -> 172.18.0.12:5672)
+2024-05-21 07:33:21.646 [info] <0.14597.35> Connection <0.14597.35> (172.18.0.6:38988 -> 172.18.0.12:5672) has a client-provided name: rabbitConnectionFactory.publisher#739f847d:0
+2024-05-21 07:33:21.647 [info] <0.14597.35> connection <0.14597.35> (172.18.0.6:38988 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#739f847d:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:34:03.056 [info] <0.60.0> SIGTERM received - shutting down
+2024-05-21 07:34:03.392 [warning] <0.667.0> HTTP listener registry could not find context rabbitmq_management_tls
+2024-05-21 07:34:03.414 [info] <0.268.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping unregistration.
+2024-05-21 07:34:03.415 [info] <0.601.0> stopped TCP listener on [::]:5672
+2024-05-21 07:34:03.416 [error] <0.802.0> Error on AMQP connection <0.802.0> (172.18.0.13:51048 -> 172.18.0.12:5672 - rabbitConnectionFactory#160c3ec1:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.416 [error] <0.14548.35> Error on AMQP connection <0.14548.35> (172.18.0.6:38834 -> 172.18.0.12:5672 - rabbitConnectionFactory#1a3e8e24:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.417 [error] <0.22085.13> Error on AMQP connection <0.22085.13> (172.18.0.8:49482 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#20791f32:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.416 [error] <0.846.0> Error on AMQP connection <0.846.0> (172.18.0.10:34468 -> 172.18.0.12:5672 - rabbitConnectionFactory#3d40a3b4:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.417 [error] <0.14597.35> Error on AMQP connection <0.14597.35> (172.18.0.6:38988 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#739f847d:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.417 [error] <0.22003.13> Error on AMQP connection <0.22003.13> (172.18.0.8:49038 -> 172.18.0.12:5672 - rabbitConnectionFactory#7e446d92:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.417 [error] <0.22098.13> Error on AMQP connection <0.22098.13> (172.18.0.3:39444 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#23b535d2:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.417 [error] <0.19492.13> Error on AMQP connection <0.19492.13> (172.18.0.3:52438 -> 172.18.0.12:5672 - rabbitConnectionFactory#72b6832e:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.417 [error] <0.22112.13> Error on AMQP connection <0.22112.13> (172.18.0.13:46136 -> 172.18.0.12:5672 - rabbitConnectionFactory.publisher#2d73be1d:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-21 07:34:03.420 [error] <0.22089.13> Supervisor {<0.22089.13>,rabbit_channel_sup_sup} had child channel_sup started with rabbit_channel_sup:start_link() at undefined exit with reason shutdown in context shutdown_error
+2024-05-21 07:34:03.420 [error] <0.22007.13> Supervisor {<0.22007.13>,rabbit_channel_sup_sup} had child channel_sup started with rabbit_channel_sup:start_link() at undefined exit with reason shutdown in context shutdown_error
+2024-05-21 07:34:03.423 [info] <0.473.0> Closing all connections in vhost '/' on node 'rabbit@rabbitmq' because the vhost is stopping
+2024-05-21 07:34:03.970 [info] <0.502.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent'
+2024-05-21 07:34:04.021 [info] <0.502.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent' is stopped
+2024-05-21 07:34:04.022 [info] <0.497.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient'
+2024-05-21 07:34:04.109 [info] <0.497.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient' is stopped
+2024-05-21 07:36:24.771 [debug] <0.288.0> Lager installed handler error_logger_lager_h into error_logger
+2024-05-21 07:36:24.804 [debug] <0.291.0> Lager installed handler lager_forwarder_backend into error_logger_lager_event
+2024-05-21 07:36:24.805 [debug] <0.294.0> Lager installed handler lager_forwarder_backend into rabbit_log_lager_event
+2024-05-21 07:36:24.805 [debug] <0.297.0> Lager installed handler lager_forwarder_backend into rabbit_log_channel_lager_event
+2024-05-21 07:36:24.805 [debug] <0.300.0> Lager installed handler lager_forwarder_backend into rabbit_log_connection_lager_event
+2024-05-21 07:36:24.805 [debug] <0.303.0> Lager installed handler lager_forwarder_backend into rabbit_log_feature_flags_lager_event
+2024-05-21 07:36:24.805 [debug] <0.306.0> Lager installed handler lager_forwarder_backend into rabbit_log_federation_lager_event
+2024-05-21 07:36:24.805 [debug] <0.309.0> Lager installed handler lager_forwarder_backend into rabbit_log_ldap_lager_event
+2024-05-21 07:36:24.805 [debug] <0.312.0> Lager installed handler lager_forwarder_backend into rabbit_log_mirroring_lager_event
+2024-05-21 07:36:24.805 [debug] <0.315.0> Lager installed handler lager_forwarder_backend into rabbit_log_prelaunch_lager_event
+2024-05-21 07:36:24.805 [debug] <0.318.0> Lager installed handler lager_forwarder_backend into rabbit_log_queue_lager_event
+2024-05-21 07:36:24.805 [debug] <0.321.0> Lager installed handler lager_forwarder_backend into rabbit_log_ra_lager_event
+2024-05-21 07:36:24.805 [debug] <0.324.0> Lager installed handler lager_forwarder_backend into rabbit_log_shovel_lager_event
+2024-05-21 07:36:24.805 [debug] <0.327.0> Lager installed handler lager_forwarder_backend into rabbit_log_upgrade_lager_event
+2024-05-21 07:36:24.865 [info] <0.268.0> HiPE disabled: no modules were natively recompiled.
+2024-05-21 07:36:25.272 [debug] <0.284.0> Lager installed handler lager_backend_throttle into lager_event
+2024-05-21 07:36:39.325 [info] <0.268.0> 
+ Starting RabbitMQ 3.8.5 on Erlang 23.0.3
+ Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+ Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  ##  ##      RabbitMQ 3.8.5
+  ##  ##
+  ##########  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+  ######  ##
+  ##########  Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  Doc guides: https://rabbitmq.com/documentation.html
+  Support:    https://rabbitmq.com/contact.html
+  Tutorials:  https://rabbitmq.com/getstarted.html
+  Monitoring: https://rabbitmq.com/monitoring.html
+
+  Logs: <stdout>
+
+  Config file(s): /etc/rabbitmq/rabbitmq.conf
+
+  Starting broker...2024-05-21 07:36:39.604 [info] <0.268.0> 
+ node           : rabbit@rabbitmq
+ home dir       : /var/lib/rabbitmq
+ config file(s) : /etc/rabbitmq/rabbitmq.conf
+ cookie hash    : CRUpz7cbQ1tNlla2qk0lGw==
+ log(s)         : <stdout>
+ database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+2024-05-21 07:36:39.611 [info] <0.268.0> Running boot step pre_boot defined by app rabbit
+2024-05-21 07:36:39.611 [info] <0.268.0> Running boot step rabbit_core_metrics defined by app rabbit
+2024-05-21 07:36:39.612 [info] <0.268.0> Running boot step rabbit_alarm defined by app rabbit
+2024-05-21 07:36:39.722 [info] <0.400.0> Memory high watermark set to 6346 MiB (6654915379 bytes) of 15866 MiB (16637288448 bytes) total
+2024-05-21 07:36:39.935 [info] <0.410.0> Enabling free disk space monitoring
+2024-05-21 07:36:39.935 [info] <0.410.0> Disk free limit set to 1000MB
+2024-05-21 07:36:40.055 [info] <0.268.0> Running boot step code_server_cache defined by app rabbit
+2024-05-21 07:36:40.055 [info] <0.268.0> Running boot step file_handle_cache defined by app rabbit
+2024-05-21 07:36:40.055 [info] <0.429.0> Limiting to approx 1048479 file handles (943629 sockets)
+2024-05-21 07:36:40.055 [info] <0.430.0> FHC read buffering:  OFF
+2024-05-21 07:36:40.055 [info] <0.430.0> FHC write buffering: ON
+2024-05-21 07:36:40.072 [info] <0.268.0> Running boot step worker_pool defined by app rabbit
+2024-05-21 07:36:40.072 [info] <0.389.0> Will use 8 processes for default worker pool
+2024-05-21 07:36:40.072 [info] <0.389.0> Starting worker pool 'worker_pool' with 8 processes in it
+2024-05-21 07:36:40.072 [info] <0.268.0> Running boot step database defined by app rabbit
+2024-05-21 07:36:40.209 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-21 07:36:40.209 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-21 07:36:40.209 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-21 07:36:40.209 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-21 07:36:40.488 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-21 07:36:40.488 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-21 07:36:40.488 [info] <0.268.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2024-05-21 07:36:40.488 [info] <0.268.0> Running boot step database_sync defined by app rabbit
+2024-05-21 07:36:40.488 [info] <0.268.0> Running boot step feature_flags defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step codec_correctness_check defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step external_infrastructure defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step rabbit_registry defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step rabbit_event defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2024-05-21 07:36:40.495 [info] <0.268.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_priority_queue defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step kernel_ready defined by app rabbit
+2024-05-21 07:36:40.496 [info] <0.268.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2024-05-21 07:36:40.497 [info] <0.268.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2024-05-21 07:36:40.520 [info] <0.463.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2024-05-21 07:36:40.520 [info] <0.268.0> Running boot step guid_generator defined by app rabbit
+2024-05-21 07:36:40.616 [info] <0.268.0> Running boot step rabbit_node_monitor defined by app rabbit
+2024-05-21 07:36:40.617 [info] <0.467.0> Starting rabbit_node_monitor
+2024-05-21 07:36:40.617 [info] <0.268.0> Running boot step delegate_sup defined by app rabbit
+2024-05-21 07:36:40.617 [info] <0.268.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2024-05-21 07:36:40.617 [info] <0.268.0> Running boot step core_initialized defined by app rabbit
+2024-05-21 07:36:40.617 [info] <0.268.0> Running boot step upgrade_queues defined by app rabbit
+2024-05-21 07:36:40.668 [info] <0.268.0> Running boot step rabbit_connection_tracking defined by app rabbit
+2024-05-21 07:36:40.668 [info] <0.268.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2024-05-21 07:36:40.668 [info] <0.268.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2024-05-21 07:36:40.668 [info] <0.268.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2024-05-21 07:36:40.668 [info] <0.268.0> Running boot step rabbit_policies defined by app rabbit
+2024-05-21 07:36:40.669 [info] <0.268.0> Running boot step rabbit_policy defined by app rabbit
+2024-05-21 07:36:40.669 [info] <0.268.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2024-05-21 07:36:40.669 [info] <0.268.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2024-05-21 07:36:40.669 [info] <0.268.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2024-05-21 07:36:40.669 [info] <0.268.0> Running boot step recovery defined by app rabbit
+2024-05-21 07:36:40.679 [info] <0.508.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2024-05-21 07:36:40.921 [info] <0.508.0> Starting message stores for vhost '/'
+2024-05-21 07:36:40.921 [info] <0.512.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2024-05-21 07:36:41.460 [info] <0.508.0> Started message store of type transient for vhost '/'
+2024-05-21 07:36:41.460 [info] <0.517.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2024-05-21 07:36:41.491 [info] <0.508.0> Started message store of type persistent for vhost '/'
+2024-05-21 07:36:41.521 [info] <0.268.0> Running boot step definition_import_worker_pool defined by app rabbit
+2024-05-21 07:36:41.521 [info] <0.389.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2024-05-21 07:36:41.521 [info] <0.268.0> Running boot step load_core_definitions defined by app rabbit
+2024-05-21 07:36:41.521 [info] <0.268.0> Running boot step empty_db_check defined by app rabbit
+2024-05-21 07:36:41.521 [info] <0.268.0> Running boot step rabbit_looking_glass defined by app rabbit
+2024-05-21 07:36:41.521 [info] <0.268.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2024-05-21 07:36:41.526 [info] <0.268.0> Running boot step background_gc defined by app rabbit
+2024-05-21 07:36:41.526 [info] <0.268.0> Running boot step connection_tracking defined by app rabbit
+2024-05-21 07:36:41.526 [info] <0.268.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@rabbitmq
+2024-05-21 07:36:41.526 [info] <0.268.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@rabbitmq
+2024-05-21 07:36:41.526 [info] <0.268.0> Running boot step routing_ready defined by app rabbit
+2024-05-21 07:36:41.526 [info] <0.268.0> Running boot step pre_flight defined by app rabbit
+2024-05-21 07:36:41.526 [info] <0.268.0> Running boot step notify_cluster defined by app rabbit
+2024-05-21 07:36:41.526 [info] <0.268.0> Running boot step networking defined by app rabbit
+2024-05-21 07:36:41.552 [info] <0.615.0> started TCP listener on [::]:5672
+2024-05-21 07:36:41.557 [info] <0.268.0> Running boot step cluster_name defined by app rabbit
+2024-05-21 07:36:41.557 [info] <0.268.0> Running boot step direct_client defined by app rabbit
+2024-05-21 07:36:43.939 [info] <0.617.0> Feature flags: list of feature flags found:
+2024-05-21 07:36:43.939 [info] <0.617.0> Feature flags:   [ ] drop_unroutable_metric
+2024-05-21 07:36:43.939 [info] <0.617.0> Feature flags:   [ ] empty_basic_get_metric
+2024-05-21 07:36:43.939 [info] <0.617.0> Feature flags:   [x] implicit_default_bindings
+2024-05-21 07:36:43.939 [info] <0.617.0> Feature flags:   [x] quorum_queue
+2024-05-21 07:36:43.939 [info] <0.617.0> Feature flags:   [x] virtual_host_metadata
+2024-05-21 07:36:43.939 [info] <0.617.0> Feature flags: feature flag states written to disk: yes
+2024-05-21 07:36:46.994 [info] <0.617.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2024-05-21 07:36:46.994 [info] <0.617.0> Management plugin: using rates mode 'basic'
+2024-05-21 07:36:47.287 [info] <0.617.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2024-05-21 07:36:47.288 [info] <0.617.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2024-05-21 07:36:47.403 [info] <0.688.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2024-05-21 07:36:47.403 [info] <0.794.0> Statistics database started.
+2024-05-21 07:36:47.403 [info] <0.793.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2024-05-21 07:36:51.415 [info] <0.617.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+ completed with 3 plugins.
+2024-05-21 07:36:52.052 [info] <0.808.0> accepting AMQP connection <0.808.0> (172.18.0.11:40106 -> 172.18.0.20:5672)
+2024-05-21 07:36:52.374 [info] <0.808.0> Connection <0.808.0> (172.18.0.11:40106 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#2b27cc70:0
+2024-05-21 07:36:52.421 [info] <0.808.0> connection <0.808.0> (172.18.0.11:40106 -> 172.18.0.20:5672 - rabbitConnectionFactory#2b27cc70:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:37:05.186 [info] <0.852.0> accepting AMQP connection <0.852.0> (172.18.0.12:36396 -> 172.18.0.20:5672)
+2024-05-21 07:37:05.332 [info] <0.852.0> Connection <0.852.0> (172.18.0.12:36396 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#12704e15:0
+2024-05-21 07:37:05.384 [info] <0.852.0> connection <0.852.0> (172.18.0.12:36396 -> 172.18.0.20:5672 - rabbitConnectionFactory#12704e15:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:37:07.340 [info] <0.880.0> accepting AMQP connection <0.880.0> (172.18.0.8:34412 -> 172.18.0.20:5672)
+2024-05-21 07:37:07.436 [info] <0.880.0> Connection <0.880.0> (172.18.0.8:34412 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#76bf1bb8:0
+2024-05-21 07:37:07.489 [info] <0.880.0> connection <0.880.0> (172.18.0.8:34412 -> 172.18.0.20:5672 - rabbitConnectionFactory#76bf1bb8:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:37:07.600 [info] <0.891.0> accepting AMQP connection <0.891.0> (172.18.0.18:42518 -> 172.18.0.20:5672)
+2024-05-21 07:37:07.750 [info] <0.891.0> Connection <0.891.0> (172.18.0.18:42518 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#6ca8fcf3:0
+2024-05-21 07:37:07.756 [info] <0.891.0> connection <0.891.0> (172.18.0.18:42518 -> 172.18.0.20:5672 - rabbitConnectionFactory#6ca8fcf3:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:37:11.034 [info] <0.939.0> accepting AMQP connection <0.939.0> (172.18.0.13:59018 -> 172.18.0.20:5672)
+2024-05-21 07:37:11.112 [info] <0.939.0> Connection <0.939.0> (172.18.0.13:59018 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#47829d6d:0
+2024-05-21 07:37:11.119 [info] <0.939.0> connection <0.939.0> (172.18.0.13:59018 -> 172.18.0.20:5672 - rabbitConnectionFactory#47829d6d:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:40:57.710 [info] <0.1232.0> accepting AMQP connection <0.1232.0> (172.18.0.12:38146 -> 172.18.0.20:5672)
+2024-05-21 07:40:57.712 [info] <0.1232.0> Connection <0.1232.0> (172.18.0.12:38146 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#48c05c52:0
+2024-05-21 07:40:57.714 [info] <0.1232.0> connection <0.1232.0> (172.18.0.12:38146 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#48c05c52:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:40:57.944 [info] <0.1245.0> accepting AMQP connection <0.1245.0> (172.18.0.8:36134 -> 172.18.0.20:5672)
+2024-05-21 07:40:57.963 [info] <0.1245.0> Connection <0.1245.0> (172.18.0.8:36134 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#270de117:0
+2024-05-21 07:40:57.970 [info] <0.1245.0> connection <0.1245.0> (172.18.0.8:36134 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#270de117:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:40:59.128 [info] <0.1259.0> accepting AMQP connection <0.1259.0> (172.18.0.11:42020 -> 172.18.0.20:5672)
+2024-05-21 07:40:59.141 [info] <0.1259.0> Connection <0.1259.0> (172.18.0.11:42020 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#5f9ea826:0
+2024-05-21 07:40:59.146 [info] <0.1259.0> connection <0.1259.0> (172.18.0.11:42020 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#5f9ea826:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-21 07:41:00.244 [info] <0.1273.0> accepting AMQP connection <0.1273.0> (172.18.0.18:44264 -> 172.18.0.20:5672)
+2024-05-21 07:41:00.253 [info] <0.1273.0> Connection <0.1273.0> (172.18.0.18:44264 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#7b71c107:0
+2024-05-21 07:41:00.256 [info] <0.1273.0> connection <0.1273.0> (172.18.0.18:44264 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#7b71c107:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:06:05.096 [info] <0.60.0> SIGTERM received - shutting down
+2024-05-22 07:06:05.133 [warning] <0.680.0> HTTP listener registry could not find context rabbitmq_management_tls
+2024-05-22 07:06:05.154 [info] <0.268.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping unregistration.
+2024-05-22 07:06:05.154 [info] <0.615.0> stopped TCP listener on [::]:5672
+2024-05-22 07:06:05.161 [error] <0.1273.0> Error on AMQP connection <0.1273.0> (172.18.0.18:44264 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#7b71c107:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.161 [error] <0.1232.0> Error on AMQP connection <0.1232.0> (172.18.0.12:38146 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#48c05c52:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.161 [error] <0.852.0> Error on AMQP connection <0.852.0> (172.18.0.12:36396 -> 172.18.0.20:5672 - rabbitConnectionFactory#12704e15:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.161 [error] <0.880.0> Error on AMQP connection <0.880.0> (172.18.0.8:34412 -> 172.18.0.20:5672 - rabbitConnectionFactory#76bf1bb8:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.161 [error] <0.939.0> Error on AMQP connection <0.939.0> (172.18.0.13:59018 -> 172.18.0.20:5672 - rabbitConnectionFactory#47829d6d:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.161 [error] <0.1245.0> Error on AMQP connection <0.1245.0> (172.18.0.8:36134 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#270de117:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.161 [error] <0.808.0> Error on AMQP connection <0.808.0> (172.18.0.11:40106 -> 172.18.0.20:5672 - rabbitConnectionFactory#2b27cc70:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.161 [error] <0.1259.0> Error on AMQP connection <0.1259.0> (172.18.0.11:42020 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#5f9ea826:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.162 [error] <0.891.0> Error on AMQP connection <0.891.0> (172.18.0.18:42518 -> 172.18.0.20:5672 - rabbitConnectionFactory#6ca8fcf3:0, vhost: '/', user: 'guest', state: running), channel 0:
+ operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+2024-05-22 07:06:05.165 [error] <0.1236.0> Supervisor {<0.1236.0>,rabbit_channel_sup_sup} had child channel_sup started with rabbit_channel_sup:start_link() at undefined exit with reason shutdown in context shutdown_error
+2024-05-22 07:06:05.166 [error] <0.884.0> Supervisor {<0.884.0>,rabbit_channel_sup_sup} had child channel_sup started with rabbit_channel_sup:start_link() at undefined exit with reason shutdown in context shutdown_error
+2024-05-22 07:06:05.167 [info] <0.488.0> Closing all connections in vhost '/' on node 'rabbit@rabbitmq' because the vhost is stopping
+2024-05-22 07:06:05.243 [info] <0.517.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent'
+2024-05-22 07:06:05.339 [info] <0.517.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent' is stopped
+2024-05-22 07:06:05.340 [info] <0.512.0> Stopping message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient'
+2024-05-22 07:06:05.383 [info] <0.512.0> Message store for directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L/msg_store_transient' is stopped
+2024-05-22 07:08:14.608 [debug] <0.298.0> Lager installed handler error_logger_lager_h into error_logger
+2024-05-22 07:08:14.633 [debug] <0.301.0> Lager installed handler lager_forwarder_backend into error_logger_lager_event
+2024-05-22 07:08:14.633 [debug] <0.304.0> Lager installed handler lager_forwarder_backend into rabbit_log_lager_event
+2024-05-22 07:08:14.633 [debug] <0.307.0> Lager installed handler lager_forwarder_backend into rabbit_log_channel_lager_event
+2024-05-22 07:08:14.633 [debug] <0.310.0> Lager installed handler lager_forwarder_backend into rabbit_log_connection_lager_event
+2024-05-22 07:08:14.633 [debug] <0.313.0> Lager installed handler lager_forwarder_backend into rabbit_log_feature_flags_lager_event
+2024-05-22 07:08:14.633 [debug] <0.316.0> Lager installed handler lager_forwarder_backend into rabbit_log_federation_lager_event
+2024-05-22 07:08:14.633 [debug] <0.319.0> Lager installed handler lager_forwarder_backend into rabbit_log_ldap_lager_event
+2024-05-22 07:08:14.633 [debug] <0.322.0> Lager installed handler lager_forwarder_backend into rabbit_log_mirroring_lager_event
+2024-05-22 07:08:14.633 [debug] <0.325.0> Lager installed handler lager_forwarder_backend into rabbit_log_prelaunch_lager_event
+2024-05-22 07:08:14.633 [debug] <0.328.0> Lager installed handler lager_forwarder_backend into rabbit_log_queue_lager_event
+2024-05-22 07:08:14.633 [debug] <0.331.0> Lager installed handler lager_forwarder_backend into rabbit_log_ra_lager_event
+2024-05-22 07:08:14.633 [debug] <0.334.0> Lager installed handler lager_forwarder_backend into rabbit_log_shovel_lager_event
+2024-05-22 07:08:14.633 [debug] <0.337.0> Lager installed handler lager_forwarder_backend into rabbit_log_upgrade_lager_event
+2024-05-22 07:08:15.109 [debug] <0.294.0> Lager installed handler lager_backend_throttle into lager_event
+2024-05-22 07:08:15.640 [info] <0.268.0> HiPE disabled: no modules were natively recompiled.
+2024-05-22 07:08:32.661 [info] <0.268.0> 
+ Starting RabbitMQ 3.8.5 on Erlang 23.0.3
+ Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+ Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  ##  ##      RabbitMQ 3.8.5
+  ##  ##
+  ##########  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+  ######  ##
+  ##########  Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  Doc guides: https://rabbitmq.com/documentation.html
+  Support:    https://rabbitmq.com/contact.html
+  Tutorials:  https://rabbitmq.com/getstarted.html
+  Monitoring: https://rabbitmq.com/monitoring.html
+
+  Logs: <stdout>
+
+  Config file(s): /etc/rabbitmq/rabbitmq.conf
+
+  Starting broker...2024-05-22 07:08:32.663 [info] <0.268.0> 
+ node           : rabbit@rabbitmq
+ home dir       : /var/lib/rabbitmq
+ config file(s) : /etc/rabbitmq/rabbitmq.conf
+ cookie hash    : CRUpz7cbQ1tNlla2qk0lGw==
+ log(s)         : <stdout>
+ database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+2024-05-22 07:08:32.673 [info] <0.268.0> Running boot step pre_boot defined by app rabbit
+2024-05-22 07:08:32.673 [info] <0.268.0> Running boot step rabbit_core_metrics defined by app rabbit
+2024-05-22 07:08:32.674 [info] <0.268.0> Running boot step rabbit_alarm defined by app rabbit
+2024-05-22 07:08:32.764 [info] <0.413.0> Memory high watermark set to 6346 MiB (6654908825 bytes) of 15866 MiB (16637272064 bytes) total
+2024-05-22 07:08:32.837 [info] <0.420.0> Enabling free disk space monitoring
+2024-05-22 07:08:32.837 [info] <0.420.0> Disk free limit set to 1000MB
+2024-05-22 07:08:32.883 [info] <0.268.0> Running boot step code_server_cache defined by app rabbit
+2024-05-22 07:08:32.883 [info] <0.268.0> Running boot step file_handle_cache defined by app rabbit
+2024-05-22 07:08:32.884 [info] <0.448.0> Limiting to approx 1048479 file handles (943629 sockets)
+2024-05-22 07:08:32.884 [info] <0.449.0> FHC read buffering:  OFF
+2024-05-22 07:08:32.884 [info] <0.449.0> FHC write buffering: ON
+2024-05-22 07:08:32.954 [info] <0.268.0> Running boot step worker_pool defined by app rabbit
+2024-05-22 07:08:32.954 [info] <0.402.0> Will use 8 processes for default worker pool
+2024-05-22 07:08:32.954 [info] <0.402.0> Starting worker pool 'worker_pool' with 8 processes in it
+2024-05-22 07:08:32.955 [info] <0.268.0> Running boot step database defined by app rabbit
+2024-05-22 07:08:33.303 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-22 07:08:33.303 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-22 07:08:33.303 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-22 07:08:33.303 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-22 07:08:33.440 [info] <0.268.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-05-22 07:08:33.440 [info] <0.268.0> Successfully synced tables from a peer
+2024-05-22 07:08:33.440 [info] <0.268.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2024-05-22 07:08:33.440 [info] <0.268.0> Running boot step database_sync defined by app rabbit
+2024-05-22 07:08:33.440 [info] <0.268.0> Running boot step feature_flags defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step codec_correctness_check defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step external_infrastructure defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step rabbit_registry defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step rabbit_event defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2024-05-22 07:08:33.447 [info] <0.268.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_priority_queue defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step kernel_ready defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2024-05-22 07:08:33.448 [info] <0.268.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2024-05-22 07:08:33.465 [info] <0.475.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2024-05-22 07:08:33.466 [info] <0.268.0> Running boot step guid_generator defined by app rabbit
+2024-05-22 07:08:33.543 [info] <0.268.0> Running boot step rabbit_node_monitor defined by app rabbit
+2024-05-22 07:08:33.543 [info] <0.479.0> Starting rabbit_node_monitor
+2024-05-22 07:08:33.543 [info] <0.268.0> Running boot step delegate_sup defined by app rabbit
+2024-05-22 07:08:33.543 [info] <0.268.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2024-05-22 07:08:33.543 [info] <0.268.0> Running boot step core_initialized defined by app rabbit
+2024-05-22 07:08:33.543 [info] <0.268.0> Running boot step upgrade_queues defined by app rabbit
+2024-05-22 07:08:33.574 [info] <0.268.0> Running boot step rabbit_connection_tracking defined by app rabbit
+2024-05-22 07:08:33.574 [info] <0.268.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2024-05-22 07:08:33.574 [info] <0.268.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2024-05-22 07:08:33.574 [info] <0.268.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2024-05-22 07:08:33.575 [info] <0.268.0> Running boot step rabbit_policies defined by app rabbit
+2024-05-22 07:08:33.575 [info] <0.268.0> Running boot step rabbit_policy defined by app rabbit
+2024-05-22 07:08:33.575 [info] <0.268.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2024-05-22 07:08:33.575 [info] <0.268.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2024-05-22 07:08:33.575 [info] <0.268.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2024-05-22 07:08:33.575 [info] <0.268.0> Running boot step recovery defined by app rabbit
+2024-05-22 07:08:33.580 [info] <0.520.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2024-05-22 07:08:33.774 [info] <0.520.0> Starting message stores for vhost '/'
+2024-05-22 07:08:33.775 [info] <0.525.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2024-05-22 07:08:34.101 [info] <0.520.0> Started message store of type transient for vhost '/'
+2024-05-22 07:08:34.101 [info] <0.529.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2024-05-22 07:08:34.377 [info] <0.520.0> Started message store of type persistent for vhost '/'
+2024-05-22 07:08:34.457 [info] <0.268.0> Running boot step definition_import_worker_pool defined by app rabbit
+2024-05-22 07:08:34.457 [info] <0.402.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2024-05-22 07:08:34.457 [info] <0.268.0> Running boot step load_core_definitions defined by app rabbit
+2024-05-22 07:08:34.457 [info] <0.268.0> Running boot step empty_db_check defined by app rabbit
+2024-05-22 07:08:34.457 [info] <0.268.0> Running boot step rabbit_looking_glass defined by app rabbit
+2024-05-22 07:08:34.457 [info] <0.268.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2024-05-22 07:08:34.457 [info] <0.268.0> Running boot step background_gc defined by app rabbit
+2024-05-22 07:08:34.457 [info] <0.268.0> Running boot step connection_tracking defined by app rabbit
+2024-05-22 07:08:34.458 [info] <0.268.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@rabbitmq
+2024-05-22 07:08:34.458 [info] <0.268.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@rabbitmq
+2024-05-22 07:08:34.458 [info] <0.268.0> Running boot step routing_ready defined by app rabbit
+2024-05-22 07:08:34.458 [info] <0.268.0> Running boot step pre_flight defined by app rabbit
+2024-05-22 07:08:34.458 [info] <0.268.0> Running boot step notify_cluster defined by app rabbit
+2024-05-22 07:08:34.458 [info] <0.268.0> Running boot step networking defined by app rabbit
+2024-05-22 07:08:34.510 [info] <0.627.0> started TCP listener on [::]:5672
+2024-05-22 07:08:34.510 [info] <0.268.0> Running boot step cluster_name defined by app rabbit
+2024-05-22 07:08:34.510 [info] <0.268.0> Running boot step direct_client defined by app rabbit
+2024-05-22 07:08:36.171 [info] <0.629.0> Feature flags: list of feature flags found:
+2024-05-22 07:08:36.171 [info] <0.629.0> Feature flags:   [ ] drop_unroutable_metric
+2024-05-22 07:08:36.171 [info] <0.629.0> Feature flags:   [ ] empty_basic_get_metric
+2024-05-22 07:08:36.171 [info] <0.629.0> Feature flags:   [x] implicit_default_bindings
+2024-05-22 07:08:36.171 [info] <0.629.0> Feature flags:   [x] quorum_queue
+2024-05-22 07:08:36.171 [info] <0.629.0> Feature flags:   [x] virtual_host_metadata
+2024-05-22 07:08:36.171 [info] <0.629.0> Feature flags: feature flag states written to disk: yes
+2024-05-22 07:08:36.368 [info] <0.629.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2024-05-22 07:08:36.368 [info] <0.629.0> Management plugin: using rates mode 'basic'
+2024-05-22 07:08:36.582 [info] <0.629.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2024-05-22 07:08:36.582 [info] <0.629.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2024-05-22 07:08:36.625 [info] <0.696.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2024-05-22 07:08:36.625 [info] <0.802.0> Statistics database started.
+2024-05-22 07:08:36.625 [info] <0.801.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2024-05-22 07:08:37.243 [info] <0.629.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+ completed with 3 plugins.
+2024-05-22 07:08:37.526 [info] <0.812.0> accepting AMQP connection <0.812.0> (172.18.0.8:38952 -> 172.18.0.10:5672)
+2024-05-22 07:08:37.684 [info] <0.812.0> Connection <0.812.0> (172.18.0.8:38952 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#6f6a7463:13
+2024-05-22 07:08:37.706 [info] <0.812.0> connection <0.812.0> (172.18.0.8:38952 -> 172.18.0.10:5672 - rabbitConnectionFactory#6f6a7463:13): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:08:38.913 [info] <0.844.0> accepting AMQP connection <0.844.0> (172.18.0.9:59460 -> 172.18.0.10:5672)
+2024-05-22 07:08:39.033 [info] <0.844.0> Connection <0.844.0> (172.18.0.9:59460 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#5f2bd6d9:0
+2024-05-22 07:08:39.055 [info] <0.844.0> connection <0.844.0> (172.18.0.9:59460 -> 172.18.0.10:5672 - rabbitConnectionFactory#5f2bd6d9:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:08:40.348 [info] <0.871.0> accepting AMQP connection <0.871.0> (172.18.0.17:34802 -> 172.18.0.10:5672)
+2024-05-22 07:08:40.521 [info] <0.871.0> Connection <0.871.0> (172.18.0.17:34802 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#516592b1:0
+2024-05-22 07:08:40.547 [info] <0.871.0> connection <0.871.0> (172.18.0.17:34802 -> 172.18.0.10:5672 - rabbitConnectionFactory#516592b1:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:08:44.251 [info] <0.901.0> accepting AMQP connection <0.901.0> (172.18.0.4:49854 -> 172.18.0.10:5672)
+2024-05-22 07:08:44.411 [info] <0.901.0> Connection <0.901.0> (172.18.0.4:49854 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#6fe595dc:0
+2024-05-22 07:08:44.421 [info] <0.901.0> connection <0.901.0> (172.18.0.4:49854 -> 172.18.0.10:5672 - rabbitConnectionFactory#6fe595dc:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:08:47.701 [info] <0.949.0> accepting AMQP connection <0.949.0> (172.18.0.16:32872 -> 172.18.0.10:5672)
+2024-05-22 07:08:47.862 [info] <0.949.0> Connection <0.949.0> (172.18.0.16:32872 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#78a515e4:0
+2024-05-22 07:08:47.871 [info] <0.949.0> connection <0.949.0> (172.18.0.16:32872 -> 172.18.0.10:5672 - rabbitConnectionFactory#78a515e4:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:09:48.201 [info] <0.1053.0> accepting AMQP connection <0.1053.0> (172.18.0.9:60068 -> 172.18.0.10:5672)
+2024-05-22 07:09:48.205 [info] <0.1053.0> Connection <0.1053.0> (172.18.0.9:60068 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#563b639e:0
+2024-05-22 07:09:48.208 [info] <0.1053.0> connection <0.1053.0> (172.18.0.9:60068 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#563b639e:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:09:48.483 [info] <0.1066.0> accepting AMQP connection <0.1066.0> (172.18.0.17:35400 -> 172.18.0.10:5672)
+2024-05-22 07:09:48.505 [info] <0.1066.0> Connection <0.1066.0> (172.18.0.17:35400 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#7c92ce37:0
+2024-05-22 07:09:48.509 [info] <0.1066.0> connection <0.1066.0> (172.18.0.17:35400 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#7c92ce37:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:09:49.859 [info] <0.1081.0> accepting AMQP connection <0.1081.0> (172.18.0.8:39604 -> 172.18.0.10:5672)
+2024-05-22 07:09:49.863 [info] <0.1081.0> Connection <0.1081.0> (172.18.0.8:39604 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#6d1c00ab:0
+2024-05-22 07:09:49.865 [info] <0.1081.0> connection <0.1081.0> (172.18.0.8:39604 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#6d1c00ab:0): user 'guest' authenticated and granted access to vhost '/'
+2024-05-22 07:09:51.322 [info] <0.1095.0> accepting AMQP connection <0.1095.0> (172.18.0.16:33418 -> 172.18.0.10:5672)
+2024-05-22 07:09:51.326 [info] <0.1095.0> Connection <0.1095.0> (172.18.0.16:33418 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#2e5baec8:0
+2024-05-22 07:09:51.328 [info] <0.1095.0> connection <0.1095.0> (172.18.0.16:33418 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#2e5baec8:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 09:12:12.076 [debug] <0.289.0> Lager installed handler error_logger_lager_h into error_logger
+2024-06-24 09:12:12.106 [debug] <0.292.0> Lager installed handler lager_forwarder_backend into error_logger_lager_event
+2024-06-24 09:12:12.106 [debug] <0.295.0> Lager installed handler lager_forwarder_backend into rabbit_log_lager_event
+2024-06-24 09:12:12.106 [debug] <0.298.0> Lager installed handler lager_forwarder_backend into rabbit_log_channel_lager_event
+2024-06-24 09:12:12.106 [debug] <0.301.0> Lager installed handler lager_forwarder_backend into rabbit_log_connection_lager_event
+2024-06-24 09:12:12.106 [debug] <0.304.0> Lager installed handler lager_forwarder_backend into rabbit_log_feature_flags_lager_event
+2024-06-24 09:12:12.106 [debug] <0.307.0> Lager installed handler lager_forwarder_backend into rabbit_log_federation_lager_event
+2024-06-24 09:12:12.106 [debug] <0.310.0> Lager installed handler lager_forwarder_backend into rabbit_log_ldap_lager_event
+2024-06-24 09:12:12.106 [debug] <0.313.0> Lager installed handler lager_forwarder_backend into rabbit_log_mirroring_lager_event
+2024-06-24 09:12:12.106 [debug] <0.316.0> Lager installed handler lager_forwarder_backend into rabbit_log_prelaunch_lager_event
+2024-06-24 09:12:12.106 [debug] <0.319.0> Lager installed handler lager_forwarder_backend into rabbit_log_queue_lager_event
+2024-06-24 09:12:12.106 [debug] <0.322.0> Lager installed handler lager_forwarder_backend into rabbit_log_ra_lager_event
+2024-06-24 09:12:12.106 [debug] <0.325.0> Lager installed handler lager_forwarder_backend into rabbit_log_shovel_lager_event
+2024-06-24 09:12:12.106 [debug] <0.328.0> Lager installed handler lager_forwarder_backend into rabbit_log_upgrade_lager_event
+2024-06-24 09:12:12.206 [info] <0.269.0> HiPE disabled: no modules were natively recompiled.
+2024-06-24 09:12:12.580 [debug] <0.285.0> Lager installed handler lager_backend_throttle into lager_event
+2024-06-24 09:12:27.897 [info] <0.269.0> 
+ Starting RabbitMQ 3.8.5 on Erlang 23.0.3
+ Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+ Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  ##  ##      RabbitMQ 3.8.5
+  ##  ##
+  ##########  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+  ######  ##
+  ##########  Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  Doc guides: https://rabbitmq.com/documentation.html
+  Support:    https://rabbitmq.com/contact.html
+  Tutorials:  https://rabbitmq.com/getstarted.html
+  Monitoring: https://rabbitmq.com/monitoring.html
+
+  Logs: <stdout>
+
+  Config file(s): /etc/rabbitmq/rabbitmq.conf
+
+  Starting broker...2024-06-24 09:12:27.898 [info] <0.269.0> 
+ node           : rabbit@rabbitmq
+ home dir       : /var/lib/rabbitmq
+ config file(s) : /etc/rabbitmq/rabbitmq.conf
+ cookie hash    : CRUpz7cbQ1tNlla2qk0lGw==
+ log(s)         : <stdout>
+ database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+2024-06-24 09:12:27.905 [info] <0.269.0> Running boot step pre_boot defined by app rabbit
+2024-06-24 09:12:27.905 [info] <0.269.0> Running boot step rabbit_core_metrics defined by app rabbit
+2024-06-24 09:12:27.906 [info] <0.269.0> Running boot step rabbit_alarm defined by app rabbit
+2024-06-24 09:12:27.986 [info] <0.394.0> Memory high watermark set to 6346 MiB (6654926848 bytes) of 15866 MiB (16637317120 bytes) total
+2024-06-24 09:12:28.063 [info] <0.407.0> Enabling free disk space monitoring
+2024-06-24 09:12:28.063 [info] <0.407.0> Disk free limit set to 1000MB
+2024-06-24 09:12:28.078 [info] <0.269.0> Running boot step code_server_cache defined by app rabbit
+2024-06-24 09:12:28.078 [info] <0.269.0> Running boot step file_handle_cache defined by app rabbit
+2024-06-24 09:12:28.078 [info] <0.436.0> FHC read buffering:  OFF
+2024-06-24 09:12:28.078 [info] <0.436.0> FHC write buffering: ON
+2024-06-24 09:12:28.078 [info] <0.435.0> Limiting to approx 1048479 file handles (943629 sockets)
+2024-06-24 09:12:28.204 [info] <0.269.0> Running boot step worker_pool defined by app rabbit
+2024-06-24 09:12:28.204 [info] <0.389.0> Will use 8 processes for default worker pool
+2024-06-24 09:12:28.204 [info] <0.389.0> Starting worker pool 'worker_pool' with 8 processes in it
+2024-06-24 09:12:28.205 [info] <0.269.0> Running boot step database defined by app rabbit
+2024-06-24 09:12:28.647 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-06-24 09:12:28.647 [info] <0.269.0> Successfully synced tables from a peer
+2024-06-24 09:12:28.647 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-06-24 09:12:28.647 [info] <0.269.0> Successfully synced tables from a peer
+2024-06-24 09:12:28.794 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-06-24 09:12:28.794 [info] <0.269.0> Successfully synced tables from a peer
+2024-06-24 09:12:28.794 [info] <0.269.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2024-06-24 09:12:28.794 [info] <0.269.0> Running boot step database_sync defined by app rabbit
+2024-06-24 09:12:28.794 [info] <0.269.0> Running boot step feature_flags defined by app rabbit
+2024-06-24 09:12:28.809 [info] <0.269.0> Running boot step codec_correctness_check defined by app rabbit
+2024-06-24 09:12:28.809 [info] <0.269.0> Running boot step external_infrastructure defined by app rabbit
+2024-06-24 09:12:28.809 [info] <0.269.0> Running boot step rabbit_registry defined by app rabbit
+2024-06-24 09:12:28.809 [info] <0.269.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2024-06-24 09:12:28.809 [info] <0.269.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2024-06-24 09:12:28.809 [info] <0.269.0> Running boot step rabbit_event defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_priority_queue defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step kernel_ready defined by app rabbit
+2024-06-24 09:12:28.810 [info] <0.269.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2024-06-24 09:12:28.811 [info] <0.269.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2024-06-24 09:12:28.832 [info] <0.463.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2024-06-24 09:12:28.832 [info] <0.269.0> Running boot step guid_generator defined by app rabbit
+2024-06-24 09:12:28.896 [info] <0.269.0> Running boot step rabbit_node_monitor defined by app rabbit
+2024-06-24 09:12:28.896 [info] <0.467.0> Starting rabbit_node_monitor
+2024-06-24 09:12:28.896 [info] <0.269.0> Running boot step delegate_sup defined by app rabbit
+2024-06-24 09:12:28.897 [info] <0.269.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2024-06-24 09:12:28.897 [info] <0.269.0> Running boot step core_initialized defined by app rabbit
+2024-06-24 09:12:28.897 [info] <0.269.0> Running boot step upgrade_queues defined by app rabbit
+2024-06-24 09:12:28.933 [info] <0.269.0> Running boot step rabbit_connection_tracking defined by app rabbit
+2024-06-24 09:12:28.933 [info] <0.269.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2024-06-24 09:12:28.933 [info] <0.269.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2024-06-24 09:12:28.933 [info] <0.269.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2024-06-24 09:12:28.934 [info] <0.269.0> Running boot step rabbit_policies defined by app rabbit
+2024-06-24 09:12:28.934 [info] <0.269.0> Running boot step rabbit_policy defined by app rabbit
+2024-06-24 09:12:28.934 [info] <0.269.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2024-06-24 09:12:28.934 [info] <0.269.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2024-06-24 09:12:28.934 [info] <0.269.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2024-06-24 09:12:28.935 [info] <0.269.0> Running boot step recovery defined by app rabbit
+2024-06-24 09:12:28.940 [info] <0.508.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2024-06-24 09:12:29.097 [info] <0.508.0> Starting message stores for vhost '/'
+2024-06-24 09:12:29.097 [info] <0.512.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2024-06-24 09:12:29.233 [info] <0.508.0> Started message store of type transient for vhost '/'
+2024-06-24 09:12:29.233 [info] <0.516.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2024-06-24 09:12:29.282 [warning] <0.516.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2024-06-24 09:12:29.516 [info] <0.508.0> Started message store of type persistent for vhost '/'
+2024-06-24 09:12:29.606 [info] <0.269.0> Running boot step definition_import_worker_pool defined by app rabbit
+2024-06-24 09:12:29.606 [info] <0.389.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2024-06-24 09:12:29.606 [info] <0.269.0> Running boot step load_core_definitions defined by app rabbit
+2024-06-24 09:12:29.606 [info] <0.269.0> Running boot step empty_db_check defined by app rabbit
+2024-06-24 09:12:29.606 [info] <0.269.0> Running boot step rabbit_looking_glass defined by app rabbit
+2024-06-24 09:12:29.606 [info] <0.269.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2024-06-24 09:12:29.607 [info] <0.269.0> Running boot step background_gc defined by app rabbit
+2024-06-24 09:12:29.607 [info] <0.269.0> Running boot step connection_tracking defined by app rabbit
+2024-06-24 09:12:29.607 [info] <0.269.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@rabbitmq
+2024-06-24 09:12:29.607 [info] <0.269.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@rabbitmq
+2024-06-24 09:12:29.607 [info] <0.269.0> Running boot step routing_ready defined by app rabbit
+2024-06-24 09:12:29.607 [info] <0.269.0> Running boot step pre_flight defined by app rabbit
+2024-06-24 09:12:29.607 [info] <0.269.0> Running boot step notify_cluster defined by app rabbit
+2024-06-24 09:12:29.607 [info] <0.269.0> Running boot step networking defined by app rabbit
+2024-06-24 09:12:29.624 [info] <0.615.0> started TCP listener on [::]:5672
+2024-06-24 09:12:29.624 [info] <0.269.0> Running boot step cluster_name defined by app rabbit
+2024-06-24 09:12:29.624 [info] <0.269.0> Running boot step direct_client defined by app rabbit
+2024-06-24 09:12:31.952 [info] <0.623.0> accepting AMQP connection <0.623.0> (172.18.0.14:52102 -> 172.18.0.20:5672)
+2024-06-24 09:12:32.071 [info] <0.623.0> Connection <0.623.0> (172.18.0.14:52102 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#28a2a3e7:13
+2024-06-24 09:12:32.100 [info] <0.623.0> connection <0.623.0> (172.18.0.14:52102 -> 172.18.0.20:5672 - rabbitConnectionFactory#28a2a3e7:13): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 09:12:32.973 [info] <0.650.0> accepting AMQP connection <0.650.0> (172.18.0.8:51750 -> 172.18.0.20:5672)
+2024-06-24 09:12:33.130 [info] <0.650.0> Connection <0.650.0> (172.18.0.8:51750 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#2264ea32:0
+2024-06-24 09:12:33.158 [info] <0.650.0> connection <0.650.0> (172.18.0.8:51750 -> 172.18.0.20:5672 - rabbitConnectionFactory#2264ea32:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 09:12:34.069 [info] <0.666.0> accepting AMQP connection <0.666.0> (172.18.0.6:43064 -> 172.18.0.20:5672)
+2024-06-24 09:12:34.210 [info] <0.666.0> Connection <0.666.0> (172.18.0.6:43064 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#2629d5dc:0
+2024-06-24 09:12:34.259 [info] <0.666.0> connection <0.666.0> (172.18.0.6:43064 -> 172.18.0.20:5672 - rabbitConnectionFactory#2629d5dc:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 09:12:35.387 [info] <0.617.0> Feature flags: list of feature flags found:
+2024-06-24 09:12:35.387 [info] <0.617.0> Feature flags:   [ ] drop_unroutable_metric
+2024-06-24 09:12:35.387 [info] <0.617.0> Feature flags:   [ ] empty_basic_get_metric
+2024-06-24 09:12:35.387 [info] <0.617.0> Feature flags:   [x] implicit_default_bindings
+2024-06-24 09:12:35.387 [info] <0.617.0> Feature flags:   [x] quorum_queue
+2024-06-24 09:12:35.387 [info] <0.617.0> Feature flags:   [x] virtual_host_metadata
+2024-06-24 09:12:35.387 [info] <0.617.0> Feature flags: feature flag states written to disk: yes
+2024-06-24 09:12:35.534 [info] <0.617.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2024-06-24 09:12:35.534 [info] <0.617.0> Management plugin: using rates mode 'basic'
+2024-06-24 09:12:35.629 [info] <0.617.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2024-06-24 09:12:35.629 [info] <0.617.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2024-06-24 09:12:35.653 [info] <0.769.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2024-06-24 09:12:35.653 [info] <0.875.0> Statistics database started.
+2024-06-24 09:12:35.653 [info] <0.874.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+ completed with 3 plugins.
+2024-06-24 09:12:35.864 [info] <0.617.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+2024-06-24 09:12:35.873 [info] <0.885.0> accepting AMQP connection <0.885.0> (172.18.0.13:52022 -> 172.18.0.20:5672)
+2024-06-24 09:12:36.047 [info] <0.885.0> Connection <0.885.0> (172.18.0.13:52022 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#5f59ea8c:0
+2024-06-24 09:12:36.074 [info] <0.885.0> connection <0.885.0> (172.18.0.13:52022 -> 172.18.0.20:5672 - rabbitConnectionFactory#5f59ea8c:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 09:12:39.787 [info] <0.923.0> accepting AMQP connection <0.923.0> (172.18.0.5:60856 -> 172.18.0.20:5672)
+2024-06-24 09:12:39.854 [info] <0.923.0> Connection <0.923.0> (172.18.0.5:60856 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory#629a9f26:0
+2024-06-24 09:12:39.859 [info] <0.923.0> connection <0.923.0> (172.18.0.5:60856 -> 172.18.0.20:5672 - rabbitConnectionFactory#629a9f26:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 09:49:14.301 [info] <0.3205.0> accepting AMQP connection <0.3205.0> (172.18.0.13:41468 -> 172.18.0.20:5672)
+2024-06-24 09:49:14.305 [info] <0.3205.0> Connection <0.3205.0> (172.18.0.13:41468 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#39f11c3c:0
+2024-06-24 09:49:14.306 [info] <0.3205.0> connection <0.3205.0> (172.18.0.13:41468 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#39f11c3c:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 10:02:52.126 [info] <0.4046.0> accepting AMQP connection <0.4046.0> (172.18.0.8:46928 -> 172.18.0.20:5672)
+2024-06-24 10:02:52.129 [info] <0.4046.0> Connection <0.4046.0> (172.18.0.8:46928 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#4c958a43:0
+2024-06-24 10:02:52.133 [info] <0.4046.0> connection <0.4046.0> (172.18.0.8:46928 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#4c958a43:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 10:02:53.247 [info] <0.4060.0> accepting AMQP connection <0.4060.0> (172.18.0.14:47314 -> 172.18.0.20:5672)
+2024-06-24 10:02:53.250 [info] <0.4060.0> Connection <0.4060.0> (172.18.0.14:47314 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#798bb694:0
+2024-06-24 10:02:53.252 [info] <0.4060.0> connection <0.4060.0> (172.18.0.14:47314 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#798bb694:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-24 10:02:54.138 [info] <0.4074.0> accepting AMQP connection <0.4074.0> (172.18.0.6:38258 -> 172.18.0.20:5672)
+2024-06-24 10:02:54.148 [info] <0.4074.0> Connection <0.4074.0> (172.18.0.6:38258 -> 172.18.0.20:5672) has a client-provided name: rabbitConnectionFactory.publisher#242de76d:0
+2024-06-24 10:02:54.154 [info] <0.4074.0> connection <0.4074.0> (172.18.0.6:38258 -> 172.18.0.20:5672 - rabbitConnectionFactory.publisher#242de76d:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:25:17.261 [debug] <0.289.0> Lager installed handler error_logger_lager_h into error_logger
+2024-06-27 08:25:17.577 [debug] <0.292.0> Lager installed handler lager_forwarder_backend into error_logger_lager_event
+2024-06-27 08:25:17.577 [debug] <0.295.0> Lager installed handler lager_forwarder_backend into rabbit_log_lager_event
+2024-06-27 08:25:17.577 [debug] <0.298.0> Lager installed handler lager_forwarder_backend into rabbit_log_channel_lager_event
+2024-06-27 08:25:17.577 [debug] <0.301.0> Lager installed handler lager_forwarder_backend into rabbit_log_connection_lager_event
+2024-06-27 08:25:17.577 [debug] <0.304.0> Lager installed handler lager_forwarder_backend into rabbit_log_feature_flags_lager_event
+2024-06-27 08:25:17.577 [debug] <0.307.0> Lager installed handler lager_forwarder_backend into rabbit_log_federation_lager_event
+2024-06-27 08:25:17.577 [debug] <0.310.0> Lager installed handler lager_forwarder_backend into rabbit_log_ldap_lager_event
+2024-06-27 08:25:17.577 [debug] <0.313.0> Lager installed handler lager_forwarder_backend into rabbit_log_mirroring_lager_event
+2024-06-27 08:25:17.577 [debug] <0.316.0> Lager installed handler lager_forwarder_backend into rabbit_log_prelaunch_lager_event
+2024-06-27 08:25:17.577 [debug] <0.319.0> Lager installed handler lager_forwarder_backend into rabbit_log_queue_lager_event
+2024-06-27 08:25:17.577 [debug] <0.322.0> Lager installed handler lager_forwarder_backend into rabbit_log_ra_lager_event
+2024-06-27 08:25:17.577 [debug] <0.325.0> Lager installed handler lager_forwarder_backend into rabbit_log_shovel_lager_event
+2024-06-27 08:25:17.577 [debug] <0.328.0> Lager installed handler lager_forwarder_backend into rabbit_log_upgrade_lager_event
+2024-06-27 08:25:17.763 [debug] <0.285.0> Lager installed handler lager_backend_throttle into lager_event
+2024-06-27 08:25:19.284 [info] <0.269.0> HiPE disabled: no modules were natively recompiled.
+2024-06-27 08:25:36.626 [info] <0.269.0> 
+ Starting RabbitMQ 3.8.5 on Erlang 23.0.3
+ Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+ Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  ##  ##      RabbitMQ 3.8.5
+  ##  ##
+  ##########  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+  ######  ##
+  ##########  Licensed under the MPL 1.1. Website: https://rabbitmq.com
+
+  Doc guides: https://rabbitmq.com/documentation.html
+  Support:    https://rabbitmq.com/contact.html
+  Tutorials:  https://rabbitmq.com/getstarted.html
+  Monitoring: https://rabbitmq.com/monitoring.html
+
+  Logs: <stdout>
+
+  Config file(s): /etc/rabbitmq/rabbitmq.conf
+
+  Starting broker...2024-06-27 08:25:36.627 [info] <0.269.0> 
+ node           : rabbit@rabbitmq
+ home dir       : /var/lib/rabbitmq
+ config file(s) : /etc/rabbitmq/rabbitmq.conf
+ cookie hash    : CRUpz7cbQ1tNlla2qk0lGw==
+ log(s)         : <stdout>
+ database dir   : /var/lib/rabbitmq/mnesia/rabbit@rabbitmq
+2024-06-27 08:25:36.643 [info] <0.269.0> Running boot step pre_boot defined by app rabbit
+2024-06-27 08:25:36.643 [info] <0.269.0> Running boot step rabbit_core_metrics defined by app rabbit
+2024-06-27 08:25:36.644 [info] <0.269.0> Running boot step rabbit_alarm defined by app rabbit
+2024-06-27 08:25:36.771 [info] <0.396.0> Memory high watermark set to 6346 MiB (6654926848 bytes) of 15866 MiB (16637317120 bytes) total
+2024-06-27 08:25:36.819 [info] <0.408.0> Enabling free disk space monitoring
+2024-06-27 08:25:36.819 [info] <0.408.0> Disk free limit set to 1000MB
+2024-06-27 08:25:37.142 [info] <0.269.0> Running boot step code_server_cache defined by app rabbit
+2024-06-27 08:25:37.143 [info] <0.269.0> Running boot step file_handle_cache defined by app rabbit
+2024-06-27 08:25:37.143 [info] <0.439.0> Limiting to approx 1048479 file handles (943629 sockets)
+2024-06-27 08:25:37.143 [info] <0.440.0> FHC read buffering:  OFF
+2024-06-27 08:25:37.143 [info] <0.440.0> FHC write buffering: ON
+2024-06-27 08:25:37.219 [info] <0.269.0> Running boot step worker_pool defined by app rabbit
+2024-06-27 08:25:37.219 [info] <0.391.0> Will use 8 processes for default worker pool
+2024-06-27 08:25:37.219 [info] <0.391.0> Starting worker pool 'worker_pool' with 8 processes in it
+2024-06-27 08:25:37.220 [info] <0.269.0> Running boot step database defined by app rabbit
+2024-06-27 08:25:37.547 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-06-27 08:25:37.547 [info] <0.269.0> Successfully synced tables from a peer
+2024-06-27 08:25:37.547 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-06-27 08:25:37.547 [info] <0.269.0> Successfully synced tables from a peer
+2024-06-27 08:25:37.707 [info] <0.269.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+2024-06-27 08:25:37.707 [info] <0.269.0> Successfully synced tables from a peer
+2024-06-27 08:25:37.707 [info] <0.269.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+2024-06-27 08:25:37.707 [info] <0.269.0> Running boot step database_sync defined by app rabbit
+2024-06-27 08:25:37.707 [info] <0.269.0> Running boot step feature_flags defined by app rabbit
+2024-06-27 08:25:37.739 [info] <0.269.0> Running boot step codec_correctness_check defined by app rabbit
+2024-06-27 08:25:37.739 [info] <0.269.0> Running boot step external_infrastructure defined by app rabbit
+2024-06-27 08:25:37.739 [info] <0.269.0> Running boot step rabbit_registry defined by app rabbit
+2024-06-27 08:25:37.739 [info] <0.269.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_queue_location_random defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_event defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_priority_queue defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Priority queues enabled, real BQ is rabbit_variable_queue
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step kernel_ready defined by app rabbit
+2024-06-27 08:25:37.740 [info] <0.269.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+2024-06-27 08:25:37.741 [info] <0.269.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+2024-06-27 08:25:37.781 [info] <0.467.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+2024-06-27 08:25:37.781 [info] <0.269.0> Running boot step guid_generator defined by app rabbit
+2024-06-27 08:25:37.919 [info] <0.269.0> Running boot step rabbit_node_monitor defined by app rabbit
+2024-06-27 08:25:37.920 [info] <0.471.0> Starting rabbit_node_monitor
+2024-06-27 08:25:37.920 [info] <0.269.0> Running boot step delegate_sup defined by app rabbit
+2024-06-27 08:25:37.920 [info] <0.269.0> Running boot step rabbit_memory_monitor defined by app rabbit
+2024-06-27 08:25:37.920 [info] <0.269.0> Running boot step core_initialized defined by app rabbit
+2024-06-27 08:25:37.920 [info] <0.269.0> Running boot step upgrade_queues defined by app rabbit
+2024-06-27 08:25:37.962 [info] <0.269.0> Running boot step rabbit_connection_tracking defined by app rabbit
+2024-06-27 08:25:37.962 [info] <0.269.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+2024-06-27 08:25:37.963 [info] <0.269.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+2024-06-27 08:25:37.963 [info] <0.269.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+2024-06-27 08:25:37.963 [info] <0.269.0> Running boot step rabbit_policies defined by app rabbit
+2024-06-27 08:25:37.964 [info] <0.269.0> Running boot step rabbit_policy defined by app rabbit
+2024-06-27 08:25:37.964 [info] <0.269.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+2024-06-27 08:25:37.964 [info] <0.269.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+2024-06-27 08:25:37.964 [info] <0.269.0> Running boot step rabbit_vhost_limit defined by app rabbit
+2024-06-27 08:25:37.964 [info] <0.269.0> Running boot step recovery defined by app rabbit
+2024-06-27 08:25:37.970 [info] <0.512.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@rabbitmq/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+2024-06-27 08:25:38.126 [info] <0.512.0> Starting message stores for vhost '/'
+2024-06-27 08:25:38.126 [info] <0.516.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+2024-06-27 08:25:38.234 [info] <0.512.0> Started message store of type transient for vhost '/'
+2024-06-27 08:25:38.235 [info] <0.520.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+2024-06-27 08:25:38.265 [warning] <0.520.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": rebuilding indices from scratch
+2024-06-27 08:25:38.316 [info] <0.512.0> Started message store of type persistent for vhost '/'
+2024-06-27 08:25:38.889 [info] <0.269.0> Running boot step definition_import_worker_pool defined by app rabbit
+2024-06-27 08:25:38.889 [info] <0.391.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step load_core_definitions defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step empty_db_check defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step rabbit_looking_glass defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step background_gc defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step connection_tracking defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@rabbitmq
+2024-06-27 08:25:38.890 [info] <0.269.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@rabbitmq
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step routing_ready defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step pre_flight defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step notify_cluster defined by app rabbit
+2024-06-27 08:25:38.890 [info] <0.269.0> Running boot step networking defined by app rabbit
+2024-06-27 08:25:38.907 [info] <0.620.0> started TCP listener on [::]:5672
+2024-06-27 08:25:38.909 [info] <0.269.0> Running boot step cluster_name defined by app rabbit
+2024-06-27 08:25:38.909 [info] <0.269.0> Running boot step direct_client defined by app rabbit
+2024-06-27 08:25:47.259 [info] <0.633.0> accepting AMQP connection <0.633.0> (172.18.0.6:43460 -> 172.18.0.10:5672)
+2024-06-27 08:25:47.473 [info] <0.633.0> Connection <0.633.0> (172.18.0.6:43460 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#42deb43a:0
+2024-06-27 08:25:47.507 [info] <0.633.0> connection <0.633.0> (172.18.0.6:43460 -> 172.18.0.10:5672 - rabbitConnectionFactory#42deb43a:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:25:47.762 [info] <0.622.0> Feature flags: list of feature flags found:
+2024-06-27 08:25:47.762 [info] <0.622.0> Feature flags:   [ ] drop_unroutable_metric
+2024-06-27 08:25:47.762 [info] <0.622.0> Feature flags:   [ ] empty_basic_get_metric
+2024-06-27 08:25:47.762 [info] <0.622.0> Feature flags:   [x] implicit_default_bindings
+2024-06-27 08:25:47.762 [info] <0.622.0> Feature flags:   [x] quorum_queue
+2024-06-27 08:25:47.762 [info] <0.622.0> Feature flags:   [x] virtual_host_metadata
+2024-06-27 08:25:47.762 [info] <0.622.0> Feature flags: feature flag states written to disk: yes
+2024-06-27 08:25:47.919 [info] <0.622.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+2024-06-27 08:25:47.919 [info] <0.622.0> Management plugin: using rates mode 'basic'
+2024-06-27 08:25:48.067 [info] <0.622.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+2024-06-27 08:25:48.067 [info] <0.622.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+2024-06-27 08:25:48.110 [info] <0.707.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+2024-06-27 08:25:48.111 [info] <0.813.0> Statistics database started.
+2024-06-27 08:25:48.111 [info] <0.812.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+2024-06-27 08:25:49.415 [info] <0.622.0> Server startup complete; 3 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * rabbitmq_management_agent
+ completed with 3 plugins.
+2024-06-27 08:25:56.033 [info] <0.850.0> accepting AMQP connection <0.850.0> (172.18.0.5:48742 -> 172.18.0.10:5672)
+2024-06-27 08:25:56.142 [info] <0.850.0> Connection <0.850.0> (172.18.0.5:48742 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#41fa769c:0
+2024-06-27 08:25:56.162 [info] <0.850.0> connection <0.850.0> (172.18.0.5:48742 -> 172.18.0.10:5672 - rabbitConnectionFactory#41fa769c:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:25:56.757 [info] <0.865.0> accepting AMQP connection <0.865.0> (172.18.0.16:56420 -> 172.18.0.10:5672)
+2024-06-27 08:25:56.913 [info] <0.865.0> Connection <0.865.0> (172.18.0.16:56420 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#4b74b35:0
+2024-06-27 08:25:56.950 [info] <0.865.0> connection <0.865.0> (172.18.0.16:56420 -> 172.18.0.10:5672 - rabbitConnectionFactory#4b74b35:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:25:57.189 [info] <0.868.0> accepting AMQP connection <0.868.0> (172.18.0.4:50374 -> 172.18.0.10:5672)
+2024-06-27 08:25:57.264 [info] <0.868.0> Connection <0.868.0> (172.18.0.4:50374 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#31e130bf:0
+2024-06-27 08:25:57.289 [info] <0.868.0> connection <0.868.0> (172.18.0.4:50374 -> 172.18.0.10:5672 - rabbitConnectionFactory#31e130bf:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:26:00.352 [info] <0.932.0> accepting AMQP connection <0.932.0> (172.18.0.2:37594 -> 172.18.0.10:5672)
+2024-06-27 08:26:00.543 [info] <0.932.0> Connection <0.932.0> (172.18.0.2:37594 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory#67e0ff3a:0
+2024-06-27 08:26:00.557 [info] <0.932.0> connection <0.932.0> (172.18.0.2:37594 -> 172.18.0.10:5672 - rabbitConnectionFactory#67e0ff3a:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:43:58.250 [info] <0.2091.0> accepting AMQP connection <0.2091.0> (172.18.0.5:57276 -> 172.18.0.10:5672)
+2024-06-27 08:43:58.258 [info] <0.2091.0> Connection <0.2091.0> (172.18.0.5:57276 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#14255b0b:0
+2024-06-27 08:43:58.259 [info] <0.2091.0> connection <0.2091.0> (172.18.0.5:57276 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#14255b0b:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:43:59.165 [info] <0.2105.0> accepting AMQP connection <0.2105.0> (172.18.0.16:36830 -> 172.18.0.10:5672)
+2024-06-27 08:43:59.168 [info] <0.2105.0> Connection <0.2105.0> (172.18.0.16:36830 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#363cd068:0
+2024-06-27 08:43:59.173 [info] <0.2105.0> connection <0.2105.0> (172.18.0.16:36830 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#363cd068:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:44:00.165 [info] <0.2119.0> accepting AMQP connection <0.2119.0> (172.18.0.6:52276 -> 172.18.0.10:5672)
+2024-06-27 08:44:00.168 [info] <0.2119.0> Connection <0.2119.0> (172.18.0.6:52276 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#4c1600c3:0
+2024-06-27 08:44:00.171 [info] <0.2119.0> connection <0.2119.0> (172.18.0.6:52276 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#4c1600c3:0): user 'guest' authenticated and granted access to vhost '/'
+2024-06-27 08:44:00.962 [info] <0.2133.0> accepting AMQP connection <0.2133.0> (172.18.0.4:59072 -> 172.18.0.10:5672)
+2024-06-27 08:44:00.967 [info] <0.2133.0> Connection <0.2133.0> (172.18.0.4:59072 -> 172.18.0.10:5672) has a client-provided name: rabbitConnectionFactory.publisher#61b152dc:0
+2024-06-27 08:44:00.968 [info] <0.2133.0> connection <0.2133.0> (172.18.0.4:59072 -> 172.18.0.10:5672 - rabbitConnectionFactory.publisher#61b152dc:0): user 'guest' authenticated and granted access to vhost '/'

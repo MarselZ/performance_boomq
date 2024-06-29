@@ -1,0 +1,8 @@
+"{"name":"untitled_profile_20:49:05","projectId":2519,"chartProfileList":[{"slaTypeList":[{"fro"
+"mDate":0,"restrictionType":"AVERAGE","targetType":"TEST","toDate":360,"type":"GENERAL_SLA_TYPE"
+""},{"fromDate":0,"restrictionType":"ERROR_RATE","targetType":"TEST","toDate":360,"type":"GENER"
+"AL_SLA_TYPE"}],"orderInReport":0}],"tableProfileList":[{"tableId":null,"slaTypeList":[{"fromDa"
+"te":0,"restrictionType":"AVERAGE","targetType":"TEST","toDate":360,"type":"GENERAL_SLA_TYPE"},"
+"{"fromDate":0,"restrictionType":"ERROR_RATE","targetType":"TEST","toDate":360,"type":"GENERAL_"
+"SLA_TYPE"}],"valueType":"VALUE","orderInReport":1}],"testFilterExpressionList":[{"type":"TEST_"
+"ID_EXPRESSION","testIdList":[8215,8214]}]}"

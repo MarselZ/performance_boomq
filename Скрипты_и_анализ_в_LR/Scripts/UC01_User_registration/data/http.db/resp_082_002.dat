@@ -1,0 +1,4 @@
+394
+{"content":[{"id":1963,"teamId":13,"userId":1887,"email":"user_9@mail.ru","userDisplayName":"User_9","permissionList":["RUN","ADMIN","MANAGE_USERS_IN_ORG","EDIT","VIEW"],"invitationStatus":"ACCEPTED","inviteUrl":null,"expiredAt":null,"createAt":"2024-06-14T08:49:46.867Z","updatedAt":"2024-06-14T08:50:07.072Z"},{"id":2030,"teamId":13,"userId":1946,"email":"user_11@mail.ru","userDisplayName":"user_11","permissionList":["RUN","ADMIN","MANAGE_USERS_IN_ORG","EDIT","VIEW"],"invitationStatus":"ACCEPTED","inviteUrl":null,"expiredAt":null,"createAt":"2024-06-17T12:30:40.655Z","updatedAt":"2024-06-17T12:31:13.156Z"}],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":2,"offset":0,"unpaged":false,"paged":true},"last":false,"totalElements":5,"totalPages":3,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":2,"size":2,"number":0,"empty":false}
+0
+

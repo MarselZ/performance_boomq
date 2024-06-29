@@ -1,0 +1,4 @@
+com\example\newMock\NewMockApplication.class
+com\example\newMock\Model\User.class
+com\example\newMock\Controller\JsonKafkaProducer.class
+com\example\newMock\Config\KafkaTopicConfig.class

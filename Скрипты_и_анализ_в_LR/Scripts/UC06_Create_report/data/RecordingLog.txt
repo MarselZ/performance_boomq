@@ -1,0 +1,776 @@
+[API Trapper      (2e90:41c8)] Recording in 32-bit mode: D:\RL\LOADRUNNER\Bin\HP.LR.ProxyRecorderStarter.exe
+[Network Analyzer (235c:4490)] ------------------------------------------------------------------------------------------
+[Network Analyzer (235c:4490)] Load Network Traffic Analyzers:
+[Network Analyzer (235c:4490)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (235c:4490)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (235c:4490)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (235c:4490)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (235c:4490)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer (235c:4490)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (235c:4490)]     Analyzer Module: local_server (value=)
+[Network Analyzer (235c:4490)] ------------------------------------------------------------------------------------------
+[Proxy Recording  (235c:4490)] Started proxy on port 8888 listening IP 169.254.16.196, 127.0.0.1, in synchronous mode
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51836
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51837
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51838
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51839
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51840
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51841
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51842
+[Proxy Recording  (235c:56e4)] Trying to connect to https://config.edge.skype.com:443/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=Edge%2CEdgeConfig%2CEdgeServices%2CEdgeFirstRun%2CEdgeFirstRunConfig&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1 ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://config.edge.skype.com:443/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=Edge%2CEdgeConfig%2CEdgeServices%2CEdgeFirstRun%2CEdgeFirstRunConfig&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1 ...
+[Proxy Recording  (235c:56e4)] Received response of 780 header and 0 body bytes from https://config.edge.skype.com:443/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=Edge%2CEdgeConfig%2CEdgeServices%2CEdgeFirstRun%2CEdgeFirstRunConfig&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1
+[Web Request      (235c:56e4)] "GET https://config.edge.skype.com/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=Edge%2CEdgeConfig%2CEdgeServices%2CEdgeFirstRun%2CEdgeFirstRunConfig&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1"   
+[Network Analyzer (235c:56e4)]   (Sid:  1) Client -> Server @ : 724 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:56e4)]   (Sid:  1) Server -> Client : 807 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:56e4)] Sent 0 bytes to client @ 169.254.16.196:51837
+[Proxy Recording  (235c:27ec)] Trying to connect to https://nav-edge.smartscreen.microsoft.com:443/api/browser/edge/navigate/3 ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://nav-edge.smartscreen.microsoft.com:443/api/browser/edge/navigate/3 ...
+[Proxy Recording  (235c:27ec)] Received response of 251 header and 820 body bytes from https://nav-edge.smartscreen.microsoft.com:443/api/browser/edge/navigate/3
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51847
+[Network Analyzer (235c:27ec)]   (Sid:  2) Client -> Server @ : 647 bytes (SSL)(Service=HTTP)
+[Web Request      (235c:27ec)] "POST https://nav-edge.smartscreen.microsoft.com/api/browser/edge/navigate/3"   
+[Network Analyzer (235c:27ec)]   (Sid:  2) Client -> Server @ : 1540 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid:  2) Server -> Client : 268 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid:  2) Server -> Client : 820 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:27ec)] Sent 820 bytes to client @ 169.254.16.196:51838
+[Proxy Recording  (235c:732c)] Trying to connect to https://dev-boomq.pflb.ru:443/authorize ...
+[Proxy Recording  (235c:732c)] Trying to connect to https://dev-boomq.pflb.ru:443/authorize ...
+[Proxy Recording  (235c:732c)] Received response of 273 header and 1489 body bytes from https://dev-boomq.pflb.ru:443/authorize
+[Web Request      (235c:732c)] "GET https://dev-boomq.pflb.ru/authorize"   
+[Network Analyzer (235c:732c)]   (Sid:  3) Client -> Server @ : 699 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid:  3) Server -> Client : 290 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid:  3) Server -> Client : 1489 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:732c)] Sent 1489 bytes to client @ 169.254.16.196:51836
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51850
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51851
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51852
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/serviceexperimentation/v3/?osname=win&channel=stable&osver=10.0.19045&devicefamily=desktop&installdate=1684262646&clientversion=126.0.2592.56&experimentationmode=2&scpguard=0&scpfull=0&scpver=0 ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/serviceexperimentation/v3/?osname=win&channel=stable&osver=10.0.19045&devicefamily=desktop&installdate=1684262646&clientversion=126.0.2592.56&experimentationmode=2&scpguard=0&scpfull=0&scpver=0 ...
+[Proxy Recording  (235c:5c50)] Received response of 477 header and 144 body bytes from https://edge.microsoft.com:443/serviceexperimentation/v3/?osname=win&channel=stable&osver=10.0.19045&devicefamily=desktop&installdate=1684262646&clientversion=126.0.2592.56&experimentationmode=2&scpguard=0&scpfull=0&scpver=0
+[Web Request      (235c:5c50)] "GET https://edge.microsoft.com/serviceexperimentation/v3/?osname=win&channel=stable&osver=10.0.19045&devicefamily=desktop&installdate=1684262646&clientversion=126.0.2592.56&experimentationmode=2&scpguard=0&scpfull=0&scpver=0"   
+[Network Analyzer (235c:5c50)]   (Sid:  4) Client -> Server @ : 1138 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid:  4) Server -> Client : 494 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid:  4) Server -> Client : 144 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:5c50)] Sent 144 bytes to client @ 169.254.16.196:51839
+[Proxy Recording  (235c:7be8)] Trying to connect to https://business.bing.com:443/api/v1/user/token/microsoftgraph?&clienttype=edge-omnibox ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://business.bing.com:443/api/v1/user/token/microsoftgraph?&clienttype=edge-omnibox ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://business.bing.com:443/work/api/v2/tenant/my/settingswithflights?&clienttype=edge-omnibox ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://business.bing.com:443/work/api/v2/tenant/my/settingswithflights?&clienttype=edge-omnibox ...
+[Proxy Recording.Error (235c:7be8)] Failed to connect to server https://business.bing.com:443/api/v1/user/token/microsoftgraph?&clienttype=edge-omnibox.
+Message=ProtocolError, status=Удаленный сервер возвратил ошибку: (401) Несанкционированный.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:7be8)] Received response of 507 header and 0 body bytes from https://business.bing.com:443/api/v1/user/token/microsoftgraph?&clienttype=edge-omnibox
+[Proxy Recording.Error (235c:201c)] Failed to connect to server https://business.bing.com:443/work/api/v2/tenant/my/settingswithflights?&clienttype=edge-omnibox.
+Message=ProtocolError, status=Удаленный сервер возвратил ошибку: (401) Несанкционированный.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:201c)] Received response of 755 header and 371 body bytes from https://business.bing.com:443/work/api/v2/tenant/my/settingswithflights?&clienttype=edge-omnibox
+[Web Request      (235c:7be8)] "GET https://business.bing.com/api/v1/user/token/microsoftgraph?&clienttype=edge-omnibox"   
+[Network Analyzer (235c:7be8)]   (Sid:  5) Client -> Server @ : 1285 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid:  5) Server -> Client : 534 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7be8)] Sent 0 bytes to client @ 169.254.16.196:51841
+[Web Request      (235c:201c)] "GET https://business.bing.com/work/api/v2/tenant/my/settingswithflights?&clienttype=edge-omnibox"   
+[Network Analyzer (235c:201c)]   (Sid:  6) Client -> Server @ : 1294 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid:  6) Server -> Client : 754 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid:  6) Server -> Client : 371 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:201c)] Sent 371 bytes to client @ 169.254.16.196:51840
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/static/css/main.64a4c65b.css ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://dev-boomq.pflb.ru:443/static/js/main.cddf1824.js ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://dev-boomq.pflb.ru:443/static/js/main.cddf1824.js ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/static/css/main.64a4c65b.css ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://config.edge.skype.com:443/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=EdgeRuntime%2CEdgeRuntimeConfig%2CEdgeDomainActions&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1 ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://config.edge.skype.com:443/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=EdgeRuntime%2CEdgeRuntimeConfig%2CEdgeDomainActions&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1 ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:27ec)] Received response of 261 header and 189344 body bytes from https://dev-boomq.pflb.ru:443/static/css/main.64a4c65b.css
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Web Request      (235c:27ec)] "GET https://dev-boomq.pflb.ru/static/css/main.64a4c65b.css"   
+[Network Analyzer (235c:27ec)]   (Sid:  7) Client -> Server @ : 576 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid:  7) Server -> Client : 278 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid:  7) Server -> Client : 189344 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:27ec)] Sent 189344 bytes to client @ 169.254.16.196:51851
+[Proxy Recording  (235c:65c0)] Received response of 780 header and 0 body bytes from https://config.edge.skype.com:443/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=EdgeRuntime%2CEdgeRuntimeConfig%2CEdgeDomainActions&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1
+[Proxy Recording  (235c:1bc0)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Web Request      (235c:65c0)] "GET https://config.edge.skype.com/config/v1/Edge/126.0.2592.56?clientId=3899649958517314498&agents=EdgeRuntime%2CEdgeRuntimeConfig%2CEdgeDomainActions&osname=win&client=edge&channel=stable&scpfre=0&osarch=x86_64&osver=10.0.19045&wu=1&devicefamily=desktop&uma=0&sessionid=1876&mngd=0&installdate=1684262646&edu=0&bphint=2&soobedate=1684261937&fg=1"   
+[Network Analyzer (235c:65c0)]   (Sid:  8) Client -> Server @ : 683 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid:  8) Server -> Client : 807 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:65c0)] Sent 0 bytes to client @ 169.254.16.196:51847
+[Proxy Recording  (235c:56e4)] Received response of 292 header and 3435354 body bytes from https://dev-boomq.pflb.ru:443/static/js/main.cddf1824.js
+[Proxy Recording  (235c:1bc0)] Sent 0 bytes to client @ 169.254.16.196:51842
+[Web Request      (235c:56e4)] "GET https://dev-boomq.pflb.ru/static/js/main.cddf1824.js"   
+[Network Analyzer (235c:56e4)]   (Sid:  9) Client -> Server @ : 560 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:56e4)]   (Sid:  9) Server -> Client : 309 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:56e4)]   (Sid:  9) Server -> Client : 3435354 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:56e4)] Sent 3435354 bytes to client @ 169.254.16.196:51850
+[Proxy Recording  (235c:732c)] Trying to connect to https://www.bing.com:443/bloomfilterfiles/ExpandedDomainsFilterGlobal.json ...
+[Proxy Recording  (235c:732c)] Trying to connect to https://www.bing.com:443/bloomfilterfiles/ExpandedDomainsFilterGlobal.json ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51868
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51869
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51872
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51873
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/logo.f5ae2890e77693e018920d4ad41c643c.svg ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/logo.f5ae2890e77693e018920d4ad41c643c.svg ...
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/loading.b59fa25397e07d75b9ac55ace151e625.svg ...
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/loading.b59fa25397e07d75b9ac55ace151e625.svg ...
+[Proxy Recording  (235c:27ec)] Received response of 263 header and 8365 body bytes from https://dev-boomq.pflb.ru:443/static/media/logo.f5ae2890e77693e018920d4ad41c643c.svg
+[Proxy Recording  (235c:4abc)] Received response of 262 header and 1861 body bytes from https://dev-boomq.pflb.ru:443/static/media/loading.b59fa25397e07d75b9ac55ace151e625.svg
+[Web Request      (235c:27ec)] "GET https://dev-boomq.pflb.ru/static/media/logo.f5ae2890e77693e018920d4ad41c643c.svg"   
+[Network Analyzer (235c:27ec)]   (Sid: 10) Client -> Server @ : 648 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 10) Server -> Client : 280 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 10) Server -> Client : 8365 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:27ec)] Sent 8365 bytes to client @ 169.254.16.196:51868
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51876
+[Web Request      (235c:4abc)] "GET https://dev-boomq.pflb.ru/static/media/loading.b59fa25397e07d75b9ac55ace151e625.svg"   
+[Network Analyzer (235c:4abc)]   (Sid: 11) Client -> Server @ : 651 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 11) Server -> Client : 279 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 11) Server -> Client : 1861 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:4abc)] Sent 1861 bytes to client @ 169.254.16.196:51869
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51878
+[Proxy Recording  (235c:201c)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff ...
+[Proxy Recording  (235c:201c)] Received response of 262 header and 138900 body bytes from https://dev-boomq.pflb.ru:443/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff
+[Proxy Recording  (235c:1bc0)] Received response of 262 header and 138232 body bytes from https://dev-boomq.pflb.ru:443/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/8066415539964960608 ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/8066415539964960608 ...
+[Web Request      (235c:201c)] "GET https://dev-boomq.pflb.ru/static/media/Montserrat-Bold.180ba33d8de7dcfe80a0.woff"   
+[Network Analyzer (235c:201c)]   (Sid: 12) Client -> Server @ : 637 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 12) Server -> Client : 279 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 12) Server -> Client : 138900 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:201c)] Sent 138900 bytes to client @ 169.254.16.196:51872
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51880
+[Web Request      (235c:1bc0)] "GET https://dev-boomq.pflb.ru/static/media/Montserrat-SemiBold.197213592de7a2a62e06.woff"   
+[Proxy Recording  (235c:56e4)] Received response of 262 header and 138516 body bytes from https://dev-boomq.pflb.ru:443/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff
+[Network Analyzer (235c:1bc0)]   (Sid: 13) Client -> Server @ : 641 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 13) Server -> Client : 279 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 13) Server -> Client : 138232 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:1bc0)] Sent 138232 bytes to client @ 169.254.16.196:51878
+[Web Request      (235c:56e4)] "GET https://dev-boomq.pflb.ru/static/media/Montserrat-Medium.d42dad28f6470e5162c2.woff"   
+[Network Analyzer (235c:56e4)]   (Sid: 14) Client -> Server @ : 639 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:56e4)]   (Sid: 14) Server -> Client : 279 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:5c50)] Received response of 257 header and 20 body bytes from https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/8066415539964960608
+[Network Analyzer (235c:56e4)]   (Sid: 14) Server -> Client : 138516 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:56e4)] Sent 138516 bytes to client @ 169.254.16.196:51876
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff ...
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff ...
+[Web Request      (235c:5c50)] "GET https://edge.microsoft.com/autofillservice/core/page/-5404104625039984836/8066415539964960608"   
+[Network Analyzer (235c:5c50)]   (Sid: 15) Client -> Server @ : 404 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 15) Server -> Client : 274 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 15) Server -> Client : 20 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:5c50)] Sent 20 bytes to client @ 169.254.16.196:51873
+[Proxy Recording  (235c:4abc)] Received response of 262 header and 138600 body bytes from https://dev-boomq.pflb.ru:443/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff
+[Proxy Recording  (235c:732c)] Received response of 690 header and 854935 body bytes from https://www.bing.com:443/bloomfilterfiles/ExpandedDomainsFilterGlobal.json
+[Web Request      (235c:4abc)] "GET https://dev-boomq.pflb.ru/static/media/Montserrat-Regular.3db65dc4b858f0fed4fb.woff"   
+[Network Analyzer (235c:4abc)]   (Sid: 16) Client -> Server @ : 640 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 16) Server -> Client : 279 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 16) Server -> Client : 138600 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:4abc)] Sent 138600 bytes to client @ 169.254.16.196:51880
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51882
+[Web Request      (235c:732c)] "GET https://www.bing.com/bloomfilterfiles/ExpandedDomainsFilterGlobal.json"   
+[Network Analyzer (235c:732c)]   (Sid: 17) Client -> Server @ : 399 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 17) Server -> Client : 707 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 17) Server -> Client : 854935 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:732c)] Sent 854935 bytes to client @ 169.254.16.196:51852
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/favicon.png ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/favicon.png ...
+[Proxy Recording  (235c:27ec)] Received response of 258 header and 1016 body bytes from https://dev-boomq.pflb.ru:443/favicon.png
+[Web Request      (235c:27ec)] "GET https://dev-boomq.pflb.ru/favicon.png"   
+[Network Analyzer (235c:27ec)]   (Sid: 18) Client -> Server @ : 605 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 18) Server -> Client : 275 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 18) Server -> Client : 1016 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:27ec)] Sent 1016 bytes to client @ 169.254.16.196:51882
+[User action                 ] StartTransactionEvent UC06_TR01_login [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51884
+[Proxy Recording  (235c:5c50)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:5c50)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:5c50)] Sent 0 bytes to client @ 169.254.16.196:51884
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51886
+[Proxy Recording  (235c:56e4)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1841&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=ng6gsdfsvb24&t=1 ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1841&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=ng6gsdfsvb24&t=1 ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51889
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51890
+[Proxy Recording  (235c:201c)] Trying to connect to https://worldtimeapi.org:443/api/ip ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://worldtimeapi.org:443/api/ip ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51893
+[Proxy Recording  (235c:201c)] Received response of 844 header and 231 body bytes from https://worldtimeapi.org:443/api/ip
+[Web Request      (235c:201c)] "GET https://worldtimeapi.org/api/ip"   
+[Network Analyzer (235c:201c)]   (Sid: 19) Client -> Server @ : 613 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 19) Server -> Client : 863 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 19) Server -> Client : 231 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:201c)] Sent 231 bytes to client @ 169.254.16.196:51889
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51894
+[Proxy Recording  (235c:65c0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/login ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/login ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:65c0)] Received response of 1868 header and 0 body bytes from https://dev-boomq.pflb.ru:443/auth-srv/login
+[Network Analyzer (235c:65c0)]   (Sid: 20) Client -> Server @ : 726 bytes (SSL)(Service=HTTP)
+[Web Request      (235c:65c0)] "POST https://dev-boomq.pflb.ru/auth-srv/login"   
+[Network Analyzer (235c:65c0)]   (Sid: 20) Client -> Server @ : 356 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 20) Server -> Client : 1883 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:65c0)] Sent 0 bytes to client @ 169.254.16.196:51894
+[Proxy Recording  (235c:1bc0)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51899
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51900
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51902
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51903
+[Proxy Recording  (235c:65c0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/user ...
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/project-srv/modelSchema ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/user ...
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/project-srv/modelSchema ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/en.b1acfc6b06bfe6e29bfbfc06d09d8177.svg ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://dev-boomq.pflb.ru:443/static/media/en.b1acfc6b06bfe6e29bfbfc06d09d8177.svg ...
+[Proxy Recording  (235c:65c0)] Received response of 475 header and 151 body bytes from https://dev-boomq.pflb.ru:443/auth-srv/user
+[Proxy Recording  (235c:27ec)] Trying to connect to https://edge-consumer-static.azureedge.net:443/mouse-gesture/config.json ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://edge-consumer-static.azureedge.net:443/mouse-gesture/config.json ...
+[Proxy Recording  (235c:5c50)] Received response of 262 header and 4045 body bytes from https://dev-boomq.pflb.ru:443/static/media/en.b1acfc6b06bfe6e29bfbfc06d09d8177.svg
+[Proxy Recording  (235c:1bc0)] Sent 0 bytes to client @ 169.254.16.196:51893
+[Proxy Recording  (235c:4abc)] Received response of 438 header and 66848 body bytes from https://dev-boomq.pflb.ru:443/project-srv/modelSchema
+[Web Request      (235c:65c0)] "GET https://dev-boomq.pflb.ru/auth-srv/user"   
+[Network Analyzer (235c:65c0)]   (Sid: 21) Client -> Server @ : 1979 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 21) Server -> Client : 462 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 21) Server -> Client : 151 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:65c0)] Sent 151 bytes to client @ 169.254.16.196:51902
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51908
+[Web Request      (235c:5c50)] "GET https://dev-boomq.pflb.ru/static/media/en.b1acfc6b06bfe6e29bfbfc06d09d8177.svg"   
+[Network Analyzer (235c:5c50)]   (Sid: 22) Client -> Server @ : 1366 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 22) Server -> Client : 279 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 22) Server -> Client : 4045 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:5c50)] Sent 4045 bytes to client @ 169.254.16.196:51903
+[Proxy Recording  (235c:732c)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/identityProvider ...
+[Proxy Recording  (235c:732c)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/identityProvider ...
+[Web Request      (235c:4abc)] "GET https://dev-boomq.pflb.ru/project-srv/modelSchema"   
+[Network Analyzer (235c:4abc)]   (Sid: 23) Client -> Server @ : 1989 bytes (SSL)(Service=HTTP)
+[Proxy Recording  (235c:732c)] Received response of 475 header and 2 body bytes from https://dev-boomq.pflb.ru:443/auth-srv/identityProvider
+[Network Analyzer (235c:4abc)]   (Sid: 23) Server -> Client : 425 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 23) Server -> Client : 66848 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:4abc)] Sent 66848 bytes to client @ 169.254.16.196:51900
+[Web Request      (235c:732c)] "GET https://dev-boomq.pflb.ru/auth-srv/identityProvider"   
+[Network Analyzer (235c:732c)]   (Sid: 24) Client -> Server @ : 1991 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 24) Server -> Client : 462 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 24) Server -> Client : 2 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:732c)] Sent 2 bytes to client @ 169.254.16.196:51908
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51910
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/team?size=2 ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/team?size=2 ...
+[Proxy Recording  (235c:1bc0)] Received response of 475 header and 589 body bytes from https://dev-boomq.pflb.ru:443/auth-srv/team?size=2
+[Web Request      (235c:1bc0)] "GET https://dev-boomq.pflb.ru/auth-srv/team?size=2"   
+[Network Analyzer (235c:1bc0)]   (Sid: 25) Client -> Server @ : 1986 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 25) Server -> Client : 462 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 25) Server -> Client : 589 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:1bc0)] Sent 589 bytes to client @ 169.254.16.196:51910
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51912
+[Proxy Recording  (235c:732c)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/teamMember/teamContext?teamId=13 ...
+[Proxy Recording  (235c:732c)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/teamMember/teamContext?teamId=13 ...
+[Proxy Recording  (235c:732c)] Received response of 2897 header and 301 body bytes from https://dev-boomq.pflb.ru:443/auth-srv/teamMember/teamContext?teamId=13
+[Web Request      (235c:732c)] "GET https://dev-boomq.pflb.ru/auth-srv/teamMember/teamContext?teamId=13"   
+[Network Analyzer (235c:732c)]   (Sid: 26) Client -> Server @ : 2007 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 26) Server -> Client : 2884 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 26) Server -> Client : 301 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:732c)] Sent 301 bytes to client @ 169.254.16.196:51912
+[Proxy Recording  (235c:27ec)] Received response of 516 header and 101 body bytes from https://edge-consumer-static.azureedge.net:443/mouse-gesture/config.json
+[Web Request      (235c:27ec)] "GET https://edge-consumer-static.azureedge.net/mouse-gesture/config.json"   
+[Network Analyzer (235c:27ec)]   (Sid: 27) Client -> Server @ : 398 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 27) Server -> Client : 533 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 27) Server -> Client : 101 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:27ec)] Sent 101 bytes to client @ 169.254.16.196:51890
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51914
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51916
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/test-runner-srv/testRunner?sort=id,desc ...
+[Proxy Recording  (235c:4abc)] Trying to connect to https://dev-boomq.pflb.ru:443/test-runner-srv/testRunner?sort=id,desc ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51918
+[Proxy Recording  (235c:65c0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/user ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/user ...
+[Proxy Recording  (235c:4abc)] Received response of 363 header and 531 body bytes from https://dev-boomq.pflb.ru:443/test-runner-srv/testRunner?sort=id,desc
+[Web Request      (235c:4abc)] "GET https://dev-boomq.pflb.ru/test-runner-srv/testRunner?sort=id,desc"   
+[Network Analyzer (235c:4abc)]   (Sid: 28) Client -> Server @ : 2503 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 28) Server -> Client : 350 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 28) Server -> Client : 531 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:4abc)] Sent 531 bytes to client @ 169.254.16.196:51914
+[Proxy Recording  (235c:65c0)] Received response of 475 header and 151 body bytes from https://dev-boomq.pflb.ru:443/auth-srv/user
+[Network Analyzer (235c:65c0)]   (Sid: 29) Client -> Server @ : 2564 bytes (SSL)(Service=HTTP)
+[Web Request      (235c:65c0)] "PUT https://dev-boomq.pflb.ru/auth-srv/user"   
+[Network Analyzer (235c:65c0)]   (Sid: 29) Client -> Server @ : 81 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 29) Server -> Client : 462 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 29) Server -> Client : 151 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:65c0)] Sent 151 bytes to client @ 169.254.16.196:51916
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-4776165001487966812 ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-4776165001487966812 ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51920
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/team/13 ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://dev-boomq.pflb.ru:443/auth-srv/team/13 ...
+[Proxy Recording  (235c:1bc0)] Received response of 257 header and 20 body bytes from https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-4776165001487966812
+[Proxy Recording  (235c:27ec)] Received response of 475 header and 275 body bytes from https://dev-boomq.pflb.ru:443/auth-srv/team/13
+[Web Request      (235c:1bc0)] "GET https://edge.microsoft.com/autofillservice/core/page/-5404104625039984836/-4776165001487966812"   
+[Network Analyzer (235c:1bc0)]   (Sid: 30) Client -> Server @ : 405 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 30) Server -> Client : 274 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 30) Server -> Client : 20 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:1bc0)] Sent 20 bytes to client @ 169.254.16.196:51918
+[Web Request      (235c:27ec)] "GET https://dev-boomq.pflb.ru/auth-srv/team/13"   
+[Network Analyzer (235c:27ec)]   (Sid: 31) Client -> Server @ : 2480 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 31) Server -> Client : 462 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 31) Server -> Client : 275 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:27ec)] Sent 275 bytes to client @ 169.254.16.196:51920
+[Proxy Recording  (235c:201c)] Trying to connect to https://dev-boomq.pflb.ru:443/config.json ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://dev-boomq.pflb.ru:443/config.json ...
+[Proxy Recording  (235c:201c)] Received response of 264 header and 285 body bytes from https://dev-boomq.pflb.ru:443/config.json
+[Web Request      (235c:201c)] "GET https://dev-boomq.pflb.ru/config.json"   
+[Network Analyzer (235c:201c)]   (Sid: 32) Client -> Server @ : 1977 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 32) Server -> Client : 281 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 32) Server -> Client : 285 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:201c)] Sent 285 bytes to client @ 169.254.16.196:51899
+[User action                 ] EndTransactionEvent UC06_TR01_login [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51922
+[Proxy Recording  (235c:4abc)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:4abc)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:4abc)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:4abc)] Sent 0 bytes to client @ 169.254.16.196:51922
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51927
+[Proxy Recording  (235c:27ec)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=xeeeu8wpkxx4&t=1 ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=xeeeu8wpkxx4&t=1 ...
+[Proxy Recording  (235c:27ec)] Received response of 450 header and 0 body bytes from https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=xeeeu8wpkxx4&t=1
+[Proxy Recording  (235c:27ec)] Sent 0 bytes to client @ 169.254.16.196:51927
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51930
+[Proxy Recording  (235c:201c)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=xeeeu8wpkxx4&t=1 ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=xeeeu8wpkxx4&t=1 ...
+[User action                 ] StartTransactionEvent UC06_TR02_reports [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51932
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report/search ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report/search ...
+[Proxy Recording  (235c:1bc0)] Received response of 363 header and 315 body bytes from https://dev-boomq.pflb.ru:443/report-srv/report/search
+[Network Analyzer (235c:1bc0)]   (Sid: 33) Client -> Server @ : 2575 bytes (SSL)(Service=HTTP)
+[Web Request      (235c:1bc0)] "POST https://dev-boomq.pflb.ru/report-srv/report/search"   
+[Network Analyzer (235c:1bc0)]   (Sid: 33) Client -> Server @ : 95 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 33) Server -> Client : 350 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 33) Server -> Client : 315 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:1bc0)] Sent 315 bytes to client @ 169.254.16.196:51932
+[User action                 ] EndTransactionEvent UC06_TR02_reports [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51934
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51935
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51936
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51939
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51940
+[Proxy Recording  (235c:732c)] Trying to connect to https://www.bing.com:443/api/shopping/v1/user/shoppingsettings ...
+[Proxy Recording  (235c:732c)] Trying to connect to https://www.bing.com:443/api/shopping/v1/user/shoppingsettings ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=126.0.2592.56&lang=ru&acceptformat=crx3,puff&x=id%3Djmjflgjpcpepeafmmgdpfkogkghcpiha%26v%3D1.2.1%26installedby%3Dother%26uc ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=126.0.2592.56&lang=ru&acceptformat=crx3,puff&x=id%3Djmjflgjpcpepeafmmgdpfkogkghcpiha%26v%3D1.2.1%26installedby%3Dother%26uc ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51942
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51943
+[Proxy Recording  (235c:4abc)] Trying to connect to https://edge.microsoft.com:443/componentupdater/api/v1/update?cup2key=7:U5_BQs-rwKgN3lIJECk7Lkjzbmcbg3SryC4tConuuzw&cup2hreq=7c22d38059b7d0afad4148862f1ff70b2ee42b6b3938ab790da455efc4ae2580 ...
+[Proxy Recording  (235c:732c)] Received response of 1031 header and 28 body bytes from https://www.bing.com:443/api/shopping/v1/user/shoppingsettings
+[Proxy Recording  (235c:5c50)] Received response of 289 header and 413 body bytes from https://edge.microsoft.com:443/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=126.0.2592.56&lang=ru&acceptformat=crx3,puff&x=id%3Djmjflgjpcpepeafmmgdpfkogkghcpiha%26v%3D1.2.1%26installedby%3Dother%26uc
+[Web Request      (235c:732c)] "GET https://www.bing.com/api/shopping/v1/user/shoppingsettings"   
+[Network Analyzer (235c:732c)]   (Sid: 34) Client -> Server @ : 363 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 34) Server -> Client : 1020 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:732c)]   (Sid: 34) Server -> Client : 28 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:732c)] Sent 28 bytes to client @ 169.254.16.196:51934
+[Web Request      (235c:5c50)] "GET https://edge.microsoft.com/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=126.0.2592.56&lang=ru&acceptformat=crx3,puff&x=id%3Djmjflgjpcpepeafmmgdpfkogkghcpiha%26v%3D1.2.1%26installedby%3Dother%26uc"   
+[Network Analyzer (235c:5c50)]   (Sid: 35) Client -> Server @ : 746 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 35) Server -> Client : 306 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 35) Server -> Client : 413 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:5c50)] Sent 413 bytes to client @ 169.254.16.196:51935
+[Proxy Recording  (235c:4abc)] Trying to connect to https://edge.microsoft.com:443/componentupdater/api/v1/update?cup2key=7:U5_BQs-rwKgN3lIJECk7Lkjzbmcbg3SryC4tConuuzw&cup2hreq=7c22d38059b7d0afad4148862f1ff70b2ee42b6b3938ab790da455efc4ae2580 ...
+[Proxy Recording  (235c:4abc)] Received response of 908 header and 1558 body bytes from https://edge.microsoft.com:443/componentupdater/api/v1/update?cup2key=7:U5_BQs-rwKgN3lIJECk7Lkjzbmcbg3SryC4tConuuzw&cup2hreq=7c22d38059b7d0afad4148862f1ff70b2ee42b6b3938ab790da455efc4ae2580
+[Web Request      (235c:4abc)] "POST https://edge.microsoft.com/componentupdater/api/v1/update?cup2key=7:U5_BQs-rwKgN3lIJECk7Lkjzbmcbg3SryC4tConuuzw&cup2hreq=7c22d38059b7d0afad4148862f1ff70b2ee42b6b3938ab790da455efc4ae2580"
+[Network Analyzer (235c:4abc)]   (Sid: 36) Client -> Server @ : 1656 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 36) Client -> Server @ : 11539 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 36) Server -> Client : 925 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:4abc)]   (Sid: 36) Server -> Client : 1558 bytes (SSL) (Service=HTTP)
+[Proxy Recording.Error (235c:1bc0)] Exception is caught while trying to connect to https://www.bing.com:443, message=Не удается прочитать данные из транспортного соединения: Программа на вашем хост-компьютере разорвала установленное подключение.
+[Proxy Recording  (235c:4abc)] Sent 1558 bytes to client @ 169.254.16.196:51936
+[Proxy Recording.Error (235c:1bc0)] Exception is caught while connecting to , message=Поток был недоступен для чтения.
+[Proxy Recording.Error (235c:7be8)] Exception is caught while trying to connect to https://go.microsoft.com:443, message=Не удается прочитать данные из транспортного соединения: Программа на вашем хост-компьютере разорвала установленное подключение.
+[Proxy Recording.Error (235c:7be8)] Exception is caught while connecting to , message=Поток был недоступен для чтения.
+[Proxy Recording  (235c:27ec)] Trying to connect to https://www.bing.com:443/api/shopping/v1/user/shoppingsettings ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://www.bing.com:443/api/shopping/v1/user/shoppingsettings ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://go.microsoft.com:443/fwlink/?linkid=2133855&bucket=76 ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://go.microsoft.com:443/fwlink/?linkid=2133855&bucket=76 ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51948
+[Proxy Recording  (235c:27ec)] Received response of 792 header and 28 body bytes from https://www.bing.com:443/api/shopping/v1/user/shoppingsettings
+[Web Request      (235c:27ec)] "GET https://www.bing.com/api/shopping/v1/user/shoppingsettings"   
+[Network Analyzer (235c:27ec)]   (Sid: 37) Client -> Server @ : 755 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:27ec)]   (Sid: 37) Server -> Client : 809 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:732c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Network Analyzer (235c:27ec)]   (Sid: 37) Server -> Client : 28 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:27ec)] Sent 28 bytes to client @ 169.254.16.196:51943
+[Proxy Recording  (235c:732c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:65c0)] Received response of 427 header and 0 body bytes from https://go.microsoft.com:443/fwlink/?linkid=2133855&bucket=76
+[Proxy Recording  (235c:732c)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Web Request      (235c:65c0)] "GET https://go.microsoft.com/fwlink/?linkid=2133855&bucket=76"   
+[Network Analyzer (235c:65c0)]   (Sid: 38) Client -> Server @ : 449 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 38) Server -> Client : 459 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:65c0)] Sent 0 bytes to client @ 169.254.16.196:51942
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51953
+[Proxy Recording  (235c:732c)] Sent 0 bytes to client @ 169.254.16.196:51948
+[Proxy Recording  (235c: cf8)] Trying to connect to https://edge.microsoft.com:443/neededge/v1?bucket=76 ...
+[Proxy Recording  (235c: cf8)] Trying to connect to https://edge.microsoft.com:443/neededge/v1?bucket=76 ...
+[Proxy Recording  (235c: cf8)] Received response of 405 header and 0 body bytes from https://edge.microsoft.com:443/neededge/v1?bucket=76
+[Web Request      (235c: cf8)] "GET https://edge.microsoft.com/neededge/v1?bucket=76"   
+[Network Analyzer (235c: cf8)]   (Sid: 39) Client -> Server @ : 551 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c: cf8)]   (Sid: 39) Server -> Client : 432 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c: cf8)] Sent 0 bytes to client @ 169.254.16.196:51953
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51956
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51957
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51958
+[Proxy Recording  (235c:732c)] Trying to connect to http://msedge.b.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/1386fef8-4bf2-4604-be16-decfe6ceb732?P1=1719330851&P2=404&P3=2&P4=SatfNznf83y0tEI6R7SjNHIH197twTtQ1pIe9mAsp1S4vZ0F25dXja6EsXYdxfggJfSXvvJ55nKUPEIXtYUzVQ%3d%3d ...
+[Proxy Recording  (235c:732c)] Trying to connect to http://msedge.b.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/1386fef8-4bf2-4604-be16-decfe6ceb732?P1=1719330851&P2=404&P3=2&P4=SatfNznf83y0tEI6R7SjNHIH197twTtQ1pIe9mAsp1S4vZ0F25dXja6EsXYdxfggJfSXvvJ55nKUPEIXtYUzVQ%3d%3d ...
+[Proxy Recording  (235c:732c)] Received response of 817 header and 0 body bytes from http://msedge.b.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/1386fef8-4bf2-4604-be16-decfe6ceb732?P1=1719330851&P2=404&P3=2&P4=SatfNznf83y0tEI6R7SjNHIH197twTtQ1pIe9mAsp1S4vZ0F25dXja6EsXYdxfggJfSXvvJ55nKUPEIXtYUzVQ%3d%3d
+[Proxy Recording  (235c:732c)] Sent 0 bytes to client @ 169.254.16.196:51958
+[Proxy Recording  (235c:5c50)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1887&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=vkcvv4cjynju&t=2 ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1887&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=vkcvv4cjynju&t=2 ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=6twf7vu3q2d4 ...
+[Proxy Recording  (235c:27ec)] Trying to connect to https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=6twf7vu3q2d4 ...
+[Proxy Recording  (235c:27ec)] Received response of 740 header and 43 body bytes from https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=6twf7vu3q2d4
+[Proxy Recording  (235c:27ec)] Sent 43 bytes to client @ 169.254.16.196:51956
+[Proxy Recording  (235c:56e4)] Received response of 2007 header and 56 body bytes from https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1841&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=ng6gsdfsvb24&t=1
+[Proxy Recording.Error (235c:56e4)] Exception is caught while sending data to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1841&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=ng6gsdfsvb24&t=1, message=Не удается записать данные в транспортное соединение: Программа на вашем хост-компьютере разорвала установленное подключение.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51975
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/componentupdater/api/v1/update ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/componentupdater/api/v1/update ...
+[Proxy Recording  (235c:7be8)] Received response of 459 header and 179 body bytes from https://edge.microsoft.com:443/componentupdater/api/v1/update
+[Network Analyzer (235c:7be8)]   (Sid: 40) Client -> Server @ : 653 bytes (SSL)(Service=HTTP)
+[Web Request      (235c:7be8)] "POST https://edge.microsoft.com/componentupdater/api/v1/update"   
+[Network Analyzer (235c:7be8)]   (Sid: 40) Client -> Server @ : 1479 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 40) Server -> Client : 476 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 40) Server -> Client : 179 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7be8)] Sent 179 bytes to client @ 169.254.16.196:51975
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51977
+[Proxy Recording  (235c:1bc0)] Trying to connect to http://msedge.b.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/064bf61f-fa45-46e0-b237-13062d23d91d?P1=1719330851&P2=404&P3=2&P4=cqZuLtzs036%2frUZksIY8wpCDbsWwwnEJM3aUDtzfeCnISk12LAKKf1FHBKzTjJaMTaBCuONnSp24SU5%2f9%2b6dsA%3d%3d ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to http://msedge.b.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/064bf61f-fa45-46e0-b237-13062d23d91d?P1=1719330851&P2=404&P3=2&P4=cqZuLtzs036%2frUZksIY8wpCDbsWwwnEJM3aUDtzfeCnISk12LAKKf1FHBKzTjJaMTaBCuONnSp24SU5%2f9%2b6dsA%3d%3d ...
+[Proxy Recording  (235c:1bc0)] Received response of 808 header and 0 body bytes from http://msedge.b.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/064bf61f-fa45-46e0-b237-13062d23d91d?P1=1719330851&P2=404&P3=2&P4=cqZuLtzs036%2frUZksIY8wpCDbsWwwnEJM3aUDtzfeCnISk12LAKKf1FHBKzTjJaMTaBCuONnSp24SU5%2f9%2b6dsA%3d%3d
+[Proxy Recording  (235c:1bc0)] Sent 0 bytes to client @ 169.254.16.196:51977
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51990
+[Proxy Recording  (235c:56e4)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:56e4)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:56e4)] Sent 0 bytes to client @ 169.254.16.196:51990
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51993
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/componentupdater/api/v1/update ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/componentupdater/api/v1/update ...
+[Proxy Recording  (235c:7be8)] Received response of 459 header and 181 body bytes from https://edge.microsoft.com:443/componentupdater/api/v1/update
+[Network Analyzer (235c:7be8)]   (Sid: 41) Client -> Server @ : 653 bytes (SSL)(Service=HTTP)
+[Web Request      (235c:7be8)] "POST https://edge.microsoft.com/componentupdater/api/v1/update"   
+[Network Analyzer (235c:7be8)]   (Sid: 41) Client -> Server @ : 1456 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 41) Server -> Client : 476 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 41) Server -> Client : 181 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7be8)] Sent 181 bytes to client @ 169.254.16.196:51993
+[User action                 ] StartTransactionEvent UC06_TR03_add_new_report [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51995
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/test-srv/test?sort=createDate,desc&displayState=FINISHED ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://dev-boomq.pflb.ru:443/test-srv/test?sort=createDate,desc&displayState=FINISHED ...
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51997
+[Proxy Recording  (235c:1bc0)] Received response of 438 header and 13650 body bytes from https://dev-boomq.pflb.ru:443/test-srv/test?sort=createDate,desc&displayState=FINISHED
+[Web Request      (235c:1bc0)] "GET https://dev-boomq.pflb.ru/test-srv/test?sort=createDate,desc&displayState=FINISHED"   
+[Network Analyzer (235c:1bc0)]   (Sid: 42) Client -> Server @ : 2523 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 42) Server -> Client : 425 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 42) Server -> Client : 13650 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:1bc0)] Sent 13650 bytes to client @ 169.254.16.196:51995
+[Proxy Recording  (235c:65c0)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-6139090777862091479 ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-6139090777862091479 ...
+[Proxy Recording  (235c:65c0)] Received response of 258 header and 20 body bytes from https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-6139090777862091479
+[Web Request      (235c:65c0)] "GET https://edge.microsoft.com/autofillservice/core/page/-5404104625039984836/-6139090777862091479"   
+[Network Analyzer (235c:65c0)]   (Sid: 43) Client -> Server @ : 405 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 43) Server -> Client : 275 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:65c0)]   (Sid: 43) Server -> Client : 20 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:65c0)] Sent 20 bytes to client @ 169.254.16.196:51997
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:51999
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/extensionrevocation/v1/threatListUpdates:fetch?req=ChcKBm1zZWRnZRINMTI2LjAuMjU5Mi41NhobCAEQCBoNMTcxODY4ODE4NTUwOCIEIAEgAigEIgIIAQ==&ct=application/x-protobuf&key=d414dd4f9db345fa8003e32adc81b362 ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/extensionrevocation/v1/threatListUpdates:fetch?req=ChcKBm1zZWRnZRINMTI2LjAuMjU5Mi41NhobCAEQCBoNMTcxODY4ODE4NTUwOCIEIAEgAigEIgIIAQ==&ct=application/x-protobuf&key=d414dd4f9db345fa8003e32adc81b362 ...
+[Proxy Recording  (235c:7be8)] Received response of 308 header and 49 body bytes from https://edge.microsoft.com:443/extensionrevocation/v1/threatListUpdates:fetch?req=ChcKBm1zZWRnZRINMTI2LjAuMjU5Mi41NhobCAEQCBoNMTcxODY4ODE4NTUwOCIEIAEgAigEIgIIAQ==&ct=application/x-protobuf&key=d414dd4f9db345fa8003e32adc81b362
+[Web Request      (235c:7be8)] "GET https://edge.microsoft.com/extensionrevocation/v1/threatListUpdates:fetch?req=ChcKBm1zZWRnZRINMTI2LjAuMjU5Mi41NhobCAEQCBoNMTcxODY4ODE4NTUwOCIEIAEgAigEIgIIAQ==&ct=application/x-protobuf&key=d414dd4f9db345fa8003e32adc81b362"   
+[Network Analyzer (235c:7be8)]   (Sid: 44) Client -> Server @ : 751 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 44) Server -> Client : 297 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 44) Server -> Client : 49 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7be8)] Sent 49 bytes to client @ 169.254.16.196:51999
+[User action                 ] EndTransactionEvent UC06_TR03_add_new_report [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52001
+[Proxy Recording  (235c:56e4)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/active?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&vc=0&c=0&w=0&flr=0&smv=130&smb=%5B130%2C%20%5D&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/active?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&vc=0&c=0&w=0&flr=0&smv=130&smb=%5B130%2C%20%5D&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false ...
+[Proxy Recording  (235c:56e4)] Received response of 2111 header and 33 body bytes from https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/active?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&vc=0&c=0&w=0&flr=0&smv=130&smb=%5B130%2C%20%5D&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false
+[Proxy Recording  (235c:56e4)] Sent 33 bytes to client @ 169.254.16.196:52001
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52003
+[Proxy Recording  (235c:732c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:732c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:732c)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:732c)] Sent 0 bytes to client @ 169.254.16.196:52003
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52006
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52007
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://edge.microsoft.com:443/entityextractiontemplates/api/v1/assets/find-assets?name=arbitration_priority_list&version=14.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362 ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://edge.microsoft.com:443/entityextractiontemplates/api/v1/assets/find-assets?name=arbitration_priority_list&version=14.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362 ...
+[Proxy Recording  (235c:1bc0)] Received response of 293 header and 271 body bytes from https://edge.microsoft.com:443/entityextractiontemplates/api/v1/assets/find-assets?name=arbitration_priority_list&version=14.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362
+[Proxy Recording  (235c:7be8)] Trying to connect to https://ntp.msn.com:443/edge/ntp?locale=ru&title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0&dsp=1&sp=Bing&startpage=1&PC=U531&prerender=1 ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://ntp.msn.com:443/edge/ntp?locale=ru&title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0&dsp=1&sp=Bing&startpage=1&PC=U531&prerender=1 ...
+[Web Request      (235c:1bc0)] "GET https://edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets?name=arbitration_priority_list&version=14.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362"   
+[Network Analyzer (235c:1bc0)]   (Sid: 45) Client -> Server @ : 558 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 45) Server -> Client : 310 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:1bc0)]   (Sid: 45) Server -> Client : 271 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:1bc0)] Sent 271 bytes to client @ 169.254.16.196:52007
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52011
+[Proxy Recording  (235c:65c0)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=bah0uerowpkr&t=2 ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=bah0uerowpkr&t=2 ...
+[Proxy Recording  (235c:7be8)] Received response of 13896 header and 58703 body bytes from https://ntp.msn.com:443/edge/ntp?locale=ru&title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0&dsp=1&sp=Bing&startpage=1&PC=U531&prerender=1
+[Web Request      (235c:7be8)] "GET https://ntp.msn.com/edge/ntp?locale=ru&title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0&dsp=1&sp=Bing&startpage=1&PC=U531&prerender=1"   
+[Network Analyzer (235c:7be8)]   (Sid: 46) Client -> Server @ : 2896 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 46) Server -> Client : 13913 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 46) Server -> Client : 58703 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7be8)] Sent 58703 bytes to client @ 169.254.16.196:52006
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52014
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52015
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52016
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52017
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52018
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52019
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52020
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52021
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52022
+[Proxy Recording  (235c:65c0)] Received response of 450 header and 0 body bytes from https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=bah0uerowpkr&t=2
+[Proxy Recording  (235c:65c0)] Sent 0 bytes to client @ 169.254.16.196:52011
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52023
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52024
+[Proxy Recording  (235c:7be8)] Trying to connect to https://assets.msn.com:443/statics/icons/favicon.ico ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://assets.msn.com:443/statics/icons/favicon.ico ...
+[Proxy Recording  (235c:7be8)] Received response of 987 header and 0 body bytes from https://assets.msn.com:443/statics/icons/favicon.ico
+[Web Request      (235c:7be8)] "HEAD https://assets.msn.com/statics/icons/favicon.ico"   
+[Network Analyzer (235c:7be8)]   (Sid: 47) Client -> Server @ : 1099 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 47) Server -> Client : 1004 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7be8)] Sent 0 bytes to client @ 169.254.16.196:52018
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52027
+[User action                 ] StartTransactionEvent UC06_TR05_reportname [Proxy Recording  (235c:27ec)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c: cf8)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c:3638)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=bah0uerowpkr&t=2 ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=bah0uerowpkr&t=2 ...
+[Proxy Recording  (235c:3638)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://ntp.msn.com:443/edge/ntp/service-worker.js?bundles=latest&riverAgeMinutes=2880&navAgeMinutes=2880&networkTimeoutSeconds=5&enableNetworkFirst=true&enableEmptySectionRoute=true&enableNavPreload=true&enableFallbackVerticalsFeed=true ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://ntp.msn.com:443/edge/ntp/service-worker.js?bundles=latest&riverAgeMinutes=2880&navAgeMinutes=2880&networkTimeoutSeconds=5&enableNetworkFirst=true&enableEmptySectionRoute=true&enableNavPreload=true&enableFallbackVerticalsFeed=true ...
+[Proxy Recording  (235c:3638)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:7420)] Received response of 1170 header and 0 body bytes from https://ntp.msn.com:443/edge/ntp/service-worker.js?bundles=latest&riverAgeMinutes=2880&navAgeMinutes=2880&networkTimeoutSeconds=5&enableNetworkFirst=true&enableEmptySectionRoute=true&enableNavPreload=true&enableFallbackVerticalsFeed=true
+[Proxy Recording  (235c:201c)] Received response of 409 header and 302 body bytes from https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=xeeeu8wpkxx4&t=1
+[Proxy Recording  (235c:3638)] Sent 0 bytes to client @ 169.254.16.196:52027
+[Web Request      (235c:7420)] "GET https://ntp.msn.com/edge/ntp/service-worker.js?bundles=latest&riverAgeMinutes=2880&navAgeMinutes=2880&networkTimeoutSeconds=5&enableNetworkFirst=true&enableEmptySectionRoute=true&enableNavPreload=true&enableFallbackVerticalsFeed=true"   
+[Network Analyzer (235c:7420)]   (Sid: 48) Client -> Server @ : 2688 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7420)]   (Sid: 48) Server -> Client : 1197 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7420)] Sent 0 bytes to client @ 169.254.16.196:52024
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52032
+[Proxy Recording.Error (235c:201c)] Exception is caught while sending data to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=xeeeu8wpkxx4&t=1, message=Не удается записать данные в транспортное соединение: Программа на вашем хост-компьютере разорвала установленное подключение.
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-3789360770530546080 ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-3789360770530546080 ...
+[Proxy Recording  (235c:7be8)] Received response of 258 header and 20 body bytes from https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/-3789360770530546080
+[Web Request      (235c:7be8)] "GET https://edge.microsoft.com/autofillservice/core/page/-5404104625039984836/-3789360770530546080"   
+[Network Analyzer (235c:7be8)]   (Sid: 49) Client -> Server @ : 405 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 49) Server -> Client : 275 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:7be8)]   (Sid: 49) Server -> Client : 20 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7be8)] Sent 20 bytes to client @ 169.254.16.196:52032
+[Proxy Recording  (235c:2640)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c:720c)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c:1bc0)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c:56e4)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c:732c)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c:4abc)] Empty http command received from client's ssl connection
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52036
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52038
+[Proxy Recording  (235c:201c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:201c)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:201c)] Sent 0 bytes to client @ 169.254.16.196:52036
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52040
+[Proxy Recording  (235c: cf8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c: cf8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/617361579749688837 ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/617361579749688837 ...
+[Proxy Recording.Error (235c: cf8)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:7420)] Received response of 258 header and 20 body bytes from https://edge.microsoft.com:443/autofillservice/core/page/-5404104625039984836/617361579749688837
+[Web Request      (235c:7420)] "GET https://edge.microsoft.com/autofillservice/core/page/-5404104625039984836/617361579749688837"   
+[Network Analyzer (235c:7420)]   (Sid: 50) Client -> Server @ : 403 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7420)]   (Sid: 50) Server -> Client : 275 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:7420)]   (Sid: 50) Server -> Client : 20 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7420)] Sent 20 bytes to client @ 169.254.16.196:52040
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52045
+[Proxy Recording  (235c:3638)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:3638)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:3638)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52049
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52051
+[Proxy Recording  (235c:2640)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:720c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:2640)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:720c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:720c)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording.Error (235c:2640)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52057
+[Proxy Recording  (235c:56e4)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:56e4)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:56e4)] Sent 0 bytes to client @ 169.254.16.196:52057
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52061
+[Proxy Recording  (235c:201c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:201c)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:201c)] Sent 0 bytes to client @ 169.254.16.196:52061
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52064
+[Proxy Recording  (235c: cf8)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=dlz9tm5exfja&t=3 ...
+[Proxy Recording  (235c: cf8)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=dlz9tm5exfja&t=3 ...
+[Proxy Recording  (235c: cf8)] Received response of 450 header and 0 body bytes from https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=dlz9tm5exfja&t=3
+[Proxy Recording  (235c: cf8)] Sent 0 bytes to client @ 169.254.16.196:52064
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52066
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=dlz9tm5exfja&t=3 ...
+[Proxy Recording  (235c:1bc0)] Trying to connect to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=dlz9tm5exfja&t=3 ...
+[Proxy Recording  (235c:65c0)] Received response of 409 header and 573 body bytes from https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=bah0uerowpkr&t=2
+[Proxy Recording.Error (235c:65c0)] Exception is caught while sending data to https://signaler-pa.clients6.google.com:443/punctual/multi-watch/channel?VER=8&gsessionid=HwSejbp0PhHyFLPAsH_1AfpZoHDgjCYza7OhVUu2sNo&key=AIzaSyAewGK8j9KoyT94rEj-weBpysMvzMQzGvk&RID=rpc&SID=3T9lawvC9tU-tblbRz0Vyw&AID=35&CI=0&TYPE=xmlhttp&zx=bah0uerowpkr&t=2, message=Не удается записать данные в транспортное соединение: Программа на вашем хост-компьютере разорвала установленное подключение.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52069
+[Proxy Recording  (235c:3638)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report ...
+[Proxy Recording  (235c:3638)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report ...
+[Proxy Recording  (235c:3638)] Received response of 363 header and 225 body bytes from https://dev-boomq.pflb.ru:443/report-srv/report
+[Web Request      (235c:3638)] "POST https://dev-boomq.pflb.ru/report-srv/report"
+[Network Analyzer (235c:3638)]   (Sid: 51) Client -> Server @ : 2575 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:3638)]   (Sid: 51) Client -> Server @ : 25483 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:3638)]   (Sid: 51) Server -> Client : 350 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:3638)]   (Sid: 51) Server -> Client : 225 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:3638)] Sent 225 bytes to client @ 169.254.16.196:52069
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52072
+[Proxy Recording  (235c:720c)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report/1228 ...
+[Proxy Recording  (235c:720c)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report/1228 ...
+[Proxy Recording  (235c:720c)] Received response of 363 header and 225 body bytes from https://dev-boomq.pflb.ru:443/report-srv/report/1228
+[Web Request      (235c:720c)] "GET https://dev-boomq.pflb.ru/report-srv/report/1228"   
+[Network Analyzer (235c:720c)]   (Sid: 52) Client -> Server @ : 2490 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:720c)]   (Sid: 52) Server -> Client : 350 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:720c)]   (Sid: 52) Server -> Client : 225 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:720c)] Sent 225 bytes to client @ 169.254.16.196:52072
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52074
+[Proxy Recording  (235c:7420)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report/1228/content ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://dev-boomq.pflb.ru:443/report-srv/report/1228/content ...
+[Proxy Recording  (235c:7420)] Received response of 363 header and 25407 body bytes from https://dev-boomq.pflb.ru:443/report-srv/report/1228/content
+[Web Request      (235c:7420)] "GET https://dev-boomq.pflb.ru/report-srv/report/1228/content"   
+[Network Analyzer (235c:7420)]   (Sid: 53) Client -> Server @ : 2498 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:7420)]   (Sid: 53) Server -> Client : 350 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:7420)]   (Sid: 53) Server -> Client : 25407 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:7420)] Sent 25407 bytes to client @ 169.254.16.196:52074
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52076
+[Proxy Recording  (235c:201c)] Trying to connect to https://dev-boomq.pflb.ru:443/test-srv/test?sort=createDate,desc&displayState=FINISHED ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://dev-boomq.pflb.ru:443/test-srv/test?sort=createDate,desc&displayState=FINISHED ...
+[Proxy Recording  (235c:201c)] Received response of 438 header and 13650 body bytes from https://dev-boomq.pflb.ru:443/test-srv/test?sort=createDate,desc&displayState=FINISHED
+[Web Request      (235c:201c)] "GET https://dev-boomq.pflb.ru/test-srv/test?sort=createDate,desc&displayState=FINISHED"   
+[Network Analyzer (235c:201c)]   (Sid: 54) Client -> Server @ : 2524 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 54) Server -> Client : 425 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:201c)]   (Sid: 54) Server -> Client : 13650 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:201c)] Sent 13650 bytes to client @ 169.254.16.196:52076
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52079
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52080
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52082
+[Proxy Recording  (235c: cf8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c: cf8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:2640)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:2640)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:65c0)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:2640)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording.Error (235c: cf8)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording.Error (235c:65c0)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52091
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52092
+[Proxy Recording  (235c:720c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:720c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:720c)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording.Error (235c:7420)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52099
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52100
+[Proxy Recording  (235c:7be8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:7be8)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording.Error (235c:201c)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[User action                 ] EndTransactionEvent UC06_TR05_reportname [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52107
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52108
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52109
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52113
+[Proxy Recording  (235c:720c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c: cf8)] Trying to connect to https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=c6npto1qymig ...
+[Proxy Recording  (235c: cf8)] Trying to connect to https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=c6npto1qymig ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1988&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=a2vfih1xn1ne&t=3 ...
+[Proxy Recording  (235c:56e4)] Trying to connect to https://docs.google.com:443/spreadsheets/d/1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8/bind?id=1FTNyuGuxkSMe1wycKZvaNPZrwbaz2sSKSady7LdqED8&sid=2fe955bcfe17489e&token=AC4w5Vjy1_S26GJHZ6ZESiG39Q0T-Tq7Rw%3A1718744416463&includes_info_params=true&cros_files=false&VER=8&lsq=1718737272252&u=14245361053018640839&flr=0&gsi=0&ssfi=1988&smv=130&smb=%5B130%2C%20%5D&cimpl=0&RID=rpc&SID=1DAA73F598BED358&CI=0&AID=81&TYPE=xmlhttp&zx=a2vfih1xn1ne&t=3 ...
+[Proxy Recording  (235c:720c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c: cf8)] Received response of 740 header and 43 body bytes from https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=c6npto1qymig
+[Proxy Recording  (235c:7be8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[User action                 ] Pausing...  [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52135
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/entityextractiontemplates/api/v1/assets/find-assets?name=addressbar_uu_files.global&version=1.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362 ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://edge.microsoft.com:443/entityextractiontemplates/api/v1/assets/find-assets?name=addressbar_uu_files.global&version=1.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362 ...
+[Proxy Recording  (235c:5c50)] Received response of 293 header and 264 body bytes from https://edge.microsoft.com:443/entityextractiontemplates/api/v1/assets/find-assets?name=addressbar_uu_files.global&version=1.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362
+[Web Request      (235c:5c50)] "GET https://edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets?name=addressbar_uu_files.global&version=1.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362"   
+[Network Analyzer (235c:5c50)]   (Sid: 59) Client -> Server @ : 550 bytes (SSL)(Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 59) Server -> Client : 310 bytes (SSL) (Service=HTTP)
+[Network Analyzer (235c:5c50)]   (Sid: 59) Server -> Client : 264 bytes (SSL) (Service=HTTP)
+[Proxy Recording  (235c:5c50)] Sent 264 bytes to client @ 169.254.16.196:52135
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52137
+[Proxy Recording  (235c:7420)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:7420)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:7420)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:7420)] Sent 0 bytes to client @ 169.254.16.196:52137
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52140
+[Proxy Recording  (235c:201c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:201c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:201c)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52144
+[Proxy Recording  (235c:7be8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:7be8)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52148
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52149
+[Proxy Recording  (235c:720c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:720c)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:2640)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:2640)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:720c)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording.Error (235c:2640)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52156
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52158
+[Proxy Recording  (235c: cf8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c: cf8)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording  (235c:5c50)] Trying to connect to https://play.google.com:443/log?format=json&hasfast=true&authuser=0 ...
+[Proxy Recording.Error (235c:5c50)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording.Error (235c: cf8)] Failed to connect to server https://play.google.com:443/log?format=json&hasfast=true&authuser=0.
+Message=SendFailure, status=Базовое соединение закрыто: Непредвиденная ошибка при передаче.
+See "https://msdn.microsoft.com/en-us/library/ms346609(v=vs.110).aspx" for details.
+[Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52164
+[Proxy Recording  (235c:720c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:720c)] Trying to connect to https://tube.pflb.ru:443/api/v1/metrics/playback ...
+[Proxy Recording  (235c:720c)] Received response of 377 header and 0 body bytes from https://tube.pflb.ru:443/api/v1/metrics/playback
+[Proxy Recording  (235c:720c)] Sent 0 bytes to client @ 169.254.16.196:52164
+[User action                 ] StartTransactionEvent UC06_TR06_sign_out [Proxy Recording  (235c:608c)] Client request from @ 169.254.16.196:52167
+[User action                 ] EndTransactionEvent UC06_TR06_sign_out [Proxy Recording  (235c:7be8)] Trying to connect to https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=6y9f71285rrb ...
+[Proxy Recording  (235c:7be8)] Trying to connect to https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=6y9f71285rrb ...
+[Proxy Recording  (235c:7be8)] Received response of 740 header and 43 body bytes from https://ssl.gstatic.com:443/docs/common/netcheck.gif?zx=6y9f71285rrb
+[Proxy Recording  (235c:7be8)] Sent 43 bytes to client @ 169.254.16.196:52167

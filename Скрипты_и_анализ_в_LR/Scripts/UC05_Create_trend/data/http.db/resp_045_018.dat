@@ -1,0 +1,4 @@
+d0
+[{"type":"GENERAL_SLA_TYPE","targetType":"TEST","restrictionType":"AVERAGE","fromDate":0,"toDate":360},{"type":"GENERAL_SLA_TYPE","targetType":"TEST","restrictionType":"ERROR_RATE","fromDate":0,"toDate":360}]
+0
+

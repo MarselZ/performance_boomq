@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\PROJECT NT 2024\Скрипты\Scripts4Stability\UC02_Create_test
+-ID:\RL\LOADRUNNER\include
+-ed:\project nt 2024\скрипты\scripts4stability\uc02_create_test\\logfile.log
+d:\project nt 2024\скрипты\scripts4stability\uc02_create_test\\combined_UC02_Create_test.c
+d:\project nt 2024\скрипты\scripts4stability\uc02_create_test\\pre_cci.c

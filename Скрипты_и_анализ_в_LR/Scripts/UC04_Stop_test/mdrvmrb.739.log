@@ -1,0 +1,15 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Action.c(194): web_url("test_4") started  	[MsgId: MMSG-26355]
+Action.c(194): web_url("test_4") was successful, 12689 body bytes, 427 header bytes  	[MsgId: MMSG-26386]
+Action.c(206): web_url("test_5") started  	[MsgId: MMSG-26355]
+Action.c(206): web_url("test_5") was successful, 7535 body bytes, 427 header bytes  	[MsgId: MMSG-26386]
+Action.c(216): Notify: Transaction "UC04_TR02_test_runs" ended with a "Pass" status (Duration: 0,4854 Wasted Time: 0,0002).	[MsgId: MMSG-16871]
+Action.c(218): Notify: Transaction "UC04_TR03_stopping_the_test" started.	[MsgId: MMSG-16999]
+Action.c(220): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(220): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(223): lr_think_time: 6,00 seconds.	[MsgId: MMSG-15948]
+Action.c(225): web_custom_request("stop") started  	[MsgId: MMSG-26355]
+Action.c(225): Error -26631: HTTP Status-Code=400 (Bad Request) for "https://dev-boomq.pflb.ru/test-srv/test/9921/stop"  	[MsgId: MERR-26631]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

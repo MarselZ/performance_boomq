@@ -1,0 +1,4 @@
+372
+{"profileId":null,"profileName":null,"chartList":[],"tableList":[],"baselineTestId":null,"testList":[{"id":8214,"testProjectId":2519,"testProjectVersionId":3554,"testMode":"TEST","state":"FINISHED","displayState":"FINISHED","userId":1870,"userEmail":null,"teamId":13,"createDate":"2024-06-24T10:03:09.815Z","startDate":"2024-06-24T10:03:19.492Z","endDate":"2024-06-24T10:08:49.920Z","comment":"","labelSet":[],"testProject":null,"testProjectVersion":null,"testResult":null,"testError":null},{"id":8215,"testProjectId":2519,"testProjectVersionId":3554,"testMode":"TEST","state":"FINISHED","displayState":"FINISHED","userId":1870,"userEmail":null,"teamId":13,"createDate":"2024-06-24T10:10:20.648Z","startDate":"2024-06-24T10:10:30.373Z","endDate":"2024-06-24T10:16:00.788Z","comment":"","labelSet":[],"testProject":null,"testProjectVersion":null,"testResult":null,"testError":null}]}
+0
+

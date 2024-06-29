@@ -1,0 +1,12 @@
+Start auto log messages stack - Iteration 43.	[MsgId: MMSG-10545]
+Action.c(52): web_add_auto_header("Priority") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(64): web_url("4aavslhx.791095574.xyz") started  	[MsgId: MMSG-26355]
+Action.c(64): Error -27792: Failed to connect to server "4aavslhx.791095574.xyz:443": [10060] Connection timed out  	[MsgId: MERR-27792]
+End auto log messages stack.	[MsgId: MMSG-10544]
+

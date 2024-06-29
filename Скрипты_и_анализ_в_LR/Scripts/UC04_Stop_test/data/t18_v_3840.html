@@ -1,0 +1,141 @@
+boomqTestPlan:
+  configurationElements:
+  - type: "HTTP_COOKIE_MANAGER"
+    id: "a86eef08-fbf6-4389-8e4b-9d044cdd5904"
+    label: "Http cookie manager"
+    enabled: true
+    clearEachIteration: false
+    clearControlledByThreadGroup: false
+    cookiePolicy: "STANDARD"
+    userDefinedCookies: []
+  - type: "HTTP_HEADER_MANAGER"
+    id: "742a72ef-a123-4eee-8deb-18a376049472"
+    label: "Http header manager"
+    enabled: true
+    headers:
+      User-Agent: "Mozilla/5.0"
+  - type: "HTTP_REQUEST_DEFAULTS"
+    id: "cf73e401-00c7-4208-ae13-78c3d62b4bf3"
+    label: "Http request defaults"
+    enabled: true
+    protocol: null
+    serverName: null
+    port: null
+    path: null
+    responseTimeout: 120000
+    connectTimeout: 60000
+    clientImplementation: null
+    contentEncoding: null
+    queryParameters: null
+    bodyParameters: null
+    body: null
+    proxyProperties: null
+    retrieveAllEmbeddedResources: null
+    useParallelDownloads: null
+    parallelDownloadsPoolSize: null
+    urlMustMatch: null
+    urlMustNotMatch: null
+    sourceAddress: null
+    saveResponseAsMd5Hash: null
+  urlOverwrites: null
+  threadGroups:
+  - type: "BOOMQ_STABLE_SCALABILITY"
+    id: "95724dee-327c-4244-8490-d74b1d2e599b"
+    label: "New group 2756"
+    typeDisplayName: ""
+    enabled: true
+    threadGroupElements:
+    - type: "CONTROLLER"
+      id: "bcc19411-d40d-4e18-965b-29931ba720c3"
+      label: "Transaction 1"
+      typeDisplayName: "Transaction Controller"
+      timerList: []
+      enabled: true
+      creationIndex: 1
+      individualProperties:
+        type: "TRANSACTION"
+        generateParentSampler: false
+        includeDurationOfAllElementsToGeneratedSampler: false
+      children:
+      - type: "SAMPLER"
+        id: "755ba81c-585d-4065-b6fa-3a0c67025769"
+        label: "http://77.50.236.215:48998/api/messages/send/kafka-topic-group-3"
+        typeDisplayName: "HTTP Request"
+        timerList:
+        - timerType: "CONSTANT"
+          id: "f8adf57b-a9ea-4bc0-8d65-46e0d08c2916"
+          typeDisplayName: null
+          label: "boomq_timer_f8adf57b-a9ea-4bc0-8d65-46e0d08c2916"
+          enabled: true
+          durationMs: 22000
+        enabled: true
+        individualProperties:
+          type: "HTTP"
+          method: "POST"
+          protocol: "http"
+          serverName: "77.50.236.215"
+          port: "48998"
+          path: "/api/messages/send/kafka-topic-group-3"
+          connectTimeout: null
+          responseTimeout: null
+          clientImplementation: null
+          contentEncoding: null
+          queryParameters: []
+          bodyParameters: []
+          headers:
+            Content-Type: "application/json"
+          body: "{\n \"message\": \"message_6966\",\n \"username\": \"user_4343\"\n\
+            \ }"
+          automaticallyRedirect: false
+          followRedirects: true
+          useKeepAlive: true
+          browserCompatibleHeaders: false
+          doMultipartPost: false
+          filesUpload: null
+          responsePreview: null
+          proxyProperties: null
+          retrieveAllEmbeddedResources: true
+          useParallelDownloads: null
+          parallelDownloadsPoolSize: null
+          urlMustMatch: null
+          urlMustNotMatch: null
+          sourceAddress: null
+          saveResponseAsMd5Hash: null
+        assertions: []
+        extractors: []
+    boomqConfiguration:
+      resourceConfiguration:
+        testRunnerIds:
+        - 1
+        cloudTestRunLocationRequirements: null
+        entTestRunLocationRequirements: null
+        memoryMb: null
+        cpuShares: null
+      pacingConfiguration: null
+      loadProfilePercent: 100
+    loadProfile: null
+  timers:
+  - timerType: "CONSTANT"
+    id: "7e3dcacc-74d9-43f5-bce5-1d18a22fd3b1"
+    typeDisplayName: null
+    label: "boomq_timer_7e3dcacc-74d9-43f5-bce5-1d18a22fd3b1"
+    enabled: true
+    durationMs: 8000
+  loadProfileType: "PER_TEST"
+  loadProfile:
+    boomqProfileType: "STABLE"
+    stepCount: 1
+    usersPerStep: 4
+    stepLengthMs: 3600000
+    rampUpMs: 60000
+    rampDownMs: 60000
+    durationAddedOnLastStepMs: 0
+  runThreadGroupConsecutively: false
+  runTearDownAfterShutdown: true
+  functionalMode: false
+  classpath: null
+slaGroupList: []
+resourceConfiguration: null
+supportingFiles: []
+supportingFilesV2: []
+importedJmxFileLocation: null

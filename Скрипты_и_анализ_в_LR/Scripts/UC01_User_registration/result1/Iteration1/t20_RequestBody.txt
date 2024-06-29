@@ -1,0 +1,3 @@
+"[{"email":"kokwe2225@edx.ru","id":2001,"permissionList":["RUN","ADMIN","MANAGE_USERS_IN_ORG",""
+"EDIT","VIEW"],"teamId":"13","userDisplayName":"kokwe_2225","userId":1925,"updateInviteExpirati"
+"on":true}]"

@@ -1,0 +1,1000 @@
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:20:36.863  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:20:36.871  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:20:36.871  INFO 1 --- [nio-7090-exec-2] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:21:33.749  INFO 1 --- [nio-7090-exec-1] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:21:33.767  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:21:33.773  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:21:33.774  INFO 1 --- [nio-7090-exec-1] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:21:33.921  INFO 1 --- [nio-7090-exec-3] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:21:33.923  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1500/content
+2024-06-27 18:21:33.933  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1500/content
+2024-06-27 18:21:33.933  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:21:33.936  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:21:33.939  INFO 1 --- [nio-7090-exec-3] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:21:34.088  INFO 1 --- [nio-7090-exec-4] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:21:34.092  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:21:34.096  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:21:34.096  INFO 1 --- [nio-7090-exec-4] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:22:31.368  INFO 1 --- [nio-7090-exec-5] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:22:31.373  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:22:31.379  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:22:31.379  INFO 1 --- [nio-7090-exec-5] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:22:31.539  INFO 1 --- [nio-7090-exec-6] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:22:31.540  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1501/content
+2024-06-27 18:22:31.546  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1501/content
+2024-06-27 18:22:31.546  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:22:31.550  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:22:31.553  INFO 1 --- [nio-7090-exec-6] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:22:31.713  INFO 1 --- [nio-7090-exec-7] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:22:31.715  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:22:31.720  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:22:31.720  INFO 1 --- [nio-7090-exec-7] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:23:26.629  INFO 1 --- [nio-7090-exec-9] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:23:26.631  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:23:26.638  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:23:26.638  INFO 1 --- [nio-7090-exec-9] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:23:26.783  INFO 1 --- [io-7090-exec-10] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:23:26.785  INFO 1 --- [io-7090-exec-10] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1502/content
+2024-06-27 18:23:26.796  INFO 1 --- [io-7090-exec-10] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1502/content
+2024-06-27 18:23:26.796  INFO 1 --- [io-7090-exec-10] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:23:26.803  INFO 1 --- [io-7090-exec-10] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:23:26.807  INFO 1 --- [io-7090-exec-10] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:23:26.961  INFO 1 --- [nio-7090-exec-8] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:23:26.970  INFO 1 --- [nio-7090-exec-8] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:23:26.976  INFO 1 --- [nio-7090-exec-8] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:23:26.976  INFO 1 --- [nio-7090-exec-8] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:24:21.851  INFO 1 --- [nio-7090-exec-2] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:24:21.857  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:24:21.862  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:24:21.862  INFO 1 --- [nio-7090-exec-2] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:24:22.004  INFO 1 --- [nio-7090-exec-1] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:24:22.005  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1503/content
+2024-06-27 18:24:22.016  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1503/content
+2024-06-27 18:24:22.016  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:24:22.021  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:24:22.026  INFO 1 --- [nio-7090-exec-1] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:24:22.175  INFO 1 --- [nio-7090-exec-3] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:24:22.180  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:24:22.184  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:24:22.184  INFO 1 --- [nio-7090-exec-3] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:25:18.479  INFO 1 --- [nio-7090-exec-4] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:25:18.486  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:25:18.492  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:25:18.492  INFO 1 --- [nio-7090-exec-4] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:25:18.637  INFO 1 --- [nio-7090-exec-5] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:25:18.640  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1504/content
+2024-06-27 18:25:18.650  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1504/content
+2024-06-27 18:25:18.650  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:25:18.653  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:25:18.655  INFO 1 --- [nio-7090-exec-5] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:25:18.788  INFO 1 --- [nio-7090-exec-6] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:25:18.790  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:25:18.793  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:25:18.793  INFO 1 --- [nio-7090-exec-6] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:26:16.146  INFO 1 --- [nio-7090-exec-7] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:26:16.149  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:26:16.152  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:26:16.152  INFO 1 --- [nio-7090-exec-7] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:26:16.294  INFO 1 --- [nio-7090-exec-9] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:26:16.296  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1505/content
+2024-06-27 18:26:16.302  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1505/content
+2024-06-27 18:26:16.302  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:26:16.307  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:26:16.310  INFO 1 --- [nio-7090-exec-9] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:26:16.453  INFO 1 --- [io-7090-exec-10] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:26:16.460  INFO 1 --- [io-7090-exec-10] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:26:16.466  INFO 1 --- [io-7090-exec-10] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:26:16.466  INFO 1 --- [io-7090-exec-10] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:27:11.666  INFO 1 --- [nio-7090-exec-8] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:27:11.672  INFO 1 --- [nio-7090-exec-8] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:27:11.679  INFO 1 --- [nio-7090-exec-8] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:27:11.679  INFO 1 --- [nio-7090-exec-8] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:27:11.836  INFO 1 --- [nio-7090-exec-2] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:27:11.837  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1506/content
+2024-06-27 18:27:12.145  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1506/content
+2024-06-27 18:27:12.146  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:27:12.152  INFO 1 --- [nio-7090-exec-2] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:27:12.155  INFO 1 --- [nio-7090-exec-2] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:27:12.302  INFO 1 --- [nio-7090-exec-1] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:27:12.307  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:27:12.312  INFO 1 --- [nio-7090-exec-1] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:27:12.312  INFO 1 --- [nio-7090-exec-1] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:28:07.421  INFO 1 --- [nio-7090-exec-3] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:28:07.425  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:28:07.429  INFO 1 --- [nio-7090-exec-3] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:28:07.429  INFO 1 --- [nio-7090-exec-3] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:28:07.560  INFO 1 --- [nio-7090-exec-4] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:28:07.561  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1507/content
+2024-06-27 18:28:07.588  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1507/content
+2024-06-27 18:28:07.588  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:28:07.592  INFO 1 --- [nio-7090-exec-4] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:28:07.595  INFO 1 --- [nio-7090-exec-4] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:28:07.729  INFO 1 --- [nio-7090-exec-5] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:28:07.731  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:28:07.733  INFO 1 --- [nio-7090-exec-5] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:28:07.733  INFO 1 --- [nio-7090-exec-5] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:29:02.388  INFO 1 --- [nio-7090-exec-6] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:29:02.394  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:29:02.397  INFO 1 --- [nio-7090-exec-6] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:29:02.397  INFO 1 --- [nio-7090-exec-6] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+2024-06-27 18:29:02.549  INFO 1 --- [nio-7090-exec-7] r.p.b.r.controller.ReportController      : Got request to create a report. teamId=14
+Hibernate: 
+    select
+        nextval ('seq_report_id')
+2024-06-27 18:29:02.551  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.MinioFileAdapter    : Trying to write file to storage location=boomq/teams/14/reports/1508/content
+2024-06-27 18:29:02.558  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.MinioFileAdapter    : Successfully wrote file to location=boomq/teams/14/reports/1508/content
+2024-06-27 18:29:02.558  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userId=1871
+2024-06-27 18:29:02.562  INFO 1 --- [nio-7090-exec-7] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userId=1871
+Hibernate: 
+    insert 
+    into
+        report
+        (content_location, created_at, created_by_user_id, name, team_id, test_ids, updated_at, updated_by_user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        report 
+    set
+        content_location=?,
+        created_at=?,
+        created_by_user_id=?,
+        name=?,
+        team_id=?,
+        test_ids=?,
+        updated_at=?,
+        updated_by_user_id=? 
+    where
+        id=?
+2024-06-27 18:29:02.565  INFO 1 --- [nio-7090-exec-7] r.p.b.r.controller.ReportController      : Returning success response to create a report: teamId=14
+2024-06-27 18:29:02.703  INFO 1 --- [nio-7090-exec-9] r.p.b.r.controller.ReportController      : Got request to get search reports: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])
+Hibernate: 
+    select
+        report0_.id as id1_0_,
+        report0_.content_location as content_2_0_,
+        report0_.created_at as created_3_0_,
+        report0_.created_by_user_id as created_4_0_,
+        report0_.name as name5_0_,
+        report0_.team_id as team_id6_0_,
+        report0_.test_ids as test_ids7_0_,
+        report0_.updated_at as updated_8_0_,
+        report0_.updated_by_user_id as updated_9_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14 
+    order by
+        report0_.updated_at desc limit ?
+Hibernate: 
+    select
+        count(report0_.id) as col_0_0_ 
+    from
+        report report0_ 
+    where
+        report0_.team_id=14
+Hibernate: 
+    select
+        reportlabe0_.id as id1_1_,
+        reportlabe0_.color as color2_1_,
+        reportlabe0_.label as label3_1_,
+        reportlabe0_.report_id as report_i4_1_,
+        reportlabe0_.team_id as team_id5_1_ 
+    from
+        report_label reportlabe0_ 
+    where
+        reportlabe0_.report_id in (
+            ? , ? , ? , ? , ? , ? , ? , ? , ?
+        )
+2024-06-27 18:29:02.708  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.UserServiceAdapter  : Try call auth service for user info: userIds=[1871]
+2024-06-27 18:29:02.715  INFO 1 --- [nio-7090-exec-9] r.p.b.r.adapter.impl.UserServiceAdapter  : Successful call auth service for user info: userIds=[1871]
+2024-06-27 18:29:02.715  INFO 1 --- [nio-7090-exec-9] r.p.b.r.controller.ReportController      : Returning response with reports page: teamId=14 reportSearchParamsDto=ReportSearchParamsDto(nameLikeOneOf=null, labelLikeOneOf=null, testIdIn=null, updatedByUserEmailIn=null, createdByUserEmailIn=null, updatedFrom=null, updatedTo=null, createdFrom=null, createdTo=null, pagination=PaginationParams(pageNumber=0, pageSize=9), sort=[ReportSort(field=CREATED_AT, direction=DESC)])

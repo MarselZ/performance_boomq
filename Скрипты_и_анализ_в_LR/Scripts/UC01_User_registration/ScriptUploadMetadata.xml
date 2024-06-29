@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>UC01_User_registration</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="UC01_User_registration.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="UC_01_User_registration.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="WebSocketBuffer.h" Filter="2" />
+    <FileEntry Name="email.dat" Filter="2" />
+    <FileEntry Name="password_new_user.dat" Filter="2" />
+    <FileEntry Name="randomChar.dat" Filter="2" />
+    <FileEntry Name="user_11.dat" Filter="2" />
+    <FileEntry Name="combined_UC01_User_registration.c" Filter="2" />
+    <FileEntry Name="combined_UC_01_User_registration.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="101293995440.idx" Filter="1" />
+    <FileEntry Name="113324657440.idx" Filter="1" />
+    <FileEntry Name="125202548440.idx" Filter="1" />
+    <FileEntry Name="125994475440.idx" Filter="1" />
+    <FileEntry Name="129840080440.idx" Filter="1" />
+    <FileEntry Name="138731009440.idx" Filter="1" />
+    <FileEntry Name="145142119440.idx" Filter="1" />
+    <FileEntry Name="15308877440.idx" Filter="1" />
+    <FileEntry Name="153593799440.idx" Filter="1" />
+    <FileEntry Name="16251403440.idx" Filter="1" />
+    <FileEntry Name="172205172440.idx" Filter="1" />
+    <FileEntry Name="198575999440.idx" Filter="1" />
+    <FileEntry Name="21448129440.idx" Filter="1" />
+    <FileEntry Name="216177745440.idx" Filter="1" />
+    <FileEntry Name="229567607440.idx" Filter="1" />
+    <FileEntry Name="234010322440.idx" Filter="1" />
+    <FileEntry Name="234263888440.idx" Filter="1" />
+    <FileEntry Name="23426388844_ABN.619.idx" Filter="1" />
+    <FileEntry Name="23426388844_teQ.303.idx" Filter="1" />
+    <FileEntry Name="23426388844_xGq.549.idx" Filter="1" />
+    <FileEntry Name="23426388844_xow.801.idx" Filter="1" />
+    <FileEntry Name="252890727440.idx" Filter="1" />
+    <FileEntry Name="256721999440.idx" Filter="1" />
+    <FileEntry Name="265157028440.idx" Filter="1" />
+    <FileEntry Name="29817370440.idx" Filter="1" />
+    <FileEntry Name="44866671440.idx" Filter="1" />
+    <FileEntry Name="50852536440.idx" Filter="1" />
+    <FileEntry Name="86604932440.idx" Filter="1" />
+    <FileEntry Name="87449943440.idx" Filter="1" />
+    <FileEntry Name="94224436440.idx" Filter="1" />
+    <FileEntry Name="98506272440.idx" Filter="1" />
+    <FileEntry Name="98632353440.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="data.zip" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="NewParam_1.dat" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UC01_User_registration.c.pickle" Filter="1" />
+    <FileEntry Name="UC01_User_registration.ci" Filter="1" />
+    <FileEntry Name="UC_01_User_registration.c.pickle" Filter="1" />
+    <FileEntry Name="UC_01_User_registration.ci" Filter="1" />
+    <FileEntry Name="UC_01_User_registration.prm.bak" Filter="1" />
+    <FileEntry Name="userParam.dat" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

@@ -1,0 +1,198 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: dev-boomq.pflb.ru",
+                "infFile": "t1.inf",
+                "time": 1719592620920
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login",
+                "infFile": "t3.inf",
+                "time": 1719592621274
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: config.json",
+                "infFile": "t4.inf",
+                "time": 1719592621327
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: modelSchema",
+                "infFile": "t5.inf",
+                "time": 1719592621443
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: user",
+                "infFile": "t6.inf",
+                "time": 1719592621520
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: identityProvider",
+                "infFile": "t7.inf",
+                "time": 1719592621608
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Url: team",
+                "infFile": "t9.inf",
+                "time": 1719592621685
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Url: teamContext",
+                "infFile": "t11.inf",
+                "time": 1719592621759
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Url: testRunner",
+                "infFile": "t12.inf",
+                "time": 1719592621840
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Url: team_2",
+                "infFile": "t13.inf",
+                "time": 1719592621975
+            },
+            {
+                "stepId": "STEP11",
+                "stepName": "Url: 13_2",
+                "infFile": "t14.inf",
+                "time": 1719592622075
+            },
+            {
+                "stepId": "STEP12",
+                "stepName": "Url: teamMember",
+                "infFile": "t15.inf",
+                "time": 1719592622170
+            },
+            {
+                "stepId": "STEP13",
+                "stepName": "Custom Request: teamMember_2",
+                "infFile": "t18.inf",
+                "time": 1719592622584
+            },
+            {
+                "stepId": "STEP14",
+                "stepName": "Url: teamMember_3",
+                "infFile": "t19.inf",
+                "time": 1719592622649
+            },
+            {
+                "stepId": "STEP15",
+                "stepName": "Custom Request: teamMember_5",
+                "infFile": "t20.inf",
+                "time": 1719592622802
+            },
+            {
+                "stepId": "STEP16",
+                "stepName": "Url: YJ4JGWAnMH-JhZ5GT-gOPcA-PRx4ftfaASf1R4gfo7ZFXezGvuoTqwD-jwmhTKUgJF7kBCgPDXbUp7yL-StP1Z8fVLcrYDK7n5UDsEqNMTk=",
+                "infFile": "t22.inf",
+                "time": 1719592623154
+            },
+            {
+                "stepId": "STEP17",
+                "stepName": "Url: modelSchema_2",
+                "infFile": "t23.inf",
+                "time": 1719592623347
+            },
+            {
+                "stepId": "STEP18",
+                "stepName": "Custom Request: user_3",
+                "infFile": "t24.inf",
+                "time": 1719592623558
+            },
+            {
+                "stepId": "STEP19",
+                "stepName": "Url: team_3",
+                "infFile": "t25.inf",
+                "time": 1719592623634
+            },
+            {
+                "stepId": "STEP20",
+                "stepName": "Url: teamContext_2",
+                "infFile": "t26.inf",
+                "time": 1719592623702
+            },
+            {
+                "stepId": "STEP21",
+                "stepName": "Url: testRunner_2",
+                "infFile": "t27.inf",
+                "time": 1719592623761
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "UC_01_TR_01_Sign_in",
+                "rawStartTime": 1719592620943,
+                "rawEndTime": 1719592621852,
+                "thinkTime": 0.0,
+                "wastedTime": 0.05730485916137695
+            },
+            {
+                "transactionName": "UC_01_TR_02_Going_to_group",
+                "rawStartTime": 1719592621868,
+                "rawEndTime": 1719592621977,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0037305355072021486
+            },
+            {
+                "transactionName": "UC_01_TR_03_Edit_group",
+                "rawStartTime": 1719592622008,
+                "rawEndTime": 1719592622178,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0077838897705078129
+            },
+            {
+                "transactionName": "UC_01_TR_05_Add_member",
+                "rawStartTime": 1719592622194,
+                "rawEndTime": 1719592622664,
+                "thinkTime": 0.0,
+                "wastedTime": 0.014325618743896485
+            },
+            {
+                "transactionName": "UC_01_TR_06_Copy_invite_link",
+                "rawStartTime": 1719592622680,
+                "rawEndTime": 1719592622819,
+                "thinkTime": 0.0,
+                "wastedTime": 0.00491786003112793
+            },
+            {
+                "transactionName": "UC_01_TR_07_Exit",
+                "rawStartTime": 1719592622835,
+                "rawEndTime": 1719592622867,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            },
+            {
+                "transactionName": "UC_01_TR_08_Insert_invite_link",
+                "rawStartTime": 1719592622883,
+                "rawEndTime": 1719592623163,
+                "thinkTime": 0.0,
+                "wastedTime": 0.007793903350830078
+            },
+            {
+                "transactionName": "UC_01_TR_09_Input_password",
+                "rawStartTime": 1719592623179,
+                "rawEndTime": 1719592623771,
+                "thinkTime": 0.0,
+                "wastedTime": 0.022633790969848634
+            },
+            {
+                "transactionName": "UC_01_TR_10_Exit",
+                "rawStartTime": 1719592623787,
+                "rawEndTime": 1719592623817,
+                "thinkTime": 0.0,
+                "wastedTime": 0.0
+            }
+        ]
+    }
+]

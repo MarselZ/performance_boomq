@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>UC05_Create_trend</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="UC05_Create_trend.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="UC_05_Create_trend.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="WebSocketBuffer.h" Filter="2" />
+    <FileEntry Name="password.dat" Filter="2" />
+    <FileEntry Name="user_11.dat" Filter="2" />
+    <FileEntry Name="combined_UC05_Create_trend.c" Filter="2" />
+    <FileEntry Name="combined_UC_05_Create_trend.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="114591940440.idx" Filter="1" />
+    <FileEntry Name="160095392440.idx" Filter="1" />
+    <FileEntry Name="16009539244_1Jp.189.idx" Filter="1" />
+    <FileEntry Name="16009539244_2z0.295.idx" Filter="1" />
+    <FileEntry Name="16009539244_Akc.153.idx" Filter="1" />
+    <FileEntry Name="16009539244_b5n.449.idx" Filter="1" />
+    <FileEntry Name="16009539244_dGe.947.idx" Filter="1" />
+    <FileEntry Name="16009539244_j3D.817.idx" Filter="1" />
+    <FileEntry Name="194348855440.idx" Filter="1" />
+    <FileEntry Name="203962139440.idx" Filter="1" />
+    <FileEntry Name="207845183440.idx" Filter="1" />
+    <FileEntry Name="20784518344_1mE.257.idx" Filter="1" />
+    <FileEntry Name="20784518344_3Zs.481.idx" Filter="1" />
+    <FileEntry Name="20784518344_5ZB.943.idx" Filter="1" />
+    <FileEntry Name="20784518344_8cr.797.idx" Filter="1" />
+    <FileEntry Name="20784518344_ALK.527.idx" Filter="1" />
+    <FileEntry Name="20784518344_bP9.959.idx" Filter="1" />
+    <FileEntry Name="20784518344_BUN.945.idx" Filter="1" />
+    <FileEntry Name="20784518344_CJz.285.idx" Filter="1" />
+    <FileEntry Name="20784518344_cky.125.idx" Filter="1" />
+    <FileEntry Name="20784518344_COA.809.idx" Filter="1" />
+    <FileEntry Name="20784518344_Ert.37.idx" Filter="1" />
+    <FileEntry Name="20784518344_G3A.607.idx" Filter="1" />
+    <FileEntry Name="20784518344_h3K.109.idx" Filter="1" />
+    <FileEntry Name="20784518344_HVY.545.idx" Filter="1" />
+    <FileEntry Name="20784518344_ILc.497.idx" Filter="1" />
+    <FileEntry Name="20784518344_j18.809.idx" Filter="1" />
+    <FileEntry Name="20784518344_jjO.925.idx" Filter="1" />
+    <FileEntry Name="20784518344_kvn.619.idx" Filter="1" />
+    <FileEntry Name="20784518344_Pcw.701.idx" Filter="1" />
+    <FileEntry Name="20784518344_Q2r.605.idx" Filter="1" />
+    <FileEntry Name="20784518344_Q4c.719.idx" Filter="1" />
+    <FileEntry Name="20784518344_ScD.207.idx" Filter="1" />
+    <FileEntry Name="20784518344_SPH.493.idx" Filter="1" />
+    <FileEntry Name="20784518344_STx.661.idx" Filter="1" />
+    <FileEntry Name="20784518344_Sz1.327.idx" Filter="1" />
+    <FileEntry Name="20784518344_TAM.489.idx" Filter="1" />
+    <FileEntry Name="20784518344_uuf.969.idx" Filter="1" />
+    <FileEntry Name="20784518344_Wgm.577.idx" Filter="1" />
+    <FileEntry Name="20784518344_x3L.809.idx" Filter="1" />
+    <FileEntry Name="20784518344_Xa5.593.idx" Filter="1" />
+    <FileEntry Name="20784518344_XRb.81.idx" Filter="1" />
+    <FileEntry Name="20784518344_ZwS.719.idx" Filter="1" />
+    <FileEntry Name="213944320440.idx" Filter="1" />
+    <FileEntry Name="248165233440.idx" Filter="1" />
+    <FileEntry Name="87243538440.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrvmwi.549.log" Filter="1" />
+    <FileEntry Name="mdrvQyi.319.log" Filter="1" />
+    <FileEntry Name="mdrvsjh.937.log" Filter="1" />
+    <FileEntry Name="mdrvwzy.435.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="time.dat" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UC05_Create_trend.c.pickle" Filter="1" />
+    <FileEntry Name="UC05_Create_trend.ci" Filter="1" />
+    <FileEntry Name="UC_05_Create_trend.c.pickle" Filter="1" />
+    <FileEntry Name="UC_05_Create_trend.ci" Filter="1" />
+    <FileEntry Name="UC_05_Create_trend.prm.bak" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

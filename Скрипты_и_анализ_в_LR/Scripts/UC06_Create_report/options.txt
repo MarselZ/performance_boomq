@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\PROJECT NT 2024\Scripts\UC06_Create_report
+-ID:\RL\LOADRUNNER\include
+-ed:\project nt 2024\scripts\uc06_create_report\\logfile.log
+d:\project nt 2024\scripts\uc06_create_report\\combined_UC06_Create_report.c
+d:\project nt 2024\scripts\uc06_create_report\\pre_cci.c

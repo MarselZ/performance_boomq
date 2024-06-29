@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\PROJECT NT 2024\Скрипты\Scripts4Stability\UC05_Create_trend
+-ID:\RL\LOADRUNNER\include
+-ed:\project nt 2024\скрипты\scripts4stability\uc05_create_trend\\logfile.log
+d:\project nt 2024\скрипты\scripts4stability\uc05_create_trend\\combined_UC05_Create_trend.c
+d:\project nt 2024\скрипты\scripts4stability\uc05_create_trend\\pre_cci.c

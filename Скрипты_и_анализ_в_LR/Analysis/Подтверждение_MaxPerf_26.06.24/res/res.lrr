@@ -1,0 +1,46 @@
+[Scenario]
+Product=LoadRunner Controller
+Version=2021.0.0.0
+Path=D:\PROJECT NT 2024\KontrollerTests\Prof10Confirmation3Test6min.lrs
+Subject=Scenario2
+Result_file=C:\Users\Ваня\AppData\Local\Temp\res\res.lrr
+Description=
+ResultName=res
+Time_Zone=-14400
+Start_time=1719418213
+Daylight_Bias=0
+Stop_time=1719423805
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By a user
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Group schedule for: uc05_create_trend
+Mode=Group Scheduling
+Scenario Duration=Unknown duration
+Load Behavior=Defined per scenario group
+[Groups_schedule]
+uc01_user_registration=SG0;ST6_1E180;R4500;SP6_1E30;
+uc02_create_test=SG0;ST6_1E180;R4500;SP6_1E30;
+uc03_start_test=SG0;ST6_1E180;R4500;SP6_1E30;
+uc05_create_trend=SG0;ST6_1E180;R4500;SP6_1E30;
+uc06_create_report=SG0;ST6_1E180;R4500;SP6_1E30;
+[Scripts]
+UC06_Create_report=D:\PROJECT NT 2024\Скрипты\Scripts4Confirmation3\UC06_Create_report\UC06_Create_report.usr
+UC05_Create_trend=D:\PROJECT NT 2024\Скрипты\Scripts4Confirmation3\UC05_Create_trend\UC05_Create_trend.usr
+UC03_Start_test=D:\PROJECT NT 2024\Скрипты\Scripts4Confirmation3\UC03_Start_test\UC03_Start_test.usr
+UC02_Create_test=D:\PROJECT NT 2024\Скрипты\Scripts4Confirmation3\UC02_Create_test\UC02_Create_test.usr
+UC01_User_registration=D:\PROJECT NT 2024\Скрипты\Scripts4Confirmation3\UC01_User_registration\UC01_User_registration.usr
+[Scripts_types]
+UC06_Create_report=Multi+QTWeb
+UC05_Create_trend=Multi+QTWeb
+UC03_Start_test=Multi+QTWeb
+UC02_Create_test=Multi+QTWeb
+UC01_User_registration=Multi+QTWeb
